@@ -1,6 +1,6 @@
 # website
 
-##Deployment instructions:
+## Deployment instructions:
 
 Create separate branch:
 ```bash
