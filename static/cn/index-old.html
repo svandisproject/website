@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110819624-2"></script>
+	<link rel="stylesheet" type="text/css"
+		  href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+	<script>
+      window.dataLayer = window.dataLayer || [];
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+      if(location.hostname === 'svandis.io'){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W9LJC32')};</script>
+	<!-- End Google Tag Manager -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	<script>
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#252e39"
+            },
+            "button": {
+              "background": "#14a7d0"
+            }
+          },
+          "content": {
+            "href": "privacy-policy.html",
+            "message": "本网站使用cookies来确保您在我们网站上获得最佳体验",
+            "link": '学到更多',
+            "dismiss": '知道了！',
+            "deny": '推辞'
+          },
+          "type": "opt-out",
+          onInitialise: function (status) {
+
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+
+            if (type == 'opt-out' && didConsent) {
+              gtag('js', new Date());
+              gtag('config', 'UA-110819624-2');
+            }
+          },
+          onStatusChange: function (status, chosenBefore) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+
+            if (type == 'opt-out' && !didConsent) {
+              // disable cookies
+            } else if (type == 'opt-out' && didConsent) {
+              gtag('js', new Date());
+              gtag('config', 'UA-110819624-2');
+
+            }
+
+          },
+          onRevokeChoice: function () {
+            var type = this.options.type;
+            if (type == 'opt-out') {
+              // enable cookies
+            }
+          },
+        })
+      });
+	</script>
+	<script>
+      var trackOutboundLink = function (url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+          'hitCallback': function () {
+            document.location = url;
+          }
+        });
+      }
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Svandis</title>
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+		  rel="stylesheet">
+	<link rel="stylesheet" id="style_svandis-css" href="../css/main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+		  integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+</head>
+<body class="home">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="main-wrapper">
+	<header id="header" class="header">
+		<div class="container">
+			<div class="header-wrap flex-row">
+				<a href="index.html" class="custom-logo-link">
+					<img width="198" height="50" src="../img/logo.png" class="custom-logo" alt="Svandis">
+				</a>
+				<div class="menu-toggle">
+					<div class="bars">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				<div class="main-navigation">
+					<ul id="primary-menu" class="main-nav">
+						<li class="menu-item">
+							<a href="#introduction">绪论</a>
+						</li>
+						<li class="menu-item">
+							<a href="#community-involvement">社区</a>
+						</li>
+						<li class="menu-item">
+							<a href="#roadmap">路线</a>
+						</li>
+						<li class="menu-item">
+							<a href="#token">代币销售</a>
+						</li>
+						<li class="menu-item">
+							<a href="#ecosystem">生态系统</a>
+						</li>
+						<li class="menu-item">
+							<a href="#team">团队</a>
+						</li>
+						<li class="menu-item">
+							<a href="#partners">伙伴</a>
+						</li>
+						<li class="menu-item">
+							<a href="#faq">常问问题</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="home-section">
+		<div class="container">
+			<div class="main-home-wrapper">
+				<h1 class="main-title">时间选择是最重要的<br/>所有数据在一个地方</h1>
+				<div class="subscribe-form-wrapper">
+					<div class="form-descr top">
+						<p>私人预售正在进行中</p>
+					</div>
+					<div class="paper-buttons">
+						<a href="form.html" target="_blank"
+						   class="button paper-btn white-btn">申请白名单</a>
+						<div class="buttons-wrapper">
+							<a href="../whitepaper.pdf" target="_blank"
+							   class="button paper-btn whitepaper-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'White Paper'});">White Paper</a>
+							<a href="lightpaper.pdf" target="_blank"
+							   class="button paper-btn light-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Light Paper'});">轻纸</a>
+						</div>
+					</div>
+					<div class="form-descr bottom">
+						<p>订阅更新</p>
+					</div>
+					<!-- Start of signup -->
+					<script language="javascript">
+                      <!--
+                      function validate_signup(frm) {
+                        var emailAddress = frm.Email.value;
+                        var errorString = '';
+                        if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+                          errorString = '请输入您的电子邮件';
+                        }
+                        var isError = false;
+                        if (errorString.length > 0)
+                          isError = true;
+                        if (isError)
+                          alert(errorString);
+                        return !isError;
+                      }
+
+                      //-->
+					</script>
+					<form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
+						  onsubmit="return validate_signup(this)">
+						<input type="hidden" name="addressbookid" value="172526">
+						<input type="hidden" name="ci_isconsentform" value="true">
+						<!-- UserID - required field, do not remove -->
+						<input type="hidden" name="userid" value="227981">
+						<!-- ReturnURL - when the user hits submit, they'll get sent here -->
+						<input type="hidden" name="ReturnURL" value="https://svandis.io">
+						<!-- Email - the user's email address -->
+						<input type="text" name="Email" class="email" placeholder="Email:">
+						<input type="hidden" name="ci_userConsentText" value="">
+						<input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+						<input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
+						<input type="Submit" name="Submit" value="订阅" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+					</form>
+					<div id="success" class="success-message" style="opacity: 0">感谢您注册我们的通讯！ 你有没有加入我们的Telegram组？					</div>
+					<script language="javascript">
+                      var urlInput = document.getElementById("ci_consenturl");
+                      if (urlInput != null && urlInput != 'undefined') {
+                        urlInput.value = encodeURI(window.location.href);
+                      }
+					</script>
+					<!-- End of signup -->
+				</div>
+				<div id="header-social-links">
+					<ul class="social-icons-list">
+						<li>
+							<a class="social-icon" href="//t.me/svandis_chatroom" target="_blank">
+								<i class="fab fa-telegram"></i></a>
+						</li>
+						<li><a class="social-icon" href="//t.me/svandisio" target="_blank">
+							<i class="fab fa-telegram-plane"></i></a>
+						</li>
+						<li>
+							<a href="//twitter.com/svandisio" class="social-icon" target="_blank">
+								<i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="//medium.com/svandis " class="social-icon" target="_blank">
+								<i class="fab fa-medium-m"></i></a>
+						</li>
+						<li>
+							<a class="social-icon" href="//www.reddit.com/r/Svandis/" target="_blank">
+								<i class="fab fa-reddit-alien"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="introduction" class="introduction-section">
+		<div class="container">
+			<div class="introduction-container">
+				<h2>我们把数据转化为有价值的信息</h2>
+				<div class="introduction-text">
+					在数据超载的时代，数量并不一定意味着价值。 在Svandis，我们在革新您收到信息的方式。 通过从传统市场中采取最有效的解决方案并使其适应密码机市场的需求，我们的平台在不稳定的数字资产世界中提供一些机构和个人投资者所需的工具为了帮他们做出更有见地的交易和投资决策。
+				</div>
+				<iframe src="https://player.vimeo.com/video/276220627" style="max-width: 100%; margin-bottom: 90px" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div id="features" class="introduction-section-wrapper">
+			<div class="container">
+				<div class="introduction-items-wrap">
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/ICO-Token-Screener.png" alt="ICO Token Screener">
+							</div>
+							<div class="txt">
+								销售首次代币发行和代币的屏幕
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Digital-Asset-Screener.png" alt="Digital Asset Screener">
+							</div>
+							<div class="txt">
+								密加货币和代币的屏幕
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Svandis-Indexes.png" alt="Svandis Indices">
+							</div>
+							<div class="txt">
+								指数
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Customized-Indexes-Builder.png" alt="Indices Builder">
+							</div>
+							<div class="txt">
+								指数生成器
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Newsfeed.png" alt="Newsfeed">
+							</div>
+							<div class="txt">
+								新闻源
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Charts.png" alt="Charts">
+							</div>
+							<div class="txt">
+								图表
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Catalysts-Analysis.png" alt="Catalysts Analysis">
+							</div>
+							<div class="txt">
+								催化分析
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Heatmaps-and-Groups.png" alt="Heatmaps And Groups">
+							</div>
+							<div class="txt">
+								热图和组
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Watchlists-and-Alerts.png" alt="Watchlists And Alerts">
+							</div>
+							<div class="txt">
+								观察列表和警示
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Customized.png" alt="Customized User Interface">
+							</div>
+							<div class="txt">
+								用户化的用户界面
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Marketplace.png" alt="Marketplace">
+							</div>
+							<div class="txt">
+								市场
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Portfolio.png" alt="Portfolio">
+							</div>
+							<div class="txt">
+								投资组合
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="introduction-descr-wrap">
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								语言处理
+							</h5>
+							<div class="txt">
+								自然语言处理将用于通过使用多种信息来识别加密货币市场趋势
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								机器学习
+							</h5>
+							<div class="txt">
+								Svandis正在开发机器学习算法，以提高Svandis生态系统中数据的速度和准确性
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								相关分析
+							</h5>
+							<div class="txt">
+								自动化流程将执行价格指标与所有用户均可访问的变量之间的相关性分析
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="community-involvement" class="community-involvement-section">
+		<div class="container">
+			<div class="community-involvement-container">
+				<h2 class="section-title">社区参与</h2>
+				<div class="diagram-img-wrap">
+					<img src="../img/community-diagram.png" alt="Community Involvement Diagram">
+					<h3 class="diagram-title">SVANDIS社区</h3>
+					<div class="abs-chart-title title-1">用户</div>
+					<div class="abs-chart-title title-2 cn"><span>数据挖掘App</span><br><span>数据验证</span>
+					</div>
+					<div class="abs-chart-title title-3">SVN 代币</div>
+				</div>
+			</div>
+		</div>
+		<span id="roadmap"></span>
+	</section>
+	<section class="roadmap-section">
+		<div class="container">
+			<div class="absolute-title-wrap">
+				<h2 class="section-title">路线</h2>
+			</div>
+			<div class="roadmap-container">
+				<img class="full-road-img" src="../img/roadmap-full.png" alt="roadmap">
+				<div class="time-item-wrap">
+					<div class="time-item item-3 active">
+						<div class="item-inner-wrap">
+							<h3 class="time-title">Q4 2017</h3>
+							<ul class="items-list">
+								<li>Svandis概念验证</li>
+								<li>新闻聚合发展和数据来源研究</li>
+								<li>轻纸发表</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-4 active">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>法律整合</li>
+								<li>智能合同开发</li>
+								<li>私人预售开始</li>
+								<li>DataMining应用程序开发</li>
+							</ul>
+							<h3 style="display:inline-block;" class="time-title">Q1 2018</h3>
+						</div>
+					</div>
+					<div class="time-item item-5">
+						<div class="item-inner-wrap">
+							<h3 class="time-title"> Q2 2018</h3>
+							<ul class="items-list">
+								<li>白皮书发布</li>
+								<li>Svandis的功能发展</li>
+								<li>令牌销售网站和营销活动</li>
+								<li>令牌销售</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-6">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>屏幕，新闻源和热图的 Beta版</li>
+								<li>受限制群体的Beta测试</li>
+								<li>发布Svandis帮助台以允许用户反馈</li>
+								<li>定制的用户界面</li>
+								<li>用户对Beta版本的反馈</li>
+							</ul>
+							<br/>
+							<h3 class="time-title">Q3 2018</h3>
+						</div>
+					</div>
+					<div class="time-item item-7">
+						<div class="item-inner-wrap">
+							<h3 class="time-title">Q4 2018</h3>
+							<ul class="items-list">
+								<li>发布所有Svandis功能的候选版本</li>
+								<li>DataMining App的测试版</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-8">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>DataMining App的发布版本</li>
+								<li>Svandis的移动应用程序版本</li>
+							</ul>
+							<br/>
+							<h3 class="time-title">Q1 2019</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="token" class="diagram-section">
+		<div class="container">
+			<h2 class="section-title">令牌出售</h2>
+			<div class="flex-row margin-bottom">
+				<div class="col left-col">
+					<div class="diagram-img">
+						<img src="../img/chart-1.png" alt="Token Distribution">
+					</div>
+				</div>
+				<div class="col right-col">
+					<div class="diagram-info">
+						<h2 class="diagram-item-title">代币分布</h2>
+						<ul>
+							<li class="right_legend_param_5"><span>60%</span> 令牌出售</li>
+							<li class="right_legend_param_4"><span>20%</span> 团队</li>
+							<li class="right_legend_param_3"><span>10%</span> 顾问和合作伙伴</li>
+							<li class="right_legend_param_2"><span>5%</span> 营销大使计划</li>
+							<li class="right_legend_param_1"><span>5%</span> 收购资金</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="flex-row">
+				<div class="col left-col">
+					<div class="diagram-img">
+						<img src="../img/chart-2.png" alt="所得款项用途">
+					</div>
+				</div>
+				<div class="col right-col">
+					<div class="diagram-info">
+						<h2 class="diagram-item-title">所得款项用途</h2>
+						<ul>
+							<li class="right_legend_param_5"><span>40%</span> 发展和安全</li>
+							<li class="right_legend_param_4"><span>30%</span> 分析部门</li>
+							<li class="right_legend_param_3"><span>20%</span> 营销和业务发展</li>
+							<li class="right_legend_param_2"><span>5%</span> 运营</li>
+							<li class="right_legend_param_1"><span>5%</span> 法律</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sale" class="full-width-section">
+		<div class="flex-row">
+			<div class="col left-col bg-col"></div>
+			<div class="col right-col info-col">
+				<h3 class="sub-title">销售信息</h3>
+				<ul class="sale-info">
+					<li class="flex-row"><span class="descr">坚硬的帽子 <span class="token-dots">.........................................................</span></span><span
+							class="val">$12,000,000</span></li>
+					<li class="flex-row"><span class="descr">总代用品供应 <span class="token-dots">.....................................................</span></span><span
+							class="val">400,000,000</span></li>
+					<li class="flex-row"><span class="descr">对公共贡献者而言 <span class="token-dots">...............................................</span></span><span
+							class="val">60%</span></li>
+					<li class="flex-row"><span class="descr">最大的代币供应给公众 <span
+							class="token-dots">........................................</span></span><span class="val">240,000,000</span></li>
+					<li class="flex-row"><span class="descr">令牌价格 <span
+							class="token-dots">............................................................</span></span><span
+							class="val">$0.05</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="ecosystem" class="scheme-section">
+		<div class="container">
+			<div class="scheme-wrapper">
+				<h2 class="section-title">生态系统</h2>
+				<img class="ecosystem-img" src="../img/ecosystem.svg" alt="scheme">
+				<img class="ecosystem-mobile" src="../img/ecosystem-mobile.png" alt="scheme">
+			</div>
+		</div>
+	</section>
+	<section id="team" class="team-section">
+		<div class="container">
+			<h2 class="section-title">管理团队</h2>
+			<div class="flex-row team-row">
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Hermann.png" alt="Hermann">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Hermann(赫尔曼)是技术和加密世界的老手，在冰岛创立了第一个加密货币交易所，一个电子投票系统和一个用于多用途支付的数字令牌卡。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Yan.png" alt="Yan">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Yan(扬) 已经参与了几项令牌销售，既是直接参与者又是幕后顾问。 他是魁北克区块链非营利组织的联合创始人 。
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/yan-crevier-45ab7a100/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Chris.png" alt="Chris">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Chris （克里斯）曾领导团队在软件，研究与开发和分析领域进行营销，销售和战略。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/cbmcclure" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Iakov.png" alt="Iakov">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">
+								一位拥有超过10年经验的软件工程师，以及KAMI实验室公司的创始人，KAMI实验室是为网络和移动设备提供跨平台产品开发的领先供应商。 在Svandis，Iakov专注于技术战略，产品开发，创新和执行。
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/iakov-mishchenko/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Catherine.png" alt="Catherine">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Catherine（卡捷琳娜） 是俄罗斯最大经纪公司之一反洗钱部的前负责人，拥有超过7年的市场和金融经验。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/khaidukova-ekaterina/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Sebastien.png" alt="Sebastien">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">
+								作为魁北克区块链的总裁和共同创始人，他与公共和私营部门的领导者合作开发区块链相关项目：分散式自治组织，开发者研究社区，智慧城市项目和加密采矿中心等等。
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/sebastien-harvey-874bb0158/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 class="team-sub-title"><a target="_blank" href="https://www.linkedin.com/company/svandis/">在Svandis Linkedin页面上找到其他团队成员</a></h4>
+		</div>
+	</section>
+	<section id="white-paper" class="team-section">
+		<div class="container">
+			<h2 class="section-title">专家</h2>
+			<div class="flex-row team-row">
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Kate.png" alt="Kate">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Kate（卡佳）自2016年起一直在金融科技初创公司Cindicator担任分析总监。她是2017年9月Cindicator令牌销售的主要推动者之一，她将继续成为当前令牌销售变化的深度分析师，同时她的团队会分析令牌销售。
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/kate-kurbanova/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Nodari.png" alt="Nodari">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Nodari是Cindicator的首席投资官。 凭借近十年的金融，贸易和资产管理经验，Nodari的主要兴趣在Black Swan活动中。 在加入Cindicator之前，Nodari曾为一家阿尔戈事件驱动的对冲基金工作。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Ana.png" alt="Ana">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Ana(阿纳) 是Akropolis的创始人兼首席执行官，该公司正在重新设计区块链上的养老金。 Ana是区块链生态系统网络的成员，目前担任Web3基金会顾问委员会成员。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/anastasia-andrianova-79198b4/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Bokky.png" alt="Bokky">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Bokky是全球领先的区块链安全专家，20多年来一直是定量软件开发人员。自2015年推出平台以来，他一直在Ethereum区块链工作。Bokky是一位备受尊敬的智能合同安全审计师，为20多家公司（例如Status，Cindicator，Stox）开发和审计了智能合约</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://github.com/bokkypoobah" class="social-icon" target="_blank"><i
+											class="fab fa-github"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/David.png" alt="David">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">David（大卫） 是Credits的首席运营官，这是一个开放式区块链平台，具有自主智能合约和内部加密货币。 David是令牌销售营销策略方面的专家，在与零售和天使投资者建立合作伙伴关系方面拥有丰富的经验。
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/david-kolmakhidze/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Roderik.png" alt="Roderik">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Roderik（罗德里克）拥有20年的金融经验，在德意志银行，汇丰银行，荷兰合作银行和贝尔斯登公司拥有欧洲，美国和亚洲市场的股票衍生产品，股票和指数期权。 2016年，他加入Caldera Pacific投资公司，担任董事总经理兼投资委员会成员。</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/roder1k/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="col col-1-3">-->
+				<!--<div class="team-item-wrap">-->
+				<!--<div class="img-wrapper">-->
+				<!--<img src="../img/Jason_Lee.png" alt="Roderik">-->
+				<!--</div>-->
+				<!--<div class="inner-wrap">-->
+				<!--<p class="col-descr">-->
+				<!--Jason is a senior media technology manager at one of Australia’s largest banks. He has-->
+				<!--nearly a decade of experience in the digital advertising landscape, leading strategic-->
+				<!--data driven marketing initiatives across Johnson & Johnson, Telstra, Virgin Atlantic and-->
+				<!--the financial industry. From being an active retail investor across stocks, property and-->
+				<!--commodities for over 10 years he has since shifted efforts as a founding partner of JSON-->
+				<!--Capital - a cryptocurrency based hedge fund with a strong belief in the future prospects-->
+				<!--of blockchain and cryptocurrencies.-->
+				<!--</p>-->
+				<!--<div class="social-user-block">-->
+				<!--<ul class="social-icons-list">-->
+				<!--<li><a href="#" class="social-icon"-->
+				<!--target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--</div>-->
+				<!--</div>-->
+				<!--</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+	</section>
+	<section id="partners" class="partners-section">
+		<div class="container">
+			<h2 class="section-title">合作伙伴和服务提供商</h2>
+			<div class="partners-wrapper">
+				<div class="item-wrap">
+					<a target="_blank" href="https://cindicator.com"
+					   onclick="trackOutboundLink('https://cindicator.com');"><img
+							src="../img/logo-sindicator.png" alt="Sindicator"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="http://json.capital"
+					   onclick="trackOutboundLink('http://json.capital');"><img
+							src="../img/logo-json-capital.png" alt="Json Capital"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="https://isx.is"
+					   onclick="trackOutboundLink('https://isx.is');"><img src="../img/logo-isx.png"
+																		   alt="ISX"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="http://quebecblockchain.ca/"
+					   onclick="trackOutboundLink('http://quebecblockchain.ca/');"><img
+							src="../img/logo-quebec.png" alt="Quebec Blockchain"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="faq-section">
+		<div class="container">
+			<div class="faq-container">
+				<div class="faq-title-wrap container">
+					<h2 class="section-title">常问问题</h2>
+				</div>
+				<div id="accordion-1" class="accordion" role="tablist" aria-multiselectable="true">
+					<h3 id="accordion-1-t1" class="accordion-title" role="tab" aria-controls="accordion-1-c1"
+						aria-selected="false" aria-expanded="false" tabindex="0" data-initialstate="false">
+						Svandis是什么？
+					</h3>
+					<div id="accordion-1-c1" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t1"
+						 aria-hidden="true" style="display: none;">
+						Svandis是一家金融科技公司，正在开发一个研究平台，为在加密市场领域工作的专业人士提供市场领先的分析和可视化工具。
+					</div>
+
+					<h3 id="accordion-1-t2" class="accordion-title" role="tab" aria-controls="accordion-1-c2"
+						aria-selected="false" aria-expanded="false" tabindex="0">Svandis是什么意思？</h3>
+					<div id="accordion-1-c2" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t2"
+						 aria-hidden="true" style="display: none;">
+						Svandis是一个冰岛女孩的名字，包含了天鹅和仙女的词汇。
+					</div>
+
+					<h3 id="accordion-1-t3" class="accordion-title" role="tab" aria-controls="accordion-1-c3"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						Svandis研究平台是什么？
+					</h3>
+					<div id="accordion-1-c3" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t3"
+						 aria-hidden="true" style="display: none;">
+						<p>Svandis研究平台是数字资产交易商和投资者以及其他活跃的加密市场参与者的平台。 Svandis将包括以下内容： </p>
+						<div class="two-col-list-wrap">
+							<ul>
+								<li>销售首次代币发行和代币的屏幕</li>
+								<li>加密货币和代币的屏幕</li>
+								<li>新闻源</li>
+								<li>图表</li>
+								<li>催化分析</li>
+								<li>热图和组</li>
+								<li>观察列表和警示</li>
+								<li>投资组合</li>
+							</ul>
+							<ul>
+								<li>用户化的用户界面</li>
+								<li>Svandis DataMining应用程序</li>
+								<li>认证审核员</li>
+								<li>数据分析</li>
+								<li>市场</li>
+								<li>Svandis指数</li>
+								<li>指数生成器</li>
+							</ul>
+						</div>
+					</div>
+					<h3 id="accordion-1-t5" class="accordion-title" role="tab" aria-controls="accordion-1-c5"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						我如何参加Svandis社区？
+					</h3>
+					<div id="accordion-1-c5" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t5"
+						 aria-hidden="true" style="display: none;">
+						<p>Svandis社区的主要角色是众包。社区的力量是无与伦比的，并将提高检测机会的能力或迅速报告集中的信息。 </p>
+						<p>Svandis社区以及其他合作伙伴将会收到Svandis令牌（SVN），以表彰他们的贡献：</p>
+						<ol>
+							<li>使用标准化模板和清单检查ICO和令牌销售。目标是检查由ICO或令牌销售发布的几类信息的有效性。
+							</li>
+							<li>安装DataMining应用程序。这个应用程序将抓住网站页面和其他内容，以分析大量的历史和实时数据。
+							</li>
+						</ol>
+					</div>
+					<h3 id="accordion-1-t7" class="accordion-title" role="tab" aria-controls="accordion-1-c7"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						什么是Svandis代币？
+					</h3>
+					<div id="accordion-1-c7" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t7"
+						 aria-hidden="true" style="display: none;">
+						该代币被称为Svandis（SVN）。它是提供访问Svandis研究平台的实用程序代币。根据相关的ERC-20智能合约（“SVN代币”），Svandis代币是在以太坊区块链上分配的ERC-20兼容令牌。与比特币或以太坊等工作区块链证明不同，Svandis没有开采。
+					</div>
+
+					<h3 id="accordion-1-t8" class="accordion-title" role="tab" aria-controls="accordion-1-c8"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						有售前吗？什么时候会出售代币？
+					</h3>
+					<div id="accordion-1-c8" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t8"
+						 aria-hidden="true" style="display: none;">
+						私人预售现在正在发生，你可以在这里 <a href="#header">(here)</a>. 申请。令牌销售本身计划于2018年第二季度订阅我们的更新以保持优化。
+					</div>
+
+					<h3 id="accordion-1-t9" class="accordion-title" role="tab" aria-controls="accordion-1-c9"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						令牌销售期间将接受哪些购买方式？
+					</h3>
+					<div id="accordion-1-c9" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t9"
+						 aria-hidden="true" style="display: none;">
+						在令牌销售期间只有ETH会被接受。
+					</div>
+
+					<h3 id="accordion-1-t10" class="accordion-title" role="tab" aria-controls="accordion-1-c10"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						我如何参与Svandis令牌分配？
+					</h3>
+					<div id="accordion-1-c10" class="accordion-content" role="tabpanel"
+						 aria-labelledby="accordion-1-t10"
+						 aria-hidden="true" style="display: none;">
+						要参与Svandis令牌分发，您需要一个与ERC20令牌兼容的以太坊钱包。不要直接从加密货币交易所发送Ether（“ETH”），只能使用ETH兼容的钱包。
+					</div>
+
+					<h3 id="accordion-1-t11" class="accordion-title" role="tab" aria-controls="accordion-1-c11"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						令牌销售中排除哪些国家？
+					</h3>
+					<div id="accordion-1-c11" class="accordion-content" role="tabpanel"
+						 aria-labelledby="accordion-1-t11"
+						 aria-hidden="true" style="display: none;">
+						出于法律原因，我们目前不能接受美国的参与者。但是，随着这一领域的法规在世界各地发生变化，这些国家名单可能会发生变化。
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="social-section">
+		<div class="container">
+			<ul class="social-icons-list">
+				<li>
+					<a class="social-icon" href="//t.me/svandis_chatroom" target="_blank">
+						<i class="fab fa-telegram"></i></a>
+				</li>
+				<li><a class="social-icon" href="//t.me/svandisio" target="_blank">
+					<i class="fab fa-telegram-plane"></i></a>
+				</li>
+				<li>
+					<a href="//twitter.com/svandisio" class="social-icon" target="_blank">
+						<i class="fab fa-twitter"></i></a>
+				</li>
+				<li>
+					<a href="//medium.com/svandis " class="social-icon" target="_blank">
+						<i class="fab fa-medium-m"></i></a>
+				</li>
+				<li>
+					<a class="social-icon" href="//www.reddit.com/r/Svandis/" target="_blank">
+						<i class="fab fa-reddit-alien"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="dark-logo-wrapper">
+				<a href="#header" class="logo-img"><img src="../img/logo-dark.png" alt="logo"></a>
+			</div>
+			<div class="footer-navigation">
+				<ul id="menu-main-menu" class="footer-nav flex-row">
+					<li class="menu-item">
+						<a href="#introduction">绪论</a>
+					</li>
+					<li class="menu-item">
+						<a href="#community-involvement">社区</a>
+					</li>
+					<li class="menu-item">
+						<a href="#roadmap">路线</a>
+					</li>
+					<li class="menu-item">
+						<a href="#token">代币销售</a>
+					</li>
+					<li class="menu-item">
+						<a href="#ecosystem">生态系统</a>
+					</li>
+					<li class="menu-item">
+						<a href="#team">团队</a>
+					</li>
+					<li class="menu-item">
+						<a href="#partners">伙伴</a>
+					</li>
+					<li class="menu-item">
+						<a href="#faq">常问问题</a>
+					</li>
+					<li class="menu-item">
+						<a href="privacy-policy.html">隐私政策</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/accordion.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+</body>
+</html>

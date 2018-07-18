@@ -1,0 +1,1118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110819624-2"></script>
+	<link rel="stylesheet" type="text/css"
+		  href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css"/>
+	<script>
+      window.dataLayer = window.dataLayer || [];
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+      if(location.hostname === 'svandis.io'){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W9LJC32')};</script>
+	<!-- End Google Tag Manager -->
+	<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript" >
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+          try {
+            w.yaCounter49495978 = new Ya.Metrika2({
+              id:49495978,
+              clickmap:true,
+              trackLinks:true,
+              accurateTrackBounce:true,
+              webvisor:true,
+              trackHash:true
+            });
+          } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks2");
+	</script>
+	<!-- /Yandex.Metrika counter -->
+	<script>
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      window.addEventListener("load", function () {
+        window.cookieconsent.initialise({
+          "palette": {
+            "popup": {
+              "background": "#252e39"
+            },
+            "button": {
+              "background": "#14a7d0"
+            }
+          },
+          "content": {
+            "href": "privacy-policy.html",
+            "message": "이 웹사이트는 고객님이 우리 웹사이트를 사용함으로써 최고의 경험을 얻을 수 있도록 보장하려면 쿠키를 사용한다",
+            "link": '더 자세히 알아보기',
+            "dismiss": "알았음!",
+            "deny": "거절하기",
+          },
+          "type": "opt-out",
+          onInitialise: function (status) {
+
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+
+            if (type == 'opt-out' && didConsent) {
+              gtag('js', new Date());
+              gtag('config', 'UA-110819624-2');
+            }
+          },
+          onStatusChange: function (status, chosenBefore) {
+            var type = this.options.type;
+            var didConsent = this.hasConsented();
+
+            if (type == 'opt-out' && !didConsent) {
+              // disable cookies
+            } else if (type == 'opt-out' && didConsent) {
+              gtag('js', new Date());
+              gtag('config', 'UA-110819624-2');
+
+            }
+
+          },
+          onRevokeChoice: function () {
+            var type = this.options.type;
+            if (type == 'opt-out') {
+              // enable cookies
+            }
+          },
+        })
+      });
+	</script>
+	<script>
+      var trackOutboundLink = function (url) {
+        ga('send', 'event', 'outbound', 'click', url, {
+          'hitCallback': function () {
+            document.location = url;
+          }
+        });
+      }
+	</script>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="robots" content="noindex,nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Svandis</title>
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.ico"/>
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+		  rel="stylesheet">
+	<link rel="stylesheet" id="style_svandis-css" href="../css/main.css" type="text/css" media="all">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+		  integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css"
+		  href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+</head>
+<body class="home">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="main-wrapper">
+	<header id="header" class="header">
+		<div class="container">
+			<div class="header-wrap flex-row">
+				<a href="index.html" class="custom-logo-link">
+					<img width="198" height="50" src="../img/logo.png" class="custom-logo" alt="Svandis">
+				</a>
+				<div class="menu-toggle">
+					<div class="bars">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<i class="fa fa-times" aria-hidden="true"></i>
+				</div>
+				<div class="main-navigation">
+					<ul id="primary-menu" class="main-nav">
+						<li class="menu-item">
+							<a href="#introduction">소개</a>
+						</li>
+						<!--<li class="menu-item">-->
+							<!--<a href="#community-involvement">커뮤니티</a>-->
+						<!--</li>-->
+						<li class="menu-item">
+							<a href="#roadmap">로드맵</a>
+						</li>
+						<li class="menu-item">
+							<a href="#token">토큰판매</a>
+						</li>
+						<li class="menu-item">
+							<a href="#ecosystem">생태계</a>
+						</li>
+						<li class="menu-item">
+							<a href="#team">팀</a>
+						</li>
+						<li class="menu-item">
+							<a href="#partners">파트너</a>
+						</li>
+						<li class="menu-item">
+							<a href="#faq">자주 묻는 질문</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="home-section">
+		<div class="container">
+			<div class="main-home-wrapper">
+				<h1 class="main-title">타이밍은 모든 것이다 <br/>모든 데이터는 한 곳에서 집중된다</h1>
+				<div class="subscribe-form-wrapper">
+					<div class="form-descr top">
+						<p>지속적인 프라이빗 프리세일</p>
+					</div>
+					<div class="paper-buttons">
+						<a href="form.html" target="_blank"
+						   class="button paper-btn white-btn">화이트리스트에 지원허기</a>
+						<div class="buttons-wrapper">
+							<a href="../whitepaper.pdf" target="_blank"
+							   class="button paper-btn whitepaper-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'White Paper'});">White Paper</a>
+							<a href="../lightpaper.pdf" target="_blank"
+							   class="button paper-btn light-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Light Paper'});">라이트 페이퍼</a>
+						</div>
+					</div>
+					<div class="form-descr bottom">
+						<p>업데이트 구독하기</p>
+					</div>
+					<!-- Start of signup -->
+					<script language="javascript">
+                      <!--
+                      function validate_signup(frm) {
+                        var emailAddress = frm.Email.value;
+                        var errorString = '';
+                        if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+                          errorString = '이메일 주소를 입력해 주시기 바랍니다';
+                        }
+                        var isError = false;
+                        if (errorString.length > 0)
+                          isError = true;
+                        if (isError)
+                          alert(errorString);
+                        return !isError;
+                      }
+
+                      //-->
+					</script>
+					<form name="signup" id="signup" action="http://r1.dmtrk.net/signup.ashx" method="post"
+						  onsubmit="return validate_signup(this)">
+						<input type="hidden" name="addressbookid" value="172526">
+						<input type="hidden" name="ci_isconsentform" value="true">
+						<!-- UserID - required field, do not remove -->
+						<input type="hidden" name="userid" value="227981">
+						<!-- ReturnURL - when the user hits submit, they'll get sent here -->
+						<input type="hidden" name="ReturnURL" value="https://svandis.io">
+						<!-- Email - the user's email address -->
+						<input type="text" name="Email" class="email" placeholder="Email:">
+						<input type="hidden" name="ci_userConsentText" value="">
+						<input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+						<input type="Submit" name="Submit" value="구독하기" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+					</form>
+					<div id="success" class="success-message" style="opacity: 0">우리 소식를 받아보는 서비스에 신청해주셔서 감사합니다! 우리 텔레그램 그룹에 가입한 적이 있었습니까?
+					</div>
+					<script language="javascript">
+                      var urlInput = document.getElementById("ci_consenturl");
+                      if (urlInput != null && urlInput != 'undefined') {
+                        urlInput.value = encodeURI(window.location.href);
+                      }
+					</script>
+					<!-- End of signup -->
+				</div>
+				<div id="header-social-links">
+					<ul class="social-icons-list">
+						<li>
+							<a class="social-icon" href="//t.me/svandis_chatroom" target="_blank">
+								<i class="fab fa-telegram"></i></a>
+						</li>
+						<li><a class="social-icon" href="//t.me/svandisio" target="_blank">
+							<i class="fab fa-telegram-plane"></i></a>
+						</li>
+						<li>
+							<a href="//twitter.com/svandisio" class="social-icon" target="_blank">
+								<i class="fab fa-twitter"></i></a>
+						</li>
+						<li>
+							<a href="//medium.com/svandis " class="social-icon" target="_blank">
+								<i class="fab fa-medium-m"></i></a>
+						</li>
+						<li>
+							<a class="social-icon" href="//www.reddit.com/r/Svandis/" target="_blank">
+								<i class="fab fa-reddit-alien"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="introduction" class="introduction-section">
+		<div class="container">
+			<div class="introduction-container">
+				<h2>우리는 데이터를 유익한 정보로 변화시킨다.</h2>
+				<div class="introduction-text">
+					오늘날 데이터 과부하 시대에서 막대한 양은 반드시 가치가 있다는 뜻이 아니다. 따라서 “Svandis”사는 여러분이 정보를 받는 방법을 완전히 변화시킬 것에 대한 회사이다. “Svandis”사가 마련한 플랫폼은 기존시장의 가장 효과적인 솔루션을 받아들이고 이를 크립토 시장의 수여에 적응함으로써 기관투자자 • 개인투자자가 디지털 자산의 불안정한 세계 속에서 트레이딩 거래 및 더 나은 투자 의사결정을 할 수 있도록 위한 도구를 제공한다.
+				</div>
+				<iframe src="https://www.youtube.com/embed/eOmZIbBD3Ik" style="max-width: 100%; margin-bottom: 90px" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div id="features" class="introduction-section-wrapper">
+			<div class="container">
+				<div class="introduction-items-wrap">
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/ICO-Token-Screener.png" alt="ICO Token Screener">
+							</div>
+							<div class="txt">
+								ICO(가상화폐공개) 및 토큰 판매 스크리너
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Digital-Asset-Screener.png" alt="Digital Asset Screener">
+							</div>
+							<div class="txt">
+								암호화폐 및 토큰 스크리너
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Svandis-Indexes.png" alt="Svandis Indices">
+							</div>
+							<div class="txt">
+								Svandis 지수
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Customized-Indexes-Builder.png" alt="Indices Builder">
+							</div>
+							<div class="txt">
+								지수 계산
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Newsfeed.png" alt="Newsfeed">
+							</div>
+							<div class="txt">
+								뉴스피드
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Charts.png" alt="Charts">
+							</div>
+							<div class="txt">
+								차트
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Catalysts-Analysis.png" alt="Catalysts Analysis">
+							</div>
+							<div class="txt">
+								변화의 기폭제 분석
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Heatmaps-and-Groups.png" alt="Heatmaps And Groups">
+							</div>
+							<div class="txt">
+								히트맵 및 정보 분류
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Watchlists-and-Alerts.png" alt="Watchlists And Alerts">
+							</div>
+							<div class="txt">
+								왓치리스트 및 경계
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Customized.png" alt="Customized User Interface">
+							</div>
+							<div class="txt">
+								사용자화된 사용자 인터페이스
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Marketplace.png" alt="Marketplace">
+							</div>
+							<div class="txt">
+								마켓플레이스
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-item">
+							<div class="img-wrap">
+								<img src="../img/Portfolio.png" alt="Portfolio">
+							</div>
+							<div class="txt">
+								포트폴리오
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="introduction-descr-wrap">
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								언어 처리:
+							</h5>
+							<div class="txt">
+								정보 다양성의 바탕으로 가상화폐 시장의 트렌드를 발견하기 위해서는 자연 언어 처리가 사용될 것이다.
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								기계 학습:
+							</h5>
+							<div class="txt">
+								“Svandis”사는 생태계에서의 데이터 전송 속도와 정확성을 높이기 위해서 기계학습 알고리즘을 개발하고 있다.
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="introduction-inner-wrap">
+							<h5 class="introduction-inner-title">
+								상관 분석
+							</h5>
+							<div class="txt">
+								자동화된 프로세스 덕분에 모든 사용자에게 액세스 가능한 가격지수와 변수 사이에 상관 분석이 수행될 것이다.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="community-involvement" class="community-involvement-section">
+		<div class="container">
+			<div class="community-involvement-container">
+				<h2 class="section-title">Blog Articles</h2>
+				<div class="owl-carousel">
+					<div>
+						<a target="_blank" href="https://medium.com/svandis/json-capital-and-svandis-enter-strategic-partnership-80ebbd57fd66?source=svandis_io_home_page">
+							<img src="https://cdn-images-1.medium.com/max/1000/0*D1FYy7hL-iE21V2q" alt="json-capital-and-svandis-enter-strategic-partnership" /><br />
+							<h4>JSON Capital and Svandis Enter Strategic Partnership</h4>
+						</a>
+					</div>
+					<div>
+						<a target="_blank" href="https://medium.com/svandis/introducing-the-svandis-research-community-and-internal-analytics-team-13e4443275d9?source=svandis_io_home_page">
+							<img src="https://cdn-images-1.medium.com/max/400/1*Rc1NyIg99WjK6T7r5sZrIQ.png" alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
+							<h4>Introducing the Svandis Research Community and Internal Analytics Team</h4>
+						</a>
+					</div>
+					<div>
+						<a target="_blank" href="https://medium.com/svandis/the-svandis-datamining-app-628f97d1e383?source=svandis_io_home_page">
+							<img src="https://cdn-images-1.medium.com/max/400/0*RV7SEXVWdxzh2hR7." alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
+							<h4>The Svandis DataMining App</h4>
+						</a>
+					</div>
+					<div>
+						<a target="_blank" href="https://medium.com/svandis/svandis-certified-reviewers-gamification-db2d88b9c231?source=svandis_io_home_page">
+							<img src="https://cdn-images-1.medium.com/max/400/0*KLUFr9G_Fc1OQRqM" alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
+							<h4>Svandis Certified Reviewers & Gamification</h4>
+						</a>
+					</div>
+					<div>
+						<a target="_blank" href="https://medium.com/cindicator/bringing-high-quality-data-to-crypto-markets-cindicator-partners-with-svandis-6a9c73b5195">
+							<img height="250" src="https://cdn-images-1.medium.com/max/800/1*njAD6Glc-erY5Z9gxCqyWw.png" /><br />
+							<h4>Bringing High-Quality Data to Crypto Markets: Cindicator Partners with Svandis</h4>
+						</a>
+					</div>
+				</div>
+				<div style="text-align:center; font-size: 17px;">
+					<a target="_blank" href="https://medium.com/svandis">All of our blogs</a>
+				</div>
+			</div>
+		</div>
+		<span id="roadmap"></span>
+	</section>
+	<section class="roadmap-section">
+		<div class="container">
+			<div class="absolute-title-wrap">
+				<h2 class="section-title">로드맵:</h2>
+			</div>
+			<div class="roadmap-container">
+				<img class="full-road-img" src="../img/roadmap-full.png" alt="roadmap">
+				<div class="time-item-wrap">
+					<div class="time-item item-3 active">
+						<div class="item-inner-wrap">
+							<h3 class="time-title">Q4 2017</h3>
+							<ul class="items-list">
+								<li>“Svandis”사의 개념 증명</li>
+								<li>뉴스 집계 개발과 데이터 소스 연구</li>
+								<li>라이트 페이퍼 발표</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-4 active">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>법제통합</li>
+								<li>스마트 계약 개발</li>
+								<li>프라이빗 프리세일 시작</li>
+								<li>데이터 마이닝 앱 개발</li>
+							</ul>
+							<h3 style="display:inline-block;" class="time-title">Q1 2018</h3>
+						</div>
+					</div>
+					<div class="time-item item-5">
+						<div class="item-inner-wrap">
+							<h3 class="time-title"> Q2 2018</h3>
+							<ul class="items-list">
+								<li>백서 발표</li>
+								<li>“Svandis”사의 특점을 개발</li>
+								<li>토큰 판매 웹사이트 및 마케팅 전략</li>
+								<li>토큰 판매</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-6">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>스크리너 , 뉴스피드와 히트 맵 등의 베타버전</li>
+								<li>제한 사용자 집단에 의해 베타 테스트 종료</li>
+								<li>사용자 피드백을 허용하는 Svandis사의 헬프 데스크 출시</li>
+								<li>사용자화된 사용자 인터페이스</li>
+								<li>사용자 피드백의 베타 버전</li>
+							</ul>
+							<br/>
+							<h3 class="time-title">Q3 2018</h3>
+						</div>
+					</div>
+					<div class="time-item item-7">
+						<div class="item-inner-wrap">
+							<h3 class="time-title">Q4 2018</h3>
+							<ul class="items-list">
+								<li>“Svandis”사의 모든 특점의 후보 버전이 출시</li>
+								<li>데이터 마이닝 앱의 베타 버전 개발</li>
+							</ul>
+						</div>
+					</div>
+					<div class="time-item item-8">
+						<div class="item-inner-wrap">
+							<ul class="items-list">
+								<li>데이터 마이닝 앱 출시</li>
+								<li>“Svandis” 모바일 앱 버전</li>
+							</ul>
+							<br/>
+							<h3 class="time-title">Q1 2019</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="token" class="diagram-section">
+		<div class="container">
+			<h2 class="section-title">토큰 세일</h2>
+			<div class="flex-row margin-bottom">
+				<div class="col left-col">
+					<div class="diagram-img">
+						<img src="../img/chart-1.png" alt="토큰 분배">
+					</div>
+				</div>
+				<div class="col right-col">
+					<div class="diagram-info">
+						<h2 class="diagram-item-title">토큰 분배</h2>
+						<ul>
+							<li class="right_legend_param_5"><span>60%</span> 토큰 세일</li>
+							<li class="right_legend_param_4"><span>20%</span> 팀</li>
+							<li class="right_legend_param_3"><span>10%</span> 고문 및 파트너</li>
+							<li class="right_legend_param_2"><span>5%</span> 마케팅 앰바사더 프로그램</li>
+							<li class="right_legend_param_1"><span>5%</span> 인수 기금</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="flex-row">
+				<div class="col left-col">
+					<div class="diagram-img">
+						<img src="../img/chart-2.png" alt="수익금의 사용">
+					</div>
+				</div>
+				<div class="col right-col">
+					<div class="diagram-info">
+						<h2 class="diagram-item-title">수익금의 사용</h2>
+						<ul>
+							<li class="right_legend_param_5"><span>40%</span> 개발 및 안보</li>
+							<li class="right_legend_param_4"><span>30%</span> 분석부</li>
+							<li class="right_legend_param_3"><span>20%</span> 마케팅 및 비즈니스 개발
+							</li>
+							<li class="right_legend_param_2"><span>5%</span> 영업 활동</li>
+							<li class="right_legend_param_1"><span>5%</span> 법률과 관련된</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="sale" class="full-width-section">
+		<div class="flex-row">
+			<div class="col left-col bg-col"></div>
+			<div class="col right-col info-col">
+				<h3 class="sub-title">토큰 판매에 대한 정보:</h3>
+				<ul class="sale-info">
+					<li class="flex-row"><span class="descr">하드 캅 <span class="token-dots">...............................................................</span></span><span
+							class="val">$12,000,000</span></li>
+					<li class="flex-row"><span class="descr">총 토큰 공급 <span class="token-dots">........................................................</span></span><span
+							class="val">400,000,000</span></li>
+					<li class="flex-row"><span class="descr">공공기고자를 위한 토큰 <span class="token-dots">......................................</span></span><span
+							class="val">60%</span></li>
+					<li class="flex-row"><span class="descr">공공을 위한 최대 토큰 공급량 <span
+							class="token-dots">..............................</span></span><span class="val">240,000,000</span></li>
+					<li class="flex-row"><span class="descr">토큰 가격 <span
+							class="token-dots">............................................................</span></span><span
+							class="val">$0.05</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<section id="ecosystem" class="scheme-section">
+		<div class="container">
+			<div class="scheme-wrapper">
+				<h2 class="section-title">생태계</h2>
+				<img class="ecosystem-img" src="../img/ecosystem.svg" alt="scheme">
+				<img class="ecosystem-mobile" src="../img/ecosystem-mobile.png" alt="scheme">
+			</div>
+		</div>
+	</section>
+	<section id="team" class="team-section">
+		<div class="container">
+			<h2 class="section-title">관리팀</h2>
+			<div class="flex-row team-row">
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Hermann.png" alt="Hermann">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Hermann은 기술계 및 크립토계의 베테랑이다.아이슬란드에서 처음으로 가상화폐 거래소, 전자투표시스템, 멀티 퍼퍼스 지불을 위한 다지털 토큰 카드 등을 개발함.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Yan.png" alt="Yan">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">직접 참여가이자 고문으로 여러 토큰 거래에 관여해 온 바 있다. 퀘벡 블록체인 비영리 기관의 공동 창립자.
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/yan-crevier-45ab7a100/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Chris.png" alt="Chris">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Chris은 마케팅, 소프트웨어 판매 및 전략, 연구 개발, 분석 분야에서 전문적팀을 주도한 경험을 보유하는 전문가.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/cbmcclure" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Iakov.png" alt="Iakov">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">
+								10년 이상의 경험을 가진 소프트웨어 기술자. “Kami Labs” 회사를 설립했으며 웹 및 모바일 크로스 플랫폼의 제품을 개발 서비스를 고급 제공자. “Svandis”에서 기술적 전략, 제품개발, 혁신, 업무집행 방해를 책임짐
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/iakov-mishchenko/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Catherine.png" alt="Catherine">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">러시아에서 가장 큰 중개 회사 중 하나의 AML을 책임자였던 Catherine는 금융 및 마켓 부문에서 7년의 경험을 보유하는 전문가..</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/khaidukova-ekaterina/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Sebastien.png" alt="Sebastien">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">
+								퀘벡 블록 체인 비영리 기관의 회장 겸 공동 창립자로써 공공 및 민간 부문의 최고의 파트너와 함께 분산형 자치조직, 개발자를 위한 연구 커뮤니티 창조, 스마트 시티 프로젝트, 크립토 마이닝 센터 등 블록 체인 관련 프로젝트를 개발을 책임짐.
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/sebastien-harvey-874bb0158/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<h4 class="team-sub-title"><a target="_blank" href="https://www.linkedin.com/company/svandis/">다른 팀원들에 대한 정보를 “Svandis Linkedin Page”에서 알아보기</a></h4>
+		</div>
+	</section>
+	<section id="white-paper" class="team-section">
+		<div class="container">
+			<h2 class="section-title">고문팀</h2>
+			<div class="flex-row team-row">
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Kate.png" alt="Kate">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Kate는 2016년부터 “Cindicator” 핀테크 신생기업에서 분석부 부서장으로 근무하고 있음. 2017년 9월, “Cindicator”의 토큰 판매 실현하기에 주요주도자 중 하나이며 아직까지도 현재 토큰 판매 거래의 변화추에 대한 깊은 이해를 가지고 있는 고급 분석가.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/kate-kurbanova/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Nodari.png" alt="Nodari">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Nodari는 “Cindicator”사에서 최고운용책임자의 업무를 담당함. 금융, 트레이딩, 자산 관리 부문에서 거의 10년의 경험을 보유하며 “블랙 스완”에 대한 주된 관심을 가자고 있음. “Cindicator”사에 취업전 알고 이벤트 드리븐 헤지펀드에서 근무한 적이 있음.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Ana.png" alt="Ana">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Anastasia는 블록체인으로 통해  연금제도을 재설계하기를 하는  “Akropolis”사의 설립자이자 CEO, 블록체인 생태계 네트워크 의 한 회원, “Web 3 Foundation”의 자문 위원회 위원.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/anastasia-andrianova-79198b4/"
+										   class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Bokky.png" alt="Bokky">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Bokky 는 글로벌 블록체인 안보보장 고급 전문가이자 20년 이상의 경험을 보유하는 정량적 소프트웨어 개발자. 2015년부터 블록체인 플랫폼인 “Ethereum”의 업무팀의 구성원. “Status”, “Cindicator”, “Stox” 등 회사 20개 이상에게 스마트 계약을 개발 및 감사 서브스를 제공하며 스마트 계약의 안전검측을 하는 고급 전문가.</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://github.com/bokkypoobah" class="social-icon" target="_blank"><i
+											class="fab fa-github"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/David.png" alt="David">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">David은 내부 암호화폐 및 자체적 스마트 계약을 지원하는 오픈 블록체인 플랫폼인 “Credits” 의 최고 업무 집행 책임자.  소매 투자자 및 엔젤투자자와 파트너십을 구축하기에 관한 심층적인 경험을 보유하는 토큰 판매를 위한 마케팅 전략에 대한 전문가
+							</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/david-kolmakhidze/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col col-1-3">
+					<div class="team-item-wrap">
+						<div class="img-wrapper">
+							<img src="../img/Roderik.png" alt="Roderik">
+						</div>
+						<div class="inner-wrap">
+							<p class="col-descr">Roderick은 금융 부문에서 20년의 경험을 보유하며 Deutche Bank, HSBC, Rabobank, Bear Stearns 등을 통해 유럽, 미국, 아시아 시장에서 에쿼티 파생 상품, 스톡 옵션 및 지수 옵션을 거래에 주력함. 2016년 “Caldera Pacific” 투자회사에 상무이사 겸 투자위원회로 취임</p>
+							<div class="social-user-block">
+								<ul class="social-icons-list">
+									<li><a href="https://www.linkedin.com/in/roder1k/" class="social-icon"
+										   target="_blank"><i class="fab fa-linkedin-in"></i></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--<div class="col col-1-3">-->
+				<!--<div class="team-item-wrap">-->
+				<!--<div class="img-wrapper">-->
+				<!--<img src="../img/Jason_Lee.png" alt="Roderik">-->
+				<!--</div>-->
+				<!--<div class="inner-wrap">-->
+				<!--<p class="col-descr">-->
+				<!--Jason is a senior media technology manager at one of Australia’s largest banks. He has-->
+				<!--nearly a decade of experience in the digital advertising landscape, leading strategic-->
+				<!--data driven marketing initiatives across Johnson & Johnson, Telstra, Virgin Atlantic and-->
+				<!--the financial industry. From being an active retail investor across stocks, property and-->
+				<!--commodities for over 10 years he has since shifted efforts as a founding partner of JSON-->
+				<!--Capital - a cryptocurrency based hedge fund with a strong belief in the future prospects-->
+				<!--of blockchain and cryptocurrencies.-->
+				<!--</p>-->
+				<!--<div class="social-user-block">-->
+				<!--<ul class="social-icons-list">-->
+				<!--<li><a href="#" class="social-icon"-->
+				<!--target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+				<!--</li>-->
+				<!--</ul>-->
+				<!--</div>-->
+				<!--</div>-->
+				<!--</div>-->
+				<!--</div>-->
+			</div>
+		</div>
+	</section>
+	<section id="partners" class="partners-section">
+		<div class="container">
+			<h2 class="section-title">파트너 및 서비스 제공자</h2>
+			<div class="partners-wrapper">
+				<div class="item-wrap">
+					<a target="_blank" href="https://cindicator.com"
+					   onclick="trackOutboundLink('https://cindicator.com');"><img
+							src="../img/logo-sindicator.png" alt="Sindicator"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="http://json.capital"
+					   onclick="trackOutboundLink('http://json.capital');"><img
+							src="../img/logo-json-capital.png" alt="Json Capital"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="https://isx.is"
+					   onclick="trackOutboundLink('https://isx.is');"><img src="../img/logo-isx.png"
+																		   alt="ISX"></a>
+				</div>
+				<div class="item-wrap">
+					<a target="_blank" href="http://quebecblockchain.ca/"
+					   onclick="trackOutboundLink('http://quebecblockchain.ca/');"><img
+							src="../img/logo-quebec.png" alt="Quebec Blockchain"></a>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<section id="faq" class="faq-section">
+		<div class="container">
+			<div class="faq-container">
+				<div class="faq-title-wrap container">
+					<h2 class="section-title">자주 묻는 질문:</h2>
+				</div>
+				<div id="accordion-1" class="accordion" role="tablist" aria-multiselectable="true">
+					<h3 id="accordion-1-t1" class="accordion-title" role="tab" aria-controls="accordion-1-c1"
+						aria-selected="false" aria-expanded="false" tabindex="0" data-initialstate="false">
+						“Svandis”사는 무엇인가?
+					</h3>
+					<div id="accordion-1-c1" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t1"
+						 aria-hidden="true" style="display: none;">
+						“Svandis”사는 크립토 스페이스에 참가하는 전문가를 위해 시장선두의 분석과 시각화 도구를 제공하기 위해서 연구 플랫폼을 개발하고 있는 핀테크 회사입니다.
+					</div>
+
+					<h3 id="accordion-1-t2" class="accordion-title" role="tab" aria-controls="accordion-1-c2"
+						aria-selected="false" aria-expanded="false" tabindex="0">Svandis이란 어떤 뜻인가?</h3>
+					<div id="accordion-1-c2" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t2"
+						 aria-hidden="true" style="display: none;">
+						Svandis이란 “백조”와 “요정” 두 단어를 결합하여 이루어지는 아이슬란드 여자 이름을 의미하는 것입니다.
+					</div>
+
+					<h3 id="accordion-1-t3" class="accordion-title" role="tab" aria-controls="accordion-1-c3"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						Svandis사의 연구 플랫폼이란 무엇인가?
+					</h3>
+					<div id="accordion-1-c3" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t3"
+						 aria-hidden="true" style="display: none;">
+						<p>T“Svandis”사의 연구 플랫폼은 디지털 자산 트레이더, 투자자 등 다른 크립토시장의 적극적인 참여자들을 위한 플랫폼이며 다음과 같은 요소를 포함할 것입니다: </p>
+						<div class="two-col-list-wrap">
+							<ul>
+								<li>ICO 및 토큰 판매 스크리너</li>
+								<li>암호화폐 및 토큰 스크리너</li>
+								<li>뉴스피드</li>
+								<li>차트</li>
+								<li>변화의 기폭제 분석</li>
+								<li>히트맵 및 정보 분류</li>
+								<li>W왓치리스트 및 경계</li>
+								<li>포트폴리오</li>
+							</ul>
+							<ul>
+								<li>사용자화된 사용자 인터페이스</li>
+								<li>“Svandis” 데이터 마이닝 앱:</li>
+								<li>인증된 검토자</li>
+								<li>데이터 분석</li>
+								<li>마켓플레이스</li>
+								<li>Svandis 지수</li>
+								<li>지수 계산</li>
+							</ul>
+						</div>
+					</div>
+					<h3 id="accordion-1-t5" class="accordion-title" role="tab" aria-controls="accordion-1-c5"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						“Svandis”사의 커뮤니티에 어떻게 참여할 수 있는가?
+					</h3>
+					<div id="accordion-1-c5" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t5"
+						 aria-hidden="true" style="display: none;">
+						<p>“Svandis”사의 주요 역할은 크라우드 소싱에 대한 것이다. 커뮤니티의 힘은 비길 데가 없고 가능성을 탐사하거나 정보를 신속하고 효율적으로 보도할 기능을 지속적으로 개선하는 것에 있습니다. </p>
+						<p>“Svandis” 커뮤니티는 다른 파트너와 함께 다음과 같이 함으로써 기여를 인정받아 “Svandis” 토큰을 혜택으로 받을 것입니다: </p>
+						<ol>
+							<li>표준화된 템플릿과 체크 리스트를 사용함으로써 ICOs 및 토큰 판매를 확인합니다. 목적은 ICO와 토큰 판매에 대한 여러 정보 범주의 타당성을 확인하는 것입니다.
+							</li>
+							<li>데이터 마이일 앱을 설치합니다. 이는 방대한 양의 실시간 데이터와 과거 데이터에 대한 분석을 위해 웹페이지 등 다른 콘텐츠을 수집하는 자동화된 소프트웨어입니다.
+							</li>
+						</ol>
+					</div>
+					<h3 id="accordion-1-t7" class="accordion-title" role="tab" aria-controls="accordion-1-c7"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						“Svandis”사의 토큰이란 무엇인가?
+					</h3>
+					<div id="accordion-1-c7" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t7"
+						 aria-hidden="true" style="display: none;">
+						토큰네임은 “Svandis” (SVN)이라고 한다. 이는 “Svandis” 연구 플랫폼에 대한 액세스를 제공하는 유틸리티 토큰입니다. “Svandis” 토큰은 블록체인 분산 트랜잭션 컴퓨팅 플랫폼인 “Ethereum”에서 분배되는 ERC20 호화되는 토큰입니다. 작업증명 알고리즘을 사용하는 블록체인이나 이도리움과 달리 “Svandis”에서 마이닝 가능성이 없습니다.
+					</div>
+
+					<h3 id="accordion-1-t8" class="accordion-title" role="tab" aria-controls="accordion-1-c8"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						프리세일이 있는가? 토큰 세일 언제 시작할 것인가?
+					</h3>
+					<div id="accordion-1-c8" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t8"
+						 aria-hidden="true" style="display: none;">
+						프라이빗 프리세일은 지금 진행하고 있습니다. 참여하려면 <a href="#header">여기를</a>. 클릭하십시오. 토큰 판매는 Q2 2018년으로 예정되어 있습니다. 최신 뉴스를 놓치지 않도록 “Svandis” 피드를 구독하시기 바랍니다.
+						stay tuned.
+					</div>
+
+					<h3 id="accordion-1-t9" class="accordion-title" role="tab" aria-controls="accordion-1-c9"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						토큰 판매 동안 토큰펀매방법을 아려주시기 바랍니다:
+					</h3>
+					<div id="accordion-1-c9" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t9"
+						 aria-hidden="true" style="display: none;">
+						토큰 판매 기간 동안 ETH로만 구입할 수 있습이다.
+					</div>
+
+					<h3 id="accordion-1-t10" class="accordion-title" role="tab" aria-controls="accordion-1-c10"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						“Svandis” 토큰 분배에 어떻게 참여할 수 있는가?
+					</h3>
+					<div id="accordion-1-c10" class="accordion-content" role="tabpanel"
+						 aria-labelledby="accordion-1-t10"
+						 aria-hidden="true" style="display: none;">
+						“Svandis” 토큰 분배에 참여하려면 ERC20 토큰 호환되는 “Ethereum” 지갑이 필요합니다. 또 “ETH”을 직접 전송하지 말고 “ETH” 호환되는 지갑만 사용하시기 바랍니다.
+					</div>
+
+					<h3 id="accordion-1-t11" class="accordion-title" role="tab" aria-controls="accordion-1-c11"
+						aria-selected="false" aria-expanded="false" tabindex="0">
+						어떤 나라가 토큰세일에 제외되고 있는가?
+					</h3>
+					<div id="accordion-1-c11" class="accordion-content" role="tabpanel"
+						 aria-labelledby="accordion-1-t11"
+						 aria-hidden="true" style="display: none;">
+						법적인 이유로 현재 미국 시민권자들이 참여대상에서 제외됩니다. 그러나 전세계에서 암호화폐 규정이 변화하는 경향을 보임에 따라 앞으로는 국가 목록이 바뀔 수 있습니다.
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="social-section">
+		<div class="container">
+			<ul class="social-icons-list">
+				<li>
+					<a class="social-icon" href="//t.me/svandis_chatroom" target="_blank">
+						<i class="fab fa-telegram"></i></a>
+				</li>
+				<li><a class="social-icon" href="//t.me/svandisio" target="_blank">
+					<i class="fab fa-telegram-plane"></i></a>
+				</li>
+				<li>
+					<a href="//twitter.com/svandisio" class="social-icon" target="_blank">
+						<i class="fab fa-twitter"></i></a>
+				</li>
+				<li>
+					<a href="//medium.com/svandis " class="social-icon" target="_blank">
+						<i class="fab fa-medium-m"></i></a>
+				</li>
+				<li>
+					<a class="social-icon" href="//www.reddit.com/r/Svandis/" target="_blank">
+						<i class="fab fa-reddit-alien"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="dark-logo-wrapper">
+				<a href="#header" class="logo-img"><img src="../img/logo-dark.png" alt="logo"></a>
+			</div>
+			<div class="footer-navigation">
+				<ul id="menu-main-menu" class="footer-nav flex-row">
+					<li class="menu-item">
+						<a href="#introduction">소개</a>
+					</li>
+					<!--<li class="menu-item">-->
+						<!--<a href="#community-involvement">커뮤니티</a>-->
+					<!--</li>-->
+					<li class="menu-item">
+						<a href="#roadmap">로드맵</a>
+					</li>
+					<li class="menu-item">
+						<a href="#token">토큰판매</a>
+					</li>
+					<li class="menu-item">
+						<a href="#ecosystem">생태계</a>
+					</li>
+					<li class="menu-item">
+						<a href="#team">팀</a>
+					</li>
+					<li class="menu-item">
+						<a href="#partners">파트너 </a>
+					</li>
+					<li class="menu-item">
+						<a href="#faq">자주 묻는 질문</a>
+					</li>
+					<li class="menu-item">
+						<a href="privacy-policy.html">프라이버시 정책</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</footer>
+</div>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../js/accordion.js"></script>
+<script type="text/javascript" src="../js/main.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+      margin: 20,
+      nav: true,
+      autoplay: true,
+      loop: true,
+      responsive:{
+        0:{
+          items:1
+        },
+        600:{
+          items:2
+        },
+        1000:{
+          items:3
+        }
+      }
+    });
+  });
+</script>
+</body>
+</html>
