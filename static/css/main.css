@@ -2616,3 +2616,40 @@ div.mce_inline_error,
 .diagram-info.vn ul li{
     font-weight: 400;
 }
+
+span.select2-container--default .select2-selection--single{
+    background: transparent;
+}
+span.select2-container--default .select2-selection--single .select2-selection__rendered{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.flag-icon:before {
+    margin-right: 20px;
+}
+
+span.flag-icon {
+    width: 100%;
+    background-position-x: 0;
+}
+
+.select2{
+    font-size: 14px;
+}
+
+span.select2-dropdown, span.select2-container--default .select2-results__option[aria-selected=true]{
+    font-size: 14px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+}
+
+span.select2-container--default .select2-results__option--highlighted[aria-selected]{
+    background-color: #ddd;
+    color: black;
+}
+
+.vn .header-wrap img{
+    margin-right: 60px;
+}
