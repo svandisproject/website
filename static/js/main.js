@@ -48,7 +48,50 @@ jQuery(document).ready(function ($) {
             $(".main-navigation, .menu-toggle").removeClass("mobile");
         })
     });
+
+  $('#selectpicker').select2({
+    minimumResultsForSearch: -1,
+    templateResult: addUserPic,
+    width: 'resolve',
+
+    templateSelection: addUserPic,
+  });
+
+  $('#selectpicker').on('select2:select', function () {
+    document.location.href = 'https://svandis.io/' + $('#selectpicker').val();
+  });
+
+  $(".owl-carousel").owlCarousel({
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    loop: true,
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 2
+      },
+      1000: {
+        items: 3
+      }
+    }
+  });
 });
+
+function addUserPic(opt) {
+  if (!opt.id) {
+    return opt.text;
+  }
+  let optimage = $(opt.element).data('content');
+  if (!optimage) {
+    return opt.text;
+  } else {
+    return $(optimage).append($(opt.element).text());
+  }
+
+}
 
 function roadmapAnimate() {
     var aSpeed = 500;

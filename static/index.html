@@ -118,8 +118,35 @@
     <link rel="stylesheet" id="style_svandis-css" href="./css/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
           integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
+
+
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '146739112807876');
+      fbq('track', 'PageView');
+      fbq('track', 'CompleteRegistration', {
+        value: 1,
+      });
+      fbq('track', 'Lead');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+                   src="https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
+https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
+"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 </head>
 <body class="home">
 <!-- Google Tag Manager (noscript) -->
@@ -169,6 +196,14 @@
                         </li>
                         <li class="menu-item">
                             <a href="hiring.html">Hiring</a>
+                        </li>
+                        <li class="menu-item">
+                            <select id="selectpicker" data-width="fit" name="language" style="width: 130px">
+                                <option value="en" data-content='<span class="flag-icon flag-icon-gb"></span> English'>English</option>
+                                <option value="cn" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+                                <option value="vn" data-content='<span class="flag-icon flag-icon-vn"></span> Tiếng Việt'>Tiếng Việt</option>
+                                <option value="kr" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어 '>한국어 </option>
+                            </select>
                         </li>
                     </ul>
                 </div>
@@ -1225,29 +1260,9 @@
     </footer>
 </div>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
 <script type="text/javascript" src="js/accordion.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $(".owl-carousel").owlCarousel({
-      margin: 20,
-      nav: true,
-      autoplay: true,
-      loop: true,
-      responsive:{
-        0:{
-          items:1
-        },
-        600:{
-          items:2
-        },
-        1000:{
-          items:3
-        }
-      }
-    });
-  });
-</script>
 </body>
 </html>
