@@ -64,11 +64,7 @@
                     }
                 },
                 "content": {
-                    "href": "privacy-policy.html",
-                  "message": "Trang web này sử dụng cookie để cải thiện việc sử dụng và chức năng của website chúng tôi",
-                  "link": 'Đọc tiếp',
-                  "dismiss": 'Đồng ý!',
-                  "deny": 'Từ chối'
+                    "href": "privacy-policy.html"
                 },
                 "type": "opt-out",
                 onInitialise: function (status) {
@@ -124,10 +120,11 @@
           integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
     <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 </head>
-<body class="home vn">
+<body class="home">
 <!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
 				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -135,7 +132,7 @@
 <div class="main-wrapper">
     <header id="header" class="header">
         <div class="container">
-            <div class="header-wrap  flex-row">
+            <div class="header-wrap flex-row">
                 <a href="index.html" class="custom-logo-link">
                     <img width="198" height="50" src="../img/logo.png" class="custom-logo" alt="Svandis">
                 </a>
@@ -148,36 +145,40 @@
                     <i class="fa fa-times" aria-hidden="true"></i>
                 </div>
                 <div class="main-navigation">
-                    <ul id="primary-menu" class="main-nav vn">
+                    <ul id="primary-menu" class="main-nav">
                         <li class="menu-item">
-                            <a href="#introduction">Giới thiệu</a>
+                            <a href="#introduction">Introduction</a>
                         </li>
                         <!--<li class="menu-item">-->
-                            <!--<a href="#community-involvement">Cộng đồng</a>-->
+                            <!--<a href="#community-involvement">Community</a>-->
                         <!--</li>-->
                         <li class="menu-item">
-                            <a href="#roadmap">Kế hoạch phát triển</a>
+                            <a href="#roadmap">Roadmap</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#token">Token sale</a>
+                            <a href="#token">Token Sale</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#ecosystem">Hệ sinh thái</a>
+                            <a href="#ecosystem">Ecosystem</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#team">Đội ngũ</a>
+                            <a href="#team">Team</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#partners">Đối tác</a>
+                            <a href="#partners">Partners</a>
                         </li>
                         <li class="menu-item">
-                            <a href="#faq">Câu hỏi thường gặp</a>
+                            <a href="#faq">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="hiring.html">Hiring</a>
                         </li>
                         <li class="menu-item">
                             <select id="selectpicker" data-width="fit" name="language" style="width: 130px">
-                                <option value="vn" data-content='<span class="flag-icon flag-icon-vn"></span> Tiếng Việt'>Tiếng Việt</option>
                                 <option value="#" data-content='<span class="flag-icon flag-icon-gb"></span> English'>English</option>
-								<option value="cn" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+                                <option value="cn" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
+
+                                <option value="vn" data-content='<span class="flag-icon flag-icon-vn"></span> Tiếng Việt'>Tiếng Việt</option>
                                 <option value="kr" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어 '>한국어 </option>
                             </select>
                         </li>
@@ -189,14 +190,14 @@
     <section class="home-section">
         <div class="container">
             <div class="main-home-wrapper">
-                <h1 class="main-title">Hãy làm chủ thời gian<br/>Tất cả dữ liệu - nằm tại một nơi</h1>
+                <h1 class="main-title">Based on investment preferences of market participants, Svandis will help them to choose which of several projects to invest in</h1>
                 <div class="subscribe-form-wrapper">
                     <div class="form-descr top">
-                        <p>Pre-sale cá nhân đang diễn ra</p>
+                        <!--<p>PRIVATE PRE-SALE ONGOING</p>-->
                     </div>
                     <div class="paper-buttons">
                         <a href="form.html" target="_blank"
-                           class="button paper-btn white-btn">Đăng ký vào Whitelist</a>
+                           class="button paper-btn white-btn">Apply for whitelist</a>
                         <div class="buttons-wrapper">
                             <a href="whitepaper.pdf" target="_blank"
                                class="button paper-btn whitepaper-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'White Paper'});">White Paper</a>
@@ -205,7 +206,7 @@
                         </div>
                     </div>
                     <div class="form-descr bottom">
-                        <p>Đăng ký cập nhật thông tin</p>
+                        <p>subscribe for updates</p>
                     </div>
                     <!-- Start of signup -->
                     <script language="javascript">
@@ -214,7 +215,7 @@
                             var emailAddress = frm.Email.value;
                             var errorString = '';
                             if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
-                                errorString = 'Bạn hãy nhập địa chỉ hòm thư điện tử của bạn vào đây';
+                                errorString = 'Please enter your email address';
                             }
                             var isError = false;
                             if (errorString.length > 0)
@@ -239,9 +240,10 @@
                         <input type="hidden" name="ci_userConsentText" value="">
                         <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
                         <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
-                        <input type="Submit" name="Submit" value="Đăng ký" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+                        <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
                     </form>
-                    <div id="success" class="success-message" style="opacity: 0">Cảm ơn bạn đã đăng ký nhận bản tin của chúng tôi! Bạn đã tham gia nhóm Telegram của chúng tôi chưa?
+                    <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
+                        newsletter! Have you joined our Telegram group yet?
                     </div>
                     <script language="javascript">
                         var urlInput = document.getElementById("ci_consenturl");
@@ -280,14 +282,13 @@
     <section id="introduction" class="introduction-section">
         <div class="container">
             <div class="introduction-container">
-                <h2>Chúng tôi biến đổi dữ liệu thành thông tin có giá trị</h2>
-                <div class="introduction-text vn">
-                    Trong thời đại hiện nay khi thế giới đang quá tải về dữ liệu, khối lượng thông tin không phải lúc
-                    nào cũng đồng nghĩa với chất lượng và giá trị của nó. Cách mà bạn nhận thông tin sẽ được cách mạng
-                    hóa với dự án Svandis của chúng tôi. Dựa vào các giải pháp hiệu quả nhất của thị trường truyền thống
-                    và thích hợp nhất với nhu cầu của thị trường Crypto, dự án của chúng tôi đưa ra các công cụ tốt nhất
-                    giúp bạn có những quyết định đầu tư và kinh doanh sâu sắc hơn trong thế giới tài sản kỹ thuật số
-                    không ổn định này.
+                <h2>WE TRANSFORM DATA INTO VALUABLE INFORMATION</h2>
+                <div class="introduction-text">
+                    In an age of data overload, volume doesn’t necessarily mean value. At Svandis, we are
+                    revolutionising the way you receive information. By taking the most effective solutions from
+                    traditional markets and adapting them to the demands of the crypto markets, our platform provides
+                    the tools you need to make more insightful trading and investment decisions in the volatile world of
+                    digital assets.
                 </div>
                 <iframe src="https://www.youtube.com/embed/eOmZIbBD3Ik" style="max-width: 100%; margin-bottom: 90px" width="640" height="360" frameborder="0" allowfullscreen></iframe>
             </div>
@@ -301,7 +302,7 @@
                                 <img src="../img/ICO-Token-Screener.png" alt="ICO Token Screener">
                             </div>
                             <div class="txt">
-                                Trình theo dõi ICO va Token sale
+                                ICO and Token Sale <br> Screener
                             </div>
                         </div>
                     </div>
@@ -311,7 +312,7 @@
                                 <img src="../img/Digital-Asset-Screener.png" alt="Digital Asset Screener">
                             </div>
                             <div class="txt">
-                                Trình theo dõi tiền Crypto va Token
+                                Cryptocurrency and <br> Token Screener
                             </div>
                         </div>
                     </div>
@@ -321,7 +322,7 @@
                                 <img src="../img/Svandis-Indexes.png" alt="Svandis Indices">
                             </div>
                             <div class="txt">
-                                Chỉ số Svandis
+                                Svandis <br> Indices
                             </div>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                                 <img src="../img/Customized-Indexes-Builder.png" alt="Indices Builder">
                             </div>
                             <div class="txt">
-                                Xây dựng chỉ số
+                                Indices <br> Builder
                             </div>
                         </div>
                     </div>
@@ -341,7 +342,7 @@
                                 <img src="../img/Newsfeed.png" alt="Newsfeed">
                             </div>
                             <div class="txt">
-                                Tin tức
+                                Newsfeed
                             </div>
                         </div>
                     </div>
@@ -351,7 +352,7 @@
                                 <img src="../img/Charts.png" alt="Charts">
                             </div>
                             <div class="txt">
-                                Biểu đồ
+                                Charts
                             </div>
                         </div>
                     </div>
@@ -361,7 +362,7 @@
                                 <img src="../img/Catalysts-Analysis.png" alt="Catalysts Analysis">
                             </div>
                             <div class="txt">
-                                Phân tích chất xúc tác
+                                Catalysts <br> Analysis
                             </div>
                         </div>
                     </div>
@@ -371,7 +372,7 @@
                                 <img src="../img/Heatmaps-and-Groups.png" alt="Heatmaps And Groups">
                             </div>
                             <div class="txt">
-                                Bản đồ nhiệt và các nhóm
+                                Heatmaps and <br> Groups
                             </div>
                         </div>
                     </div>
@@ -381,7 +382,7 @@
                                 <img src="../img/Watchlists-and-Alerts.png" alt="Watchlists And Alerts">
                             </div>
                             <div class="txt">
-                                Danh sách theo dõi và thông báo
+                                Watchlists and <br> Alerts
                             </div>
                         </div>
                     </div>
@@ -391,7 +392,7 @@
                                 <img src="../img/Customized.png" alt="Customized User Interface">
                             </div>
                             <div class="txt">
-                                Giao diện người dùng tùy chỉnh
+                                Customized User <br> Interface
                             </div>
                         </div>
                     </div>
@@ -401,7 +402,7 @@
                                 <img src="../img/Marketplace.png" alt="Marketplace">
                             </div>
                             <div class="txt">
-                                Nền tảng mua các dịch vụ Svandis
+                                Marketplace
                             </div>
                         </div>
                     </div>
@@ -411,7 +412,7 @@
                                 <img src="../img/Portfolio.png" alt="Portfolio">
                             </div>
                             <div class="txt">
-                                Danh mục đầu tư
+                                Portfolio
                             </div>
                         </div>
                     </div>
@@ -420,33 +421,34 @@
                     <div class="col">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
-                                Xử lý ngôn ngữ
+                                Language Processing
                             </h5>
                             <div class="txt">
-                                Xử lý ngôn ngữ tự nhiên giúp chúng tôi xác định xu hướng thị trường Crypto bằng cách sử
-                                dụng sự đa dạng của thông tin
+                                Natural language processing will be used to identify cryptocurrency markets trends by
+                                using a diversity of information
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
-                                Học máy
+                                Machine Learning
                             </h5>
                             <div class="txt">
-                                Svandis đang phát triển các thuật toán học máy để cải thiện tốc độ phân phối và độ chính
-                                xác của thông tin trong hệ sinh thái Svandis
+                                Svandis is developing machine learning algorithms to increase the speed and accuracy of
+                                data
+                                in the Svandis ecosystem
                             </div>
                         </div>
                     </div>
                     <div class="col">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
-                                Phân tích tương quan
+                                Correlation Analysis
                             </h5>
                             <div class="txt">
-                                Các quy trình tự động sẽ thực hiện phân tích tương quan giữa các chỉ số giá và chỉ số
-                                biến thiên. Và thông tin đó có thể dễ dàng tiếp cận với tất cả người dùng
+                                Automated processes will perform correlation analyses between price indicators and
+                                variables that are accessible to all users
                             </div>
                         </div>
                     </div>
@@ -457,7 +459,7 @@
     <section id="community-involvement" class="community-involvement-section">
         <div class="container">
             <div class="community-involvement-container">
-                <h2 class="section-title">Bài viết trên blog</h2>
+                <h2 class="section-title">Blog Articles</h2>
                 <div class="owl-carousel">
                     <div>
                         <a target="_blank" href="https://medium.com/svandis/json-capital-and-svandis-enter-strategic-partnership-80ebbd57fd66?source=svandis_io_home_page">
@@ -491,7 +493,7 @@
                     </div>
                 </div>
                 <div style="text-align:center; font-size: 17px;">
-                    <a target="_blank" href="https://medium.com/svandis">Tất cả các blog của chúng tôi</a>
+                    <a target="_blank" href="https://medium.com/svandis">All of our blogs</a>
                 </div>
             </div>
         </div>
@@ -500,28 +502,28 @@
     <section class="roadmap-section">
         <div class="container">
             <div class="absolute-title-wrap">
-                <h2 class="section-title">Kế hoạch phát triển</h2>
+                <h2 class="section-title">Roadmap</h2>
             </div>
             <div class="roadmap-container">
                 <img class="full-road-img" src="../img/roadmap-full.png" alt="roadmap">
                 <div class="time-item-wrap">
-                    <div class="time-item item-3 active vn">
+                    <div class="time-item item-3 active">
                         <div class="item-inner-wrap">
                             <h3 class="time-title">Q4 2017</h3>
                             <ul class="items-list">
-                                <li>Proof-of-Concept của Svandis (chứng minh sự cần thiết của dự án)</li>
-                                <li>Phát triển trình đọc tin trực tuyến và nghiên cứu nguồn dữ liệu</li>
-                                <li>Phát hành Light Paper</li>
+                                <li>Svandis Proof-of-Concept</li>
+                                <li>News aggregation development and data sources research</li>
+                                <li>Light paper release</li>
                             </ul>
                         </div>
                     </div>
                     <div class="time-item item-4 active">
                         <div class="item-inner-wrap">
                             <ul class="items-list">
-                                <li>Tích hợp pháp lý</li>
-                                <li>Phát triển các hợp đồng thông minh (smart contracts)</li>
-                                <li>Presale cá nhân đã bắt đầu</li>
-                                <li>Phát triển ứng dụng DataMining</li>
+                                <li>Legal integration</li>
+                                <li>Smart Contracts development</li>
+                                <li>Private presale started</li>
+                                <li>DataMining App development</li>
                             </ul>
                             <h3 style="display:inline-block;" class="time-title">Q1 2018</h3>
                         </div>
@@ -530,9 +532,9 @@
                         <div class="item-inner-wrap">
                             <h3 class="time-title"> Q2 2018</h3>
                             <ul class="items-list">
-                                <li>Phát hành White paper</li>
-                                <li>Phát triển các dịch vụ của Svandis</li>
-                                <li>Trang web Token sale & chiến dịch marketing</li>
+                                <li>White paper release</li>
+                                <li>Svandis features development</li>
+                                <li>Token sale website & marketing campaign</li>
                                 <li>Token sale</li>
                             </ul>
                         </div>
@@ -540,11 +542,11 @@
                     <div class="time-item item-6">
                         <div class="item-inner-wrap">
                             <ul class="items-list">
-                                <li>Phiên bản Beta của các trình theo dõi (Screeners), tin tức (Newsfeed) và bản đồ nhiệt (Heatmaps)</li>
-                                <li>Thử nghiệm phiên bản Beta bởi nhóm người dùng được chọn</li>
-                                <li>Khởi động hệ thống hỗ trợ người dùng (Svandis Help Desk) với chức năng tương tác song phương</li>
-                                <li>Giao diện người dùng tùy chỉnh</li>
-                                <li>Phản hồi của người dùng về phiên bản Beta</li>
+                                <li>Beta version of Screeners, Newsfeed and Heatmaps</li>
+                                <li>Beta testing by a restricted group</li>
+                                <li>Releasing the Svandis Help Desk to allow user’s feedback</li>
+                                <li>Customized User Interface</li>
+                                <li>User’s feedback on the Beta version</li>
                             </ul>
                             <br/>
                             <h3 class="time-title">Q3 2018</h3>
@@ -554,16 +556,16 @@
                         <div class="item-inner-wrap">
                             <h3 class="time-title">Q4 2018</h3>
                             <ul class="items-list">
-                                <li>Phát hành phiên bản sơ bộ của tất cả các dịch vụ Svandis</li>
-                                <li>Phiên bản Beta của ứng dụng DataMining</li>
+                                <li>Release candidate version of all Svandis features</li>
+                                <li>Beta version of DataMining App</li>
                             </ul>
                         </div>
                     </div>
                     <div class="time-item item-8">
                         <div class="item-inner-wrap">
                             <ul class="items-list">
-                                <li>Phát hành phiên bản của ứng dụng DataMining</li>
-                                <li>Phiên bản ứng dụng Svandis dành cho các thiết bị di động</li>
+                                <li>Release version of DataMining App</li>
+                                <li>Mobile app version of Svandis</li>
                             </ul>
                             <br/>
                             <h3 class="time-title">Q1 2019</h3>
@@ -579,19 +581,19 @@
             <div class="flex-row margin-bottom">
                 <div class="col left-col">
                     <div class="diagram-img">
-                        <img src="../img/chart-1.png" alt="Phân phối token">
+                        <img src="../img/chart-1.png" alt="Token Distribution">
                     </div>
                 </div>
                 <div class="col right-col">
-                    <div class="diagram-info vn">
-                        <h2 class="diagram-item-title">Phân phối token</h2>
+                    <div class="diagram-info">
+                        <h2 class="diagram-item-title">Token Distribution</h2>
                         <ul>
                             <li class="right_legend_param_5"><span>60%</span> Token Sale</li>
-                            <li class="right_legend_param_4"><span>20%</span>  Đội ngũ</li>
-                            <li class="right_legend_param_3"><span>10%</span>Nhà tư vấn và đối tác
+                            <li class="right_legend_param_4"><span>20%</span> Team</li>
+                            <li class="right_legend_param_3"><span>10%</span>Advisors and Partners
                             </li>
-                            <li class="right_legend_param_2"><span>5%</span> Chương trình tiếp thị Ambassador</li>
-                            <li class="right_legend_param_1"><span>5%</span> mua bán và sáp nhập</li>
+                            <li class="right_legend_param_2"><span>5%</span> Marketing ambassador program</li>
+                            <li class="right_legend_param_1"><span>5%</span> Acquisition Funds</li>
                         </ul>
                     </div>
                 </div>
@@ -603,15 +605,15 @@
                     </div>
                 </div>
                 <div class="col right-col">
-                    <div class="diagram-info vn">
-                        <h2 class="diagram-item-title">SỬ DỤNG TIỀN THU NHẬP</h2>
+                    <div class="diagram-info">
+                        <h2 class="diagram-item-title">Use of Proceeds</h2>
                         <ul>
-                            <li class="right_legend_param_5"><span>40%</span> Phát triển và bảo mật </li>
-                            <li class="right_legend_param_4"><span>30%</span> Bộ phận phân tích</li>
-                            <li class="right_legend_param_3"><span>20%</span>Tiếp thị và phát triển kinh doanh
+                            <li class="right_legend_param_5"><span>40%</span> Development and Security</li>
+                            <li class="right_legend_param_4"><span>30%</span> Analytics Department</li>
+                            <li class="right_legend_param_3"><span>20%</span>Marketing&nbsp;and&nbsp;Business&nbsp;Development
                             </li>
-                            <li class="right_legend_param_2"><span>5%</span> Hoạt động điều hành</li>
-                            <li class="right_legend_param_1"><span>5%</span> Hoạt động pháp lý</li>
+                            <li class="right_legend_param_2"><span>5%</span> Operations</li>
+                            <li class="right_legend_param_1"><span>5%</span> Legal</li>
                         </ul>
                     </div>
                 </div>
@@ -622,18 +624,18 @@
         <div class="flex-row">
             <div class="col left-col bg-col"></div>
             <div class="col right-col info-col">
-                <h3 class="sub-title">Thông tin về Token sale</h3>
-                <ul class="sale-info vn">
-                    <li class="flex-row"><span class="descr">Số tiền tối đa mà dự án sẽ huy động <span class="token-dots">.......</span></span><span
+                <h3 class="sub-title">Token Sale Information</h3>
+                <ul class="sale-info">
+                    <li class="flex-row"><span class="descr">Hard Cap <span class="token-dots">.........................................................</span></span><span
                             class="val">$12,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Tổng cung token <span class="token-dots">......................................</span></span><span
+                    <li class="flex-row"><span class="descr">Total token supply <span class="token-dots">........................................</span></span><span
                             class="val">400,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Tỷ lệ Token bán công khai cho các nhà đầu tư <span class="token-dots">........................................................</span></span><span
-                            class="val"><br>60%</span></li>
-                    <li class="flex-row"><span class="descr">Tổng số Token được bán công khai <span
-                            class="token-dots">.......</span></span><span class="val">240,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Giá bán Token <span
-                            class="token-dots">............................................</span></span><span
+                    <li class="flex-row"><span class="descr">Token for Public Contributors <span class="token-dots">................</span></span><span
+                            class="val">60%</span></li>
+                    <li class="flex-row"><span class="descr">Maximum Token Supply to the Public <span
+                            class="token-dots">........</span></span><span class="val">240,000,000</span></li>
+                    <li class="flex-row"><span class="descr">Token price <span
+                            class="token-dots">....................................................</span></span><span
                             class="val">$0.05</span>
                     </li>
                 </ul>
@@ -643,7 +645,7 @@
     <section id="ecosystem" class="scheme-section">
         <div class="container">
             <div class="scheme-wrapper">
-                <h2 class="section-title">Hệ sinh thái</h2>
+                <h2 class="section-title">Ecosystem</h2>
                 <img class="ecosystem-img" src="../img/ecosystem.svg" alt="scheme">
                 <img class="ecosystem-mobile" src="../img/ecosystem-mobile.png" alt="scheme">
             </div>
@@ -651,7 +653,7 @@
     </section>
     <section id="team" class="team-section">
         <div class="container">
-            <h2 class="section-title">NHÓM QUẢN LÝ</h2>
+            <h2 class="section-title">Management Team</h2>
             <div class="flex-row team-row">
                 <div class="col col-1-3">
                     <div class="team-item-wrap">
@@ -659,10 +661,15 @@
                             <img src="../img/Hermann.png" alt="Hermann">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Hermann là một người có kinh nghiệm lâu năm trong lĩnh vực công nghệ và
-                                tiền crypto, là người đã thành lập ra thị trường trao đổi tiền Crypto đầu tiên ở
-                                Iceland. Đồng thời ông đã tạo ra một hệ thống bỏ phiếu điện tử, và một thẻ Token card
-                                thanh toán đa năng.</p>
+                            <p class="col-descr">With over 15 years in software development, Hermann has founded
+                                four companies from
+                                scratch that are still fully operational. Hermann is one of the co-founders of isx.is –
+                                the first and only cryptocurrency exchange in Iceland, a KYC-run exchange that connects
+                                to the user’s bank account, with all trades conducted in Icelandic króna pairs. He also
+                                has been working on clarifying and establishing the legal and tax status of
+                                cryptocurrency in Iceland. His experience includes developing electronic voting systems
+                                in Iceland, as well as a digital token card that can be used for all-purpose connections
+                                and payments.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
@@ -679,10 +686,14 @@
                             <img src="../img/Yan.png" alt="Yan">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Yan đã từng tham gia một số Token sale, vừa là một người trực tiếp thực
-                                hiện các giao dịch mua bán, và vừa là một người đứng ngoài làm cố vấn cho người khác.
-                                Ngoài ra ông ta còn là người đồng sáng lập một tổ chức phi lợi nhuận như Québec
-                                Blockchain.
+                            <p class="col-descr">Yan is co-founder and Strategic Development Manager of the Québec
+                                Blockchain non-profit organisation. Five years ago, after over a decade and a half in
+                                retail management, he plunged head-first into the world of blockchain and its
+                                possibilities. Over that period he has built up a wide and diversified network of
+                                contacts, while exploring every level of the blockchain space, including marketing and
+                                PR, community building and management, financial analysis and negotiation. Among other
+                                things, Yan has been involved in several token sales, both as a direct participant and
+                                as a behind-the-scenes advisor.
                             </p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
@@ -700,8 +711,12 @@
                             <img src="../img/Chris.png" alt="Chris">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Chris đã từng lãnh đạo các nhóm trong những lĩnh vực: tiếp thị, bán
-                                hàng, chiến lược hóa phần mềm, các ngành nghiên cứu, phát triển và phân tích.</p>
+                            <p class="col-descr">Once a social-behavioral epidemiologist, Chris has led
+                                commercialization teams, including marketing, sales & strategy, across life sciences,
+                                research & development, and analytics. With a strong belief in blockchain and
+                                cryptocurrency for the future success of the global population, Chris focuses on
+                                marketing and business development for ICOs from pre-TGE to growth (concept to early
+                                revenue).</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/cbmcclure" class="social-icon"
@@ -719,10 +734,12 @@
                         </div>
                         <div class="inner-wrap">
                             <p class="col-descr">
-                                Iakov là một kỹ sư phần mềm với kinh nghiệm hơn 10 năm trong ngành và là người sáng lập
-                                công ty KAMI Labs. Hơn nữa ông lại là một nhà lập trình hàng đầu về các phần mềm đa nền
-                                tảng dành cho thiết bị di động và web. Tại Svandis, Iakov tập trung vào chiến lược công
-                                nghệ, phát triển sản phẩm, đổi mới và thực hành.
+                                Iakov is a software engineer with over 10 years’ experience, and founder of the
+                                company KAMI Labs, a leading provider of cross-platform product
+                                development for both web and mobile. At Svandis, Iakov focuses on technology strategy,
+                                product development, innovation, and execution. He is fascinated by the idea of changing
+                                the approach to financial analysis of crypto markets and creating the first research
+                                and visualisation infrastructure for traders and investors in digital assets.
                             </p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
@@ -740,8 +757,14 @@
                             <img src="../img/Catherine.png" alt="Catherine">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Catherine đã từng làm trưởng phòng Phòng chống các hoạt động rửa tiền
-                                của một trong những công ty môi giới lớn nhất tại Nga, với hơn 7 năm kinh nghiệm trong lĩnh vực tài chính.</p>
+                            <p class="col-descr">Catherine is the former Head of Anti-Money Laundering at one of
+                                Russia’s largest
+                                brokerage firms, with over 7 years’ experience in markets and finance. Her background in
+                                anti-money laundering and market abuse has given her the strength to make tough
+                                decisions in crucial situations, along with the skill to evaluate large amounts of
+                                factual and circumstantial data and to deal with their consequences. Catherine’s deep
+                                knowledge of the regulatory environment allows her to accurately anticipate how it will
+                                affect the market.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/khaidukova-ekaterina/" class="social-icon"
@@ -759,10 +782,14 @@
                         </div>
                         <div class="inner-wrap">
                             <p class="col-descr">
-                                Sebastien là chủ tịch và là người đồng sáng lập Quebec Blockchain. Ông ta phát triển các
-                                dự án liên quan đến blockchain cùng với những người lãnh đạo kinh tế nhà nước và kinh tế
-                                tư nhân: tổ chức độc lập phi tập trung, cộng đồng nghiên cứu cho lập trình viên, dự án
-                                thành phố thông minh và trung tâm Crypto mining.
+                                Sebastien is President and co-founder of Quebec Blockchain, an organization promoting
+                                knowledge development and collaboration as a vector for innovation. He develops
+                                blockchain-related projects in partnership with leaders from both the public and private
+                                sector: decentralized autonomous organization, a research community for developers, a
+                                smart city project, and a crypto mining centre among others. Having worked as a
+                                financial security advisor and chief executive of a contemporary art centre, for the
+                                last ten years Sebastien has worked in organisational and strategic development, public
+                                fundraising and communications.
                             </p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
@@ -775,12 +802,13 @@
                     </div>
                 </div>
             </div>
-            <h4 class="team-sub-title"><a target="_blank" href="https://www.linkedin.com/company/svandis/">Các thành viên khác trong nhóm bạn có thể tìm trên trang Svandis Linkedin</a></h4>
+            <h4 class="team-sub-title"><a target="_blank" href="https://www.linkedin.com/company/svandis/">Find other
+                team members on Svandis Linkedin Page</a></h4>
         </div>
     </section>
     <section id="white-paper" class="team-section">
         <div class="container">
-            <h2 class="section-title">Nhà tư vấn </h2>
+            <h2 class="section-title">Advisors</h2>
             <div class="flex-row team-row">
                 <div class="col col-1-3">
                     <div class="team-item-wrap">
@@ -788,10 +816,16 @@
                             <img src="../img/Kate.png" alt="Kate">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Kate làm việc tại fintech startup Cindicator từ năm 2016 với chức vụ
-                                trưởng nhóm phân tích. Cô từng giữ vai trò chủ chốt trong Cindicator token sale diễn ra
-                                vào tháng 9/2017 và hiện tại cô tiếp tục làm nhà phân tích chuyên sâu về các thay đổi
-                                của token sale cùng với nhóm của cô.</p>
+                            <p class="col-descr">Kate has been working in the fintech startup Cindicator as Head of
+                                Analytics since 2016. Together with her team, she is reinventing the approach to
+                                financial analysis, creating the world’s first ecosystem run by Hybrid Intelligence.
+                                Kate knows that crypto traders, investors and analysts today face an unprecedented
+                                challenge in researching and processing the vast range of information sources that
+                                inhabit the crypto space.
+                                She was one of the main drivers of Cindicator token sale in September 2017 and she
+                                continues to be a deep analyst of current token sales’ changes as her team analyses all
+                                ICOs worth to notice daily. She is also a token sale advisor in a number of crypto
+                                projects.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/kate-kurbanova/" class="social-icon"
@@ -808,11 +842,13 @@
                             <img src="../img/Nodari.png" alt="Nodari">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Nodari là Giám đốc Đầu tư tại Cindicator. Ông ta có kinh nghiệm gần 10
-                                năm trong lĩnh vực tài chính, kinh doanh và quản lý tài sản. Mối quan tâm chính của
-                                Nodari hiện nay là các sự kiện liên quan đến Thuyết Thiên Nga Đen.
-                                Trước khi đầu quân cho Cindicator, Nodari đã làm việc cho một hedge-fund, sử dụng giao
-                                dịch thuật toán dựa trên phân tích cơ bản.</p>
+                            <p class="col-descr">Nodari is Chief Investment Officer at Cindicator. With nearly a
+                                decade’s experience in
+                                finance, trading and asset management, Nodari’s main interest is in Black Swan events.
+                                His investment management track record includes successfully shorting markets before the
+                                Russian campaign in Crimea, the US stock market selloffs in August 2015 and January
+                                2016, the UK Brexit vote and the election of Donald Trump as US President. Before
+                                joining Cindicator, Nodari worked for an algo event-driven hedge fund.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/" class="social-icon"
@@ -829,9 +865,15 @@
                             <img src="../img/Ana.png" alt="Ana">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Ana là giám đốc điều hành và là người sáng lập ra công ty Akropolis,
-                                một công ty đang cải cách lại hệ thống lương hưu dựa trên cơ sở blockchain. Ana còn là
-                                thành viên của Blockchain Ecosystem Network và hiện tại đang làm cố vấn cho Web3 Foundation.</p>
+                            <p class="col-descr">Ana is Founder and CEO of Akropolis, the company that is redesigning
+                                pensions on the
+                                blockchain. She is an experienced special situations investment professional with a
+                                strong interest in decentralization and blockchain. Ana is a member of the Blockchain
+                                Ecosystem Network and currently sits on the advisory board for the Web3 Foundation. She
+                                has analyzed and transacted over USD3.5bn and advised on over USD300mn of private equity
+                                and debt transactions. Ana is a business-builder, team-builder, technology and data
+                                obsessive, with particular strength in forensic analysis, seeing efficiencies and
+                                optimising processes.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/anastasia-andrianova-79198b4/"
@@ -848,11 +890,14 @@
                             <img src="../img/Bokky.png" alt="Bokky">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Bokky là một chuyên gia bảo mật blockchain hàng đầu và là một lập trình
-                                viên của nhiều phần mềm trong hơn 20 năm nay. Ông đã làm việc với blockchain Ethereum kể
-                                từ khi nền tảng đó ra mắt vào năm 2015. Đồng thời Bokky cũng là một kiểm toán viên bảo
-                                mật hợp đồng thông minh (smart contract) có uy tín. Ông đã từng kiểm định và phát triển
-                                các hợp đồng thông minh (smart contracts) cho hơn 20 công ty, trong đó có: Status, Cindicator, Stox v.v…</p>
+                            <p class="col-descr">Bokky is a leading global blockchain security specialist and has been a
+                                quantitative software developer for over 20 years. He has worked with the Ethereum
+                                blockchain since the platform launched in 2015, and is excited by the ease at with which
+                                monetary value can be sent to, held and sent by smart contracts on the Ethereum
+                                platform. Bokky is a respected smart contract security auditor, having developed and
+                                audited smart contracts for over 20 companies, among them Status, Cindicator, Stox, and
+                                others. Bokky is currently editing "Mastering Ethereum" with Andreas M. Antonopolous and
+                                Gavin Wood.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://github.com/bokkypoobah" class="social-icon" target="_blank"><i
@@ -869,10 +914,11 @@
                             <img src="../img/David.png" alt="David">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">David là giám đốc điều hành tại Credits, là một nền tảng blockchain mở.
-                                Credits đã tạo ra các hợp đồng thông minh (smart contracts) và tiền crypto nội bộ. David
-                                là một chuyên gia về chiến lược tiếp thị token sale, với nhiều kinh nghiệm trong việc
-                                xây dựng quan hệ đối tác với các nhà đầu tư thiên thần và các công ty đầu tư.
+                            <p class="col-descr">David is Chief Operating Officer at Credits, an open blockchain
+                                platform which features autonomous smart contracts and an internal cryptocurrency. David
+                                has 6 years’ experience in cryptocurrency investments, and is an expert in marketing
+                                strategy for token sales, with a deep experience in building partnerships with both
+                                retail and angel investors.
                             </p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
@@ -890,11 +936,14 @@
                             <img src="../img/Roderik.png" alt="Roderik">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Roderik có 20 năm kinh nghiệm trong lĩnh vực tài chính. Trong lúc công
-                                tác tại Deutsche Bank, HSBC, Rabobank và Bear Stearns ông ta đã từng mua bán giao dịch
-                                cổ phiếu phái sinh, quyền chọn mua bán cổ phiếu và chỉ số tại các thị trường chứng khoán
-                                của châu u, Mỹ và châu Á. Năm 2016 ông trở thành giám đốc điều hành của công ty đầu tư
-                                Caldera Pacific và là thành viên của hội đồng cổ đông.</p>
+                            <p class="col-descr">Roderik has 20 years of experience in finance, having traded equity
+                                derivatives, stock
+                                and index options on European, US and Asian markets at Deutsche Bank, HSBC, Rabobank and
+                                Bear Stearns. In 2008 he joined the Hong Kong-based hedge fund LIM Advisors to set up
+                                and manage a pan-Asia volatility arbitrage strategy. In 2010, he became Head of Trading
+                                at the firm All Options, before joining KCP Capital in 2013, where he led the merchant
+                                banking firm’s Asian operations. In 2016 he joined investment firm Caldera Pacific as
+                                Managing Director and member of the Investment Committee.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/roder1k/" class="social-icon"
@@ -911,13 +960,13 @@
                             <img src="../img/jasonlee.png" alt="Roderik">
                         </div>
                         <div class="inner-wrap">
-                            <p class="col-descr">Jason là một nhà quản lý công nghệ truyền thông cao cấp tại một trong
-                                những ngân hàng lớn nhất của Úc. Ông có kinh nghiệm gần 10 năm trong lĩnh vực tài chính,
-                                lĩnh vực quảng cáo kỹ thuật số, cũng như trong việc tạo ra các chiến lược tiếp thị hàng
-                                đầu dựa trên phân tích dữ liệu cho các công ty sau: Johnson & Johnson, Telstra, Virgin
-                                Atlantic. Không những là một nhà đầu tư tích cực vào cổ phiếu, tài sản và hàng hóa trong
-                                hơn 10 năm, mà ông còn là một đối tác sáng lập của JSON Capital - một quỹ đầu cơ (hedge
-                                fund) dựa trên tiền Crypto với niềm tin mạnh mẽ vào triển vọng tương lai của blockchain và tiền Crypto.</p>
+                            <p class="col-descr">Jason is a senior media technology manager at one of Australia’s
+                                largest banks. He has nearly a decade of experience in the digital advertising
+                                landscape, leading strategic data driven marketing initiatives across Johnson & Johnson,
+                                Telstra, Virgin Atlantic and the financial industry. From being an active retail
+                                investor across stocks, property and commodities for over 10 years he has since shifted
+                                efforts as a founding partner of JSON Capital - a cryptocurrency based hedge fund with a
+                                strong belief in the future prospects of blockchain and cryptocurrencies.</p>
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/jasonlee137/" class="social-icon"
@@ -958,7 +1007,7 @@
     </section>
     <section id="partners" class="partners-section">
         <div class="container">
-            <h2 class="section-title">ĐỐI TÁC VÀ CÁC NHÀ CUNG CẤP DỊCH VỤ</h2>
+            <h2 class="section-title">Partners and Service Providers</h2>
             <div class="partners-wrapper">
                 <div class="item-wrap">
                     <a target="_blank" href="https://cindicator.com"
@@ -988,131 +1037,133 @@
         <div class="container">
             <div class="faq-container">
                 <div class="faq-title-wrap container">
-                    <h2 class="section-title">Câu hỏi thường gặp</h2>
+                    <h2 class="section-title">FAQ</h2>
                 </div>
                 <div id="accordion-1" class="accordion" role="tablist" aria-multiselectable="true">
                     <h3 id="accordion-1-t1" class="accordion-title" role="tab" aria-controls="accordion-1-c1"
                         aria-selected="false" aria-expanded="false" tabindex="0" data-initialstate="false">
-                        Svandis là gì?
+                        What is Svandis?
                     </h3>
-                    <div id="accordion-1-c1" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t1"
+                    <div id="accordion-1-c1" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t1"
                          aria-hidden="true" style="display: none;">
-                        Svandis là một công ty công nghệ tài chính nhằm phát triển một nền tảng nghiên cứu cung cấp các
-                        công cụ phân tích và trực quan hóa thị trường hàng đầu cho các chuyên gia làm việc trong thị
-                        trường tiền Crypto.
+                        Svandis is a fintech company that is developing a research platform providing market-leading
+                        analytical and visualisation tools for professionals working in crypto market space.
                     </div>
 
                     <h3 id="accordion-1-t2" class="accordion-title" role="tab" aria-controls="accordion-1-c2"
-                        aria-selected="false" aria-expanded="false" tabindex="0">Svandis có nghĩa là gì?</h3>
-                    <div id="accordion-1-c2" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t2"
+                        aria-selected="false" aria-expanded="false" tabindex="0">What does Svandis mean?</h3>
+                    <div id="accordion-1-c2" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t2"
                          aria-hidden="true" style="display: none;">
-                        Svandis là tên của người con gái Iceland, đc kết hợp bởi hai từ “thiên nga” (swan) va “nàng tiên” (fairy).
+                        Svandis is an Icelandic girl’s name, incorporating the words for swan and fairy.
                     </div>
 
                     <h3 id="accordion-1-t3" class="accordion-title" role="tab" aria-controls="accordion-1-c3"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Nền tảng nghiên cứu của Svandis là gì?
+                        What is the Svandis Research Platform?
                     </h3>
-                    <div id="accordion-1-c3" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t3"
+                    <div id="accordion-1-c3" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t3"
                          aria-hidden="true" style="display: none;">
-                        <p>Nền tảng nghiên cứu của Svandis là một nền tảng dành cho các nhà giao dịch (traders) và các
-                            nhà đầu tư vào tài sản kỹ thuật số, cũng như cho những người tham gia thị trường tiền Crypto
-                            khác. </p>
+                        <p>The Svandis Research Platform is a platform for digital assets traders and investors, as well
+                            as for other active crypto market participants. Svandis will include the following
+                            elements: </p>
                         <div class="two-col-list-wrap">
                             <ul>
-                                <li>Trình theo dõi ICO va Token sale</li>
-                                <li>Trình theo dõi tiền Crypto va Token</li>
-                                <li>Tin tức</li>
-                                <li>Biểu đồ</li>
-                                <li>Phân tích chất xúc tác</li>
-                                <li>Bản đồ nhiệt và các nhóm</li>
-                                <li>Danh sách theo dõi và thông báo</li>
-                                <li>Danh mục đầu tư</li>
+                                <li>ICO and token-sale screener</li>
+                                <li>Cryptocurrency and token screener</li>
+                                <li>Newsfeed</li>
+                                <li>Charts</li>
+                                <li>Catalysts analysis</li>
+                                <li>Heatmaps and Groups</li>
+                                <li>Watchlists and Alerts</li>
+                                <li>Portfolio</li>
                             </ul>
                             <ul>
-                                <li>Giao diện người dùng tùy chỉnh</li>
-                                <li>Ứng dụng Svandis DataMining</li>
-                                <li>Nhà phê bình chuyên nghiệp</li>
-                                <li>Phân tích dữ liệu</li>
-                                <li>Nền tảng mua các dịch vụ Svandis</li>
-                                <li>Chỉ số Svandis</li>
-                                <li>Xây dựng chỉ số </li>
+                                <li>Customised user interface</li>
+                                <li>Svandis DataMining App</li>
+                                <li>Certified reviewer</li>
+                                <li>Data analysis</li>
+                                <li>Marketplace</li>
+                                <li>Svandis indices</li>
+                                <li>Indices builder</li>
                             </ul>
                         </div>
                     </div>
                     <h3 id="accordion-1-t5" class="accordion-title" role="tab" aria-controls="accordion-1-c5"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Làm thể nào để tôi có thể tham gia vào Svandis?
+                        How can I participate in the Svandis Community?
                     </h3>
-                    <div id="accordion-1-c5" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t5"
+                    <div id="accordion-1-c5" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t5"
                          aria-hidden="true" style="display: none;">
-                        <p>Vai trò chính của cộng đồng Svandis là crowdsourcing. Sức mạnh của Svandis là tiềm năng trong
-                            việc tìm kiếm và hệ thống hóa thông tin một cách nhanh chóng và hiệu quả </p>
-                        <p>Cộng đồng Svandis, cùng với các đối tác khác sẽ nhận Svandis tokens (SVN) như phần thưởng cho những công việc sau:</p>
+                        <p>The main role of the Svandis Community is crowdsourcing. The power of the community is
+                            unparalleled and will exponentially increase the capability to detect opportunities or
+                            report organised information quickly and efficiently. </p>
+                        <p>The Svandis Community, along with other partners, will receive Svandis tokens (SVN) in
+                            recognition of their contribution:</p>
                         <ol>
-                            <li>Kiểm tra ICO và token sales bằng cách sử dụng mẫu chuẩn hóa và danh sách kiểm tra. Mục
-                                đích kiểm tra tính hợp lệ của một số loại thông tin được xuất bản bởi một ICO hoặc token
-                                sale
+                            <li>Checking on ICOs and token sales by using a standardized template and a checklist. The
+                                goal is to check the validity of several categories of information published by an ICO
+                                or
+                                token sale.
                             </li>
-                            <li>Cài đặt ứng dụng DataMining. Ứng dụng này sẽ lấy giữ liệu từ các trang web và những nội
-                                dung khác để phân tích một khối lượng lớn những dữ liệu lịch sử trong thời gian thực.
+                            <li>Installing a DataMining application. This app will grab website pages and other content
+                                to enable the analysis of a vast quantity of historical and real-time data.
                             </li>
                         </ol>
                     </div>
                     <h3 id="accordion-1-t7" class="accordion-title" role="tab" aria-controls="accordion-1-c7"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Svandis Token là cái gì?
+                        What are Svandis tokens?
                     </h3>
-                    <div id="accordion-1-c7" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t7"
+                    <div id="accordion-1-c7" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t7"
                          aria-hidden="true" style="display: none;">
-                        Token (đồng tiền mã hóa) được gọi là Svandis (SVN). Nó là loại Token tiện ích (utility token)
-                        cho phép truy cập vào nền tảng nghiên cứu Svandis. Svandis Token (SVN Tokens) là Token sử dụng
-                        công nghệ ERC20 được phát hành trên nền tảng blockchain của Ethereum theo các hợp đồng thông
-                        minh (smart contracts) ERC20. Không giống như các proof-of-work blockchains Bitcoin và Ethereum,
-                        Svandis không có mining.
+                        The token is called Svandis (SVN). It is an utility token that provides access to the Svandis
+                        Research Platform. Svandis tokens are ERC-20 compatible tokens distributed on the Ethereum
+                        blockchain pursuant to a related ERC-20 smart contract (the “SVN Tokens”). Unlike proof-of-work
+                        blockchains such as Bitcoin or Ethereum, there is no mining in Svandis.
                     </div>
 
                     <h3 id="accordion-1-t8" class="accordion-title" role="tab" aria-controls="accordion-1-c8"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Sẽ có Pre-sale không? Khi nào thì sẽ có token sale?
+                        Is there a pre-sale? When will be the token sale?
                     </h3>
-                    <div id="accordion-1-c8" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t8"
+                    <div id="accordion-1-c8" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t8"
                          aria-hidden="true" style="display: none;">
-                        Pre-sale cá nhân đang diễn ra ngay bây giờ, bạn có thể đăng ký tại đây. Còn token sale theo lịch
-                        sẽ diễn vào quý 2 năm 2018. Bạn hãy đăng ký cập nhập thông tin của chúng tôi.
+                        The private pre-sale is happening right now, you can apply <a href="#header">here</a>. The token
+                        sale
+                        itself is scheduled for Q2 2018, subscribe to our updates to
+                        stay tuned.
                     </div>
 
                     <h3 id="accordion-1-t9" class="accordion-title" role="tab" aria-controls="accordion-1-c9"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Phương thức thanh toán nào sẽ được chấp nhận trong quá trình token sale?
+                        What purchase methods will be accepted during the token sale?
                     </h3>
-                    <div id="accordion-1-c9" class="accordion-content vn" role="tabpanel" aria-labelledby="accordion-1-t9"
+                    <div id="accordion-1-c9" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t9"
                          aria-hidden="true" style="display: none;">
-                        Chúng tôi chỉ nhận ETH trong quá trình token sale.
+                        Only ETH will be accepted during the token sale.
                     </div>
 
                     <h3 id="accordion-1-t10" class="accordion-title" role="tab" aria-controls="accordion-1-c10"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Tôi có thể tham gia phân phối Svandis token bằng cách nào?
+                        How can I participate in the Svandis token distribution?
                     </h3>
-                    <div id="accordion-1-c10" class="accordion-content vn" role="tabpanel"
+                    <div id="accordion-1-c10" class="accordion-content" role="tabpanel"
                          aria-labelledby="accordion-1-t10"
                          aria-hidden="true" style="display: none;">
-                        Để tham gia vào việc phân phối Svandis token bạn cần có một cái ví Ethereum tương thích với
-                        ERC20 token. Bạn không được gửi ETH trực tiếp từ sàn chứng khoán tiền điện tư, mà chỉ được dùng
-                        ví tương thích với ETH thôi.
+                        To get involved in the Svandis token distribution, you need an Ethereum wallet compatible with
+                        ERC20 tokens. Do not send Ether (“ETH”) directly from cryptocurrency exchanges, use only an ETH
+                        compatible wallet.
                     </div>
 
                     <h3 id="accordion-1-t11" class="accordion-title" role="tab" aria-controls="accordion-1-c11"
                         aria-selected="false" aria-expanded="false" tabindex="0">
-                        Những quốc gia nào không được tham gia token sale?
+                        What countries are excluded from the token sale?
                     </h3>
-                    <div id="accordion-1-c11" class="accordion-content vn" role="tabpanel"
+                    <div id="accordion-1-c11" class="accordion-content" role="tabpanel"
                          aria-labelledby="accordion-1-t11"
                          aria-hidden="true" style="display: none;">
-                        Vì lý do pháp lý, các nhà đầu tư đến từ Mỹ không thể tham gia vào token sale của chúng tôi được.
-                        Tuy nhiên, danh sách các quốc gia bị cấm tham gia có thể thay đổi cũng như pháp luật trong lĩnh
-                        vực này trên toàn thế giới.
+                        For legal reasons, we currently cannot accept participants from the US.
+                        However, this list of countries may change as regulations in this area change around the world.
                     </div>
                 </div>
             </div>
@@ -1149,37 +1200,37 @@
                 <a href="#header" class="logo-img"><img src="../img/logo-dark.png" alt="logo"></a>
             </div>
             <div class="footer-navigation">
-                <ul id="menu-main-menu" class="footer-nav vn flex-row">
+                <ul id="menu-main-menu" class="footer-nav flex-row">
                     <li class="menu-item">
-                        <a href="#introduction">Giới thiệu</a>
+                        <a href="#introduction">Introduction</a>
                     </li>
                     <!--<li class="menu-item">-->
-                        <!--<a href="#community-involvement">Cộng đồng</a>-->
+                        <!--<a href="#community-involvement">Community</a>-->
                     <!--</li>-->
                     <li class="menu-item">
-                        <a href="#roadmap">Kế hoạch phát triển</a>
+                        <a href="#roadmap">Roadmap</a>
                     </li>
                     <li class="menu-item">
                         <a href="#token">Token Sale</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#ecosystem">Hệ sinh thái</a>
+                        <a href="#ecosystem">Ecosystem</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#team">Đội ngũ</a>
+                        <a href="#team">Team</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#partners">Đối tác</a>
+                        <a href="#partners">Partners</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#faq">Câu hỏi thường gặp</a>
+                        <a href="#faq">FAQ</a>
                     </li>
                     <li class="menu-item">
-                        <a href="privacy-policy.html">Chính sách bảo mật</a>
+                        <a href="privacy-policy.html">Privacy Policy</a>
                     </li>
-                    <!--<li class="menu-item">-->
-                        <!--<a href="hiring.html">Hiring</a>-->
-                    <!--</li>-->
+                    <li class="menu-item">
+                        <a href="hiring.html">Hiring</a>
+                    </li>
                 </ul>
             </div>
         </div>
