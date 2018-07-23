@@ -58,7 +58,7 @@ jQuery(document).ready(function ($) {
   });
 
   $('#selectpicker').on('select2:select', function () {
-    document.location.href = 'https://svandis.io/' + $('#selectpicker').val();
+    document.location.href = '/' + $('#selectpicker').val();
   });
 
   $(".owl-carousel").owlCarousel({
