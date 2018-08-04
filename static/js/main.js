@@ -34,10 +34,11 @@ jQuery(document).ready(function ($) {
     }
 
     setTimeout(function () {
-      if((!jQuery('.social-icons-list').height() || !jQuery('.subscribe-form-wrapper').height()) && !jQuery('.privacy-policy').length){
+      if((!jQuery('.social-icons-list').height() || !jQuery('.subscribe-form-wrapper').height()) && jQuery('body.index-page').length){
         alert('Please disable your adblock to view this site properly');
       }
     }, 2000);
+
     //mobile menu
     $(".menu-toggle").on("click", function () {
         $(this).toggleClass("mobile");
@@ -49,18 +50,26 @@ jQuery(document).ready(function ($) {
         })
     });
 
-  $('#selectpicker').select2({
-    minimumResultsForSearch: -1,
-    templateResult: addUserPic,
-    width: 'resolve',
-
-    templateSelection: addUserPic,
-  });
+  if ($('#selectpicker').length) {
+    $('#selectpicker').select2({
+      minimumResultsForSearch: -1,
+      templateResult: addUserPic,
+      width: 'resolve',
+      templateSelection: addUserPic,
+    });
+  }
+  if ($('#pass-kyc-whitelist').length) {
+    $('#pass-kyc-whitelist').select2({
+      minimumResultsForSearch: -1,
+      width: 'resolve',
+      placeholder: "Please select an option"
+    });
+  }
 
   $('#selectpicker').on('select2:select', function () {
-    document.location.href = '/' + $('#selectpicker').val();
+    document.location.href = 'https://svandis.io/' + $('#selectpicker').val();
   });
-
+if($(".owl-carousel").length){
   $(".owl-carousel").owlCarousel({
     margin: 20,
     nav: true,
@@ -78,6 +87,61 @@ jQuery(document).ready(function ($) {
       }
     }
   });
+}
+
+  $('#form-whitelist-button').on('click', function (e) {
+    e.preventDefault();
+    let error = false;
+    let email = $('#email-whitelist');
+    let address = $('#eth-address-whitelist');
+    let contribution = $('#contribution-whitelist');
+
+    if (email.val() == '' || ! /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/.test(email.val()) ) {
+      email.css('border', '1px solid red');
+      error = true
+    } else {
+      email.css('border', '1px solid #ccc');
+    }
+
+    if (address.val() == '') {
+      address.css('border', '1px solid red');
+      error = true
+    } else {
+      address.css('border', 'none');
+    }
+
+    if (contribution.val() == '') {
+      contribution.css('border', '1px solid red');
+      error = true
+    } else {
+      contribution.css('border', '1px solid #ccc');
+    }
+
+    if ($('#pass-kyc-whitelist option:selected').val() == '') {
+      $('.select2').css('border', '1px solid red');
+      error = true
+    } else {
+      $('.select2').css('border', '1px solid #ccc');
+    }
+
+    if (grecaptcha.getResponse() == '') {
+      $('.g-recaptcha iframe').css('border', '1px solid red');
+      error = true
+    } else {
+      $('.g-recaptcha iframe').css('border', '1px solid #ccc');
+    }
+
+    if (!error) {
+      $('#form-whitelist').submit();
+    }
+
+  });
+
+  let getName = getParameterByName('message');
+  if (getName == 'sent'){
+    $('#success').show();
+  }
+
 });
 
 function addUserPic(opt) {
@@ -103,4 +167,15 @@ function roadmapAnimate() {
         $('.item-7').delay(1600).fadeIn(aSpeed);
         $('.item-8').delay(1900).fadeIn(aSpeed);
     }
+}
+
+// Read url parameters
+function getParameterByName(name, url) {
+  if (!url) url = window.location.href;
+  name = name.replace(/[\[\]]/g, "\\$&");
+  var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+    results = regex.exec(url);
+  if (!results) return null;
+  if (!results[2]) return '';
+  return decodeURIComponent(results[2].replace(/\+/g, " "));
 }
