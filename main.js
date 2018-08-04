@@ -21,7 +21,7 @@ async function getNextId() {
 async function main() {
     const app = express();
     app.use(bodyParser.urlencoded({ extended: true }));
-
+    app.use(express.static('static'));
     const exists = await knex.schema.hasTable('whitelist');
 
     if (!exists) {
