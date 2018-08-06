@@ -34,7 +34,7 @@ async function main() {
         });
     }
 
-    app.post('/',
+    app.post('/whitelist-form',
         [
             check('email-whitelist').isEmail(),
             check('eth-address-whitelist').isAlphanumeric(),
