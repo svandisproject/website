@@ -62,13 +62,7 @@ async function main() {
                 res.status(500).send('Something went wrong. Try again later');
             }
 
-            res.set({
-                'Location': ( req.hostname === 'localhost' )
-                    ? 'http://localhost/svandis2.0/en/formv2.html?message=sent'
-                    : `http://${req.hostname}/en/formv2.html?message=sent`
-            });
-
-            return res.send();
+            res.redirect('http://svandis.io/en/formv2.html?message=sent');
         }
     );
 
