@@ -62,7 +62,7 @@ async function main() {
                 res.status(500).send('Something went wrong. Try again later');
             }
 
-            res.redirect('http://svandis.io/en/formv2.html?message=sent');
+            res.redirect(302, 'http://svandis.io/en/formv2.html?message=sent');
         }
     );
 
