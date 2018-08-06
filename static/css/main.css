@@ -1558,6 +1558,7 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
     border-radius: 4px;
     margin: 30px auto 50px;
     padding: 265px 30px 35px;
+    font-size: 20px;
 }
 
 .apply-form label,
@@ -1619,7 +1620,7 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
 
 .apply-form  .success {
     text-align: center;
-    color: #36ff50;
+    color: #28a331;
 }
 
 .apply-form .select2-container {
