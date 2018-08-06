@@ -63,6 +63,8 @@ async function main() {
             }
 
             res.redirect(302, 'http://svandis.io/en/formv2.html?message=sent');
+
+            return res;
         }
     );
 
