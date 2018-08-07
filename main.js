@@ -9,15 +9,6 @@ const knex = require('knex')({
     connection: process.env.CLEARDB_DATABASE_URL
 });
 
-async function getNextId() {
-    let rows = await knex.select('id').from('whitelist');
-    if (rows.length) {
-        return rows.length + 1;
-    } else {
-        return 1;
-    }
-}
-
 async function main() {
     const app = express();
     app.use(bodyParser.urlencoded({ extended: true }));
@@ -26,11 +17,11 @@ async function main() {
 
     if (!exists) {
         await knex.schema.createTable('whitelist', (t) => {
-            t.integer('id').primary();
-            t.string('email'),
-                t.string('address_eth'),
-                t.string('amount'),
-                t.string('kyc')
+            t.increments('id');
+            t.string('email');
+            t.string('address_eth');
+            t.string('amount');
+            t.string('kyc');
         });
     }
 
@@ -51,22 +42,21 @@ async function main() {
 
             try {
                 const result = await knex('whitelist').insert({
-                    id: await getNextId(),
                     email: req.body['email-whitelist'],
                     address_eth: req.body['eth-address-whitelist'],
                     amount: req.body['contribution-whitelist'],
                     kyc: req.body['pass-kyc-whitelist']
-                })
+                });
             } catch (err) {
                 console.error(err);
-                res.status(500).send('Something went wrong. Try again later');
+                return res.status(500).send('Something went wrong. Try again later');
             }
 
-            res.set({
-                'Location': 'http://svandis.io/en/formv2.html?message=sent'
-            });
+            const url = ( req.hostname === 'localhost' )
+                ? 'http://localhost/svandis2.0/en/formv2.html?message=sent'
+                : `http://${req.hostname}/en/formv2.html?message=sent`;
 
-            return res.send();
+            return res.redirect(url);
         }
     );
 
