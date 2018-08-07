@@ -34,7 +34,7 @@ jQuery(document).ready(function ($) {
     }
 
     setTimeout(function () {
-      if((!jQuery('.social-icons-list').height() || !jQuery('.subscribe-form-wrapper').height()) && jQuery('body.index-page').length){
+      if(((!jQuery('.social-icons-list').height() && !jQuery('.fa-linkedin-in').height())|| !jQuery('.subscribe-form-wrapper').height()) && jQuery('body.index-page').length){
         alert('Please disable your adblock to view this site properly');
       }
     }, 2000);
