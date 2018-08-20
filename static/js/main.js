@@ -124,12 +124,6 @@ if($(".owl-carousel").length){
       $('.select2').css('border', '1px solid #ccc');
     }
 
-    if (grecaptcha.getResponse() == '') {
-      $('.g-recaptcha iframe').css('border', '1px solid red');
-      error = true
-    } else {
-      $('.g-recaptcha iframe').css('border', '1px solid #ccc');
-    }
 
     if (!error) {
       $('#form-whitelist').submit();

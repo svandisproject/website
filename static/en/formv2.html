@@ -32,9 +32,37 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
           integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body class="apply-form">
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter49495978 = new Ya.Metrika2({
+                    id:49495978,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true,
+                    trackHash:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/tag.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks2");
+</script>
+<!-- /Yandex.Metrika counter -->
 <!-- Google Tag Manager (noscript) -->
 <noscript>
     <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
@@ -64,10 +92,6 @@
                 <option value="yes">Yes</option>
                 <option value="no">No</option>
             </select>
-        </div>
-        <div class="g-recaptcha" data-sitekey="6LcZeGgUAAAAAAwu-9ZODVtwXY8mjJ9eDcCA9E7t"></div>
-        <div class="button-wrap">
-            <input id="form-whitelist-button" class="button" type="submit" value="Submit">
         </div>
     </form>
     <div class="success" id="success" style="display: none">
