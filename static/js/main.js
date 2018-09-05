@@ -136,6 +136,35 @@ if($(".owl-carousel").length){
     $('#success').show();
   }
 
+  $(".bio-button").on("click", function(){
+    if($(this).siblings(".col-descr").css("max-height") == "0px"){
+      $(this).siblings(".col-descr").css("max-height", "1000px");
+      $(this).children(".bio-plus").html("-");
+    }
+    else{
+      $(this).siblings(".col-descr").css("max-height", "0px");
+      $(this).children(".bio-plus").html("+");
+    }
+  })
+
+  $(".bio-button").on("click", function(){
+    var popupToOpen = "." + $(this).data('popup');
+
+    $(popupToOpen).css('display', 'table')
+  });
+
+  $(".bio-popup-close").on("click", function(){
+    $(".bio-popup").css('display', 'none');
+  })
+
+  $(".bio-popup").on("click", function() {
+    $(".bio-popup").css('display', 'none');
+  })
+
+  $(".team-item-wrap").on("click", function(e) {
+    e.stopPropagation();
+  })
+
 });
 
 function addUserPic(opt) {
