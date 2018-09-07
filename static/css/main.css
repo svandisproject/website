@@ -276,6 +276,10 @@ h3 {
     color: #999
 }
 
+.home-section .email{
+    border: solid white 2px;
+}
+
 .email::-webkit-input-placeholder {
     color: #999;
     font-weight: 300
@@ -1699,7 +1703,7 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
 .private-pre-sale-section{
     text-align: center;
     background-color: #f4f5f5;
-    background: url(../img/Svandis-Subscribe.png), center no-repeat;
+    background: url(../img/svandis-subscribe.png), center no-repeat;
     background-size: cover;
 }
 
@@ -2545,6 +2549,7 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
 
     .home-section {
         background-size: 100%;
+        background-size: 100% 185px;
         background-repeat: no-repeat;
     }
 
@@ -2972,6 +2977,17 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
 
     #introduction{
         margin-top: 0px;
+    }
+
+    .home-section .email{
+        border: solid #181818 2px;
+    }
+
+    .social-user-block .social-icons-list li{
+        width: initial;
+    }
+    .social-user-block .social-icons-list li a{
+        margin: 0 10px;
     }
 }
 

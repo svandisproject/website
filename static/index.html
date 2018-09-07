@@ -174,9 +174,6 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <li class="menu-item">
                             <a href="#introduction">Introduction</a>
                         </li>
-                        <li class="menu-item">
-                            <a href="#presale">PRE-SALE</a>
-                        </li>
                         <!--<li class="menu-item">-->
                             <!--<a href="#community-involvement">Community</a>-->
                         <!--</li>-->
@@ -185,6 +182,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         </li>
                         <li class="menu-item">
                             <a href="#token">Token Sale</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#whitelist">WHITELIST</a>
                         </li>
                         <li class="menu-item">
                             <a href="#team">Team</a>
@@ -217,7 +217,13 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <h1 class="main-title">TIMING IS EVERYTHING<br/>ALL DATA - ONE PLACE</h1>
                 <div class="subscribe-form-wrapper">
                     <div class="form-descr top">
-                        <p>Svandis is a blockchain-based data hub providing a research and visualisation platform to crypto-market participants. Its interoperable features prioritize objectivity, relevance and speed. All data is available at one place, gathered by the DataMining App and the Research Community - a gamified validation system on the blockchain. Additional features and products will be offered by third-party partners on the Svandis Marketplace to allow for a better and increasingly customizable workflow.</p>
+                        <p>
+                            Svandis is a data hub providing a research platform to crypto-market participants                         
+							</br>
+							Its features prioritize objectivity, relevance and speed
+							</br>
+							Data is crowdsourced by the DataMining App and the Research Community - a gamified validation system on blockchain
+						</p>
                     </div>
                     <div class="paper-buttons">
                         <div class="buttons-wrapper">
@@ -227,6 +233,57 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                class="button paper-btn light-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Light Paper'});">Light Paper</a>
                         </div>
                     </div>
+                    <div class="paper-buttons" style="margin-top: 40px;">
+                        <a href="#whitelist"
+                            class="button paper-btn white-btn scroll">Apply for whitelist</a>
+                    </div>
+                    <div class="form-descr bottom">
+                        <p>subscribe for updates</p>
+                    </div>
+                    <!-- Start of signup -->
+                    <script language="javascript">
+                        <!--
+                        function validate_signup(frm) {
+                            var emailAddress = frm.Email.value;
+                            var errorString = '';
+                            if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+                                errorString = 'Please enter your email address';
+                            }
+                            var isError = false;
+                            if (errorString.length > 0)
+                                isError = true;
+                            if (isError)
+                                alert(errorString);
+                            return !isError;
+                        }
+    
+                        //-->
+                    </script>
+                    <form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
+                            onsubmit="return validate_signup(this)">
+                        <input type="hidden" name="addressbookid" value="172526">
+                        <input type="hidden" name="ci_isconsentform" value="true">
+                        <!-- UserID - required field, do not remove -->
+                        <input type="hidden" name="userid" value="227981">
+                        <!-- ReturnURL - when the user hits submit, they'll get sent here -->
+                        <input type="hidden" name="ReturnURL" value="https://svandis.io">
+                        <!-- Email - the user's email address -->
+                        <input type="text" name="Email" class="email" placeholder="Email:">
+                        <input type="hidden" name="ci_userConsentText" value="">
+                        <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+                        <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
+                        <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+                    </form>
+                    <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
+                        newsletter! Have you joined our Telegram group yet?
+                    </div>
+                    <script language="javascript">
+                        var urlInput = document.getElementById("ci_consenturl");
+                        if (urlInput != null && urlInput != 'undefined') {
+                            urlInput.value = encodeURI(window.location.href);
+                        }
+                    </script>
+                    <!-- End of signup -->
                 </div>
                 <div id="header-social-links">
                     <ul class="social-icons-list">
@@ -248,6 +305,11 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <li>
                             <a class="social-icon" href="https://www.reddit.com/r/Svandis/" target="_blank">
                                 <i class="fab fa-reddit-alien"></i></a>
+                        </li>
+                        <li>
+                            <a class="social-icon" href="https://github.com/svandisproject/" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -281,7 +343,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 <img src="./img/icon3.png" alt="Digital Asset Screener">
                             </div>
                             <div class="txt">
-                                Svandis offers validated information, prioritizing objectivity, relevance and speed.
+                                Svandis offers validated information, prioritizing objectivity, relevance and speed
                             </div>
                         </div>
                     </div>
@@ -291,7 +353,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 <img src="./img/icon4.png" alt="Svandis Indices">
                             </div>
                             <div class="txt">
-                                The main features of Svandis are the Newsfeed, Screeners, Catalyst analysis, Heatmaps, Alerts and Portfolio.
+                                The main features of Svandis are the Newsfeed, Screeners, Catalyst analysis, Heatmaps, Alerts and Portfolio
                             </div>
                         </div>
                     </div>
@@ -301,7 +363,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 <img src="./img/icon5.png" alt="Indices Builder">
                             </div>
                             <div class="txt">
-                                Members in the Research community are rewarded for submitting, verifying, validating and updating data about ICO and token sales.
+                                Members in the Research community are rewarded for submitting, verifying, validating and updating data about ICO and token sales
                             </div>
                         </div>
                     </div>
@@ -311,7 +373,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 <img src="./img/icon1.png" alt="Newsfeed">
                             </div>
                             <div class="txt">
-                                Users are rewarded for installing and running the DataMining App, an open source application using language processing and machine learning to process information for Newsfeed content.
+                                Users are rewarded for installing and running the DataMining App, an open source application using language processing and machine learning to process information for Newsfeed content
                             </div>
                         </div>
                     </div>
@@ -321,7 +383,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 <img src="./img/icon6.png" alt="Charts">
                             </div>
                             <div class="txt">
-                                The Svandis Marketplace is a hub for third-party partners, providing access to other products and services to Svandis users in an efficiently unique approach.
+                                The Svandis Marketplace is a hub for third-party partners, providing access to other products and services to Svandis users in an efficiently unique approach
                             </div>
                         </div>
                     </div>
@@ -364,66 +426,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 </div>
             </div>
         </div>
-        <section class="private-pre-sale-section">
-            <div class="container">
-                <div class="main-home-wrapper" id="presale">
-                    <h1 class="main-title">Private Pre-Sale Ongoing</h1>
-                    <div class="subscribe-form-wrapper">
-                        <div class="paper-buttons">
-                            <a href="form.html" target="_blank"
-                               class="button paper-btn white-btn">Apply for whitelist</a>
-                        </div>
-                        <div class="form-descr bottom">
-                            <p>subscribe for updates</p>
-                        </div>
-                        <!-- Start of signup -->
-                        <script language="javascript">
-                            <!--
-                            function validate_signup(frm) {
-                                var emailAddress = frm.Email.value;
-                                var errorString = '';
-                                if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
-                                    errorString = 'Please enter your email address';
-                                }
-                                var isError = false;
-                                if (errorString.length > 0)
-                                    isError = true;
-                                if (isError)
-                                    alert(errorString);
-                                return !isError;
-                            }
         
-                            //-->
-                        </script>
-                        <form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
-                              onsubmit="return validate_signup(this)">
-                            <input type="hidden" name="addressbookid" value="172526">
-                            <input type="hidden" name="ci_isconsentform" value="true">
-                            <!-- UserID - required field, do not remove -->
-                            <input type="hidden" name="userid" value="227981">
-                            <!-- ReturnURL - when the user hits submit, they'll get sent here -->
-                            <input type="hidden" name="ReturnURL" value="https://svandis.io">
-                            <!-- Email - the user's email address -->
-                            <input type="text" name="Email" class="email" placeholder="Email:">
-                            <input type="hidden" name="ci_userConsentText" value="">
-                            <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
-                            <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
-                            <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
-                        </form>
-                        <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
-                            newsletter! Have you joined our Telegram group yet?
-                        </div>
-                        <script language="javascript">
-                            var urlInput = document.getElementById("ci_consenturl");
-                            if (urlInput != null && urlInput != 'undefined') {
-                                urlInput.value = encodeURI(window.location.href);
-                            }
-                        </script>
-                        <!-- End of signup -->
-                    </div>
-                </div>
-            </div>
-        </section>
     </section>
     <section id="community-involvement" class="community-involvement-section">
         <div class="container">
@@ -610,6 +613,66 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 </ul>
             </div>
         </div>
+        <section class="private-pre-sale-section">
+                <div class="container">
+                    <div class="main-home-wrapper" id="whitelist">
+                        <h1 class="main-title">Private Pre-Sale Ongoing</h1>
+                        <div class="subscribe-form-wrapper">
+                            <div class="paper-buttons">
+                                <a href="form.html" target="_blank"
+                                   class="button paper-btn white-btn">Apply for whitelist</a>
+                            </div>
+                            <div class="form-descr bottom">
+                                <p>subscribe for updates</p>
+                            </div>
+                            <!-- Start of signup -->
+                            <script language="javascript">
+                                <!--
+                                function validate_signup(frm) {
+                                    var emailAddress = frm.Email.value;
+                                    var errorString = '';
+                                    if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
+                                        errorString = 'Please enter your email address';
+                                    }
+                                    var isError = false;
+                                    if (errorString.length > 0)
+                                        isError = true;
+                                    if (isError)
+                                        alert(errorString);
+                                    return !isError;
+                                }
+            
+                                //-->
+                            </script>
+                            <form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
+                                  onsubmit="return validate_signup(this)">
+                                <input type="hidden" name="addressbookid" value="172526">
+                                <input type="hidden" name="ci_isconsentform" value="true">
+                                <!-- UserID - required field, do not remove -->
+                                <input type="hidden" name="userid" value="227981">
+                                <!-- ReturnURL - when the user hits submit, they'll get sent here -->
+                                <input type="hidden" name="ReturnURL" value="https://svandis.io">
+                                <!-- Email - the user's email address -->
+                                <input type="text" name="Email" class="email" placeholder="Email:">
+                                <input type="hidden" name="ci_userConsentText" value="">
+                                <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
+                                <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
+                                <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+                            </form>
+                            <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
+                                newsletter! Have you joined our Telegram group yet?
+                            </div>
+                            <script language="javascript">
+                                var urlInput = document.getElementById("ci_consenturl");
+                                if (urlInput != null && urlInput != 'undefined') {
+                                    urlInput.value = encodeURI(window.location.href);
+                                }
+                            </script>
+                            <!-- End of signup -->
+                        </div>
+                    </div>
+                </div>
+            </section>
     </section>
     <section id="team" class="team-section">
         <div class="container">
@@ -618,7 +681,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Herman.jpg" alt="Hermann">
+                            <img src="./img/svandis-herman.jpg" alt="Hermann">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -648,7 +711,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Herman.jpg" alt="Hermann">
+                                    <img src="./img/svandis-herman.jpg" alt="Hermann">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -685,7 +748,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Yan.jpg" alt="Yan">
+                            <img src="./img/svandis-yan.jpg" alt="Yan">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -713,7 +776,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Yan.jpg" alt="Yan">
+                                    <img src="./img/svandis-yan.jpg" alt="Yan">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -728,6 +791,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                             <li><a href="https://www.linkedin.com/in/yan-crevier-45ab7a100/" class="social-icon"
                                                 target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
+                                            
                                         </ul>
                                     </div>
                                     
@@ -748,7 +812,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Chris.jpg" alt="Chris">
+                            <img src="./img/svandis-chris.jpg" alt="Chris">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -776,7 +840,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Chris.jpg" alt="Chris">
+                                    <img src="./img/svandis-chris.jpg" alt="Chris">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -808,7 +872,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Sebastien.jpg" alt="Sebastien">
+                            <img src="./img/svandis-sebastien.jpg" alt="Sebastien">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -836,7 +900,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Sebastien.jpg" alt="Sebastien">
+                                    <img src="./img/svandis-sebastien.jpg" alt="Sebastien">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -872,7 +936,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Iakov.jpg" alt="Iakov">
+                            <img src="./img/svandis-iakov.jpg" alt="Iakov">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -888,6 +952,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <li><a href="https://www.linkedin.com/in/iakov-mishchenko/" class="social-icon"
                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
+                                    <li><a href="https://github.com/ama3ing" class="social-icon"
+                                        target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="bio-button" data-popup="bio-Iakov">READ BIO <span class="bio-plus">+</span></div>
@@ -900,7 +967,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Iakov.jpg" alt="Iakov">
+                                    <img src="./img/svandis-iakov.jpg" alt="Iakov">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -914,6 +981,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/iakov-mishchenko/" class="social-icon"
                                                     target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/ama3ing" class="social-icon"
+                                                target="_blank"><i class="fab fa-github"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -934,7 +1004,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Catherine.jpg" alt="Catherine">
+                            <img src="./img/svandis-catherine.jpg" alt="Catherine">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -962,7 +1032,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Catherine.jpg" alt="Catherine">
+                                    <img src="./img/svandis-catherine.jpg" alt="Catherine">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -996,7 +1066,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Victor.jpg" alt="Victor">
+                            <img src="./img/svandis-victor.jpg" alt="Victor">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1012,6 +1082,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/" class="social-icon"
                                             target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
+                                    <li><a href="https://github.com/victorwiebe" class="social-icon"
+                                        target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="bio-button" data-popup="bio-Victor">READ BIO <span class="bio-plus">+</span></div>
@@ -1024,7 +1097,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Victor.jpg" alt="Victor">
+                                    <img src="./img/svandis-victor.jpg" alt="Victor">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1038,6 +1111,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/" class="social-icon"
                                                     target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/victorwiebe" class="social-icon"
+                                                target="_blank"><i class="fab fa-github"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1053,7 +1129,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-marc-olivier.jpg" alt="Marc-Olivier">
+                            <img src="./img/svandis-marc-olivier.jpg" alt="Marc-Olivier">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1081,7 +1157,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-marc-olivier.jpg" alt="Marc-Olivier">
+                                    <img src="./img/svandis-marc-olivier.jpg" alt="Marc-Olivier">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1110,7 +1186,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Ruben.jpg" alt="Ruben">
+                            <img src="./img/svandis-ruben.jpg" alt="Ruben">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1126,6 +1202,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/" class="social-icon"
                                             target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
+                                    <li><a href="https://github.com/rubenCodeforges" class="social-icon"
+                                        target="_blank"><i class="fab fa-github"></i></a>
+                                    </li>
                                 </ul>
                             </div>
                             <div class="bio-button" data-popup="bio-Ruben">READ BIO <span class="bio-plus">+</span></div>
@@ -1138,7 +1217,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Ruben.jpg" alt="Ruben">
+                                    <img src="./img/svandis-ruben.jpg" alt="Ruben">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1152,6 +1231,9 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/" class="social-icon"
                                                     target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            </li>
+                                            <li><a href="https://github.com/rubenCodeforges" class="social-icon"
+                                                target="_blank"><i class="fab fa-github"></i></a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1176,7 +1258,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Nodari.jpg" alt="Nodari">
+                            <img src="./img/svandis-nodari.jpg" alt="Nodari">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1207,7 +1289,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Nodari.jpg" alt="Nodari">
+                                    <img src="./img/svandis-nodari.jpg" alt="Nodari">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1243,7 +1325,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Kate.jpg" alt="Kate">
+                            <img src="./img/svandis-kate.jpg" alt="Kate">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1273,7 +1355,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Kate.jpg" alt="Kate">
+                                    <img src="./img/svandis-kate.jpg" alt="Kate">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1312,7 +1394,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Anastasia.jpg" alt="Ana">
+                            <img src="./img/svandis-anastasia.jpg" alt="Ana">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1342,7 +1424,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Anastasia.jpg" alt="Ana">
+                                    <img src="./img/svandis-anastasia.jpg" alt="Ana">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1379,7 +1461,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Booky.jpg" alt="Bokky">
+                            <img src="./img/svandis-booky.jpg" alt="Bokky">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1409,7 +1491,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Booky.jpg" alt="Bokky">
+                                    <img src="./img/svandis-booky.jpg" alt="Bokky">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1502,7 +1584,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-David.jpg" alt="David">
+                            <img src="./img/svandis-david.jpg" alt="David">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1532,7 +1614,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-David.jpg" alt="David">
+                                    <img src="./img/svandis-david.jpg" alt="David">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1566,7 +1648,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis-Jason-lee.jpg" alt="Jason">
+                            <img src="./img/svandis-jason-lee.jpg" alt="Jason">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1594,7 +1676,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis-Jason-lee.jpg" alt="Jason">
+                                    <img src="./img/svandis-jason-lee.jpg" alt="Jason">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1627,7 +1709,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
-                            <img src="./img/Svandis_Cemo.jpg" alt="Cemo">
+                            <img src="./img/svandis_cemo.jpg" alt="Cemo">
                         </div>
                         <div class="inner-wrap">
                             <div class="team-name">
@@ -1655,7 +1737,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     X
                                 </div>
                                 <div class="img-wrapper">
-                                    <img src="./img/Svandis_Cemo.jpg" alt="Cemo">
+                                    <img src="./img/svandis_cemo.jpg" alt="Cemo">
                                 </div>
                                 <div class="inner-wrap">
                                     <div class="team-name">
@@ -1737,12 +1819,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <div class="item-wrap">
                     <a target="_blank" href="https://credits.com/"
                        onclick="trackOutboundLink('https://credits.com/');"><img
-                            src="img/credits.png" alt="Credits"></a>
+                            src="img/credits.png" alt="Credits" style="opacity: .65;"></a>
                 </div>
                 <div class="item-wrap">
                     <a target="_blank" href="http://www.horatiipartners.com/"
                        onclick="trackOutboundLink('http://www.horatiipartners.com/');"><img
-                            src="img/horatii.png" alt="Horatii"></a>
+                            src="img/horatii.png" alt="Horatii" style="opacity: .7;"></a>
                 </div>
             </div>
         </div>
@@ -1905,6 +1987,11 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                     <a class="social-icon" href="https://www.reddit.com/r/Svandis/" target="_blank">
                         <i class="fab fa-reddit-alien"></i></a>
                 </li>
+                <li>
+                    <a class="social-icon" href="https://github.com/svandisproject/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
             </ul>
         </div>
     </div>
@@ -1919,7 +2006,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <a href="#introduction">Introduction</a>
                     </li>
                     <li class="menu-item">
-                        <a href="#presale">PRE-SALE</a>
+                        <a href="#whitelist">PRE-SALE</a>
                     </li>
                     <!--<li class="menu-item">-->
                         <!--<a href="#community-involvement">Community</a>-->
