@@ -1007,8 +1007,13 @@ div.mce_inline_error,
 }
 
 .time-item.active,
+.time-item.active .items-list li,
 .time-item.active .items-list li:before {
-    border-left-color: #0028f1
+    border-left-color: #0028f1;
+}
+
+.items-list li.active:before {
+    border-left-color: #0028f1;
 }
 
 .time-item.active:before {
@@ -1125,6 +1130,22 @@ div.mce_inline_error,
 .item-8 {
     bottom: 377px;
     left: 961px;
+}
+
+.item-9 {
+    top: 249px;
+    left: 1090px;
+}
+
+.item-10 {
+    bottom: 347px;
+    left: 1250px;
+}
+
+.item-11 {
+    top: 219px;
+    left: 1390px;
+    height: 99px;
 }
 
 .continued-item {

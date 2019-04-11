@@ -197,6 +197,7 @@ function roadmapAnimate() {
         $('.item-6').delay(1300).fadeIn(aSpeed);
         $('.item-7').delay(1600).fadeIn(aSpeed);
         $('.item-8').delay(1900).fadeIn(aSpeed);
+        $('.item-9').delay(2200).fadeIn(aSpeed);
     }
 }
 
