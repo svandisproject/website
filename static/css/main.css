@@ -1010,7 +1010,6 @@ div.mce_inline_error,
 .time-item.active .items-list li,
 .time-item.active .items-list li:before {
     border-left-color: #0028f1;
-    color: #0028f1;
 }
 
 .items-list li.active:before {
