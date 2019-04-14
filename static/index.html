@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
@@ -11,41 +10,56 @@
     </script>
     <!-- Google Tag Manager -->
     <script>
-      if(location.hostname === 'svandis.io'){
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-W9LJC32')};</script>
+        if (location.hostname === 'svandis.io') {
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start':
+                        new Date().getTime(), event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-W9LJC32')
+        }
+        ;</script>
     <!-- End Google Tag Manager -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
     <!-- Yandex.Metrika counter -->
-    <script type="text/javascript" >
-      (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-          try {
-            w.yaCounter49495978 = new Ya.Metrika2({
-              id:49495978,
-              clickmap:true,
-              trackLinks:true,
-              accurateTrackBounce:true,
-              webvisor:true,
-              trackHash:true
+    <script type="text/javascript">
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function () {
+                try {
+                    w.yaCounter49495978 = new Ya.Metrika2({
+                        id: 49495978,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true,
+                        trackHash: true
+                    });
+                } catch (e) {
+                }
             });
-          } catch(e) { }
-        });
 
-        var n = d.getElementsByTagName("script")[0],
-          s = d.createElement("script"),
-          f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-        if (w.opera == "[object Opera]") {
-          d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-      })(document, window, "yandex_metrika_callbacks2");
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks2");
     </script>
     <!-- /Yandex.Metrika counter -->
     <script>
@@ -113,34 +127,45 @@
     <meta name="robots" content="noindex,nofollow">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Svandis</title>
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="./img/favicon.ico"/>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
           rel="stylesheet">
     <link rel="stylesheet" id="style_svandis-css" href="./css/main.css" type="text/css" media="all">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
           integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
-    <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet"/>
+    <link rel="stylesheet prefetch"
+          href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css">
 
     <link rel="stylesheet" type="text/css"
           href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <!-- Facebook Pixel Code -->
     <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '146739112807876');
-      fbq('track', 'PageView');
-      fbq('track', 'CompleteRegistration', {
-        value: 1,
-      });
-      fbq('track', 'Lead');
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '146739112807876');
+        fbq('track', 'PageView');
+        fbq('track', 'CompleteRegistration', {
+            value: 1,
+        });
+        fbq('track', 'Lead');
     </script>
     <noscript><img height="1" width="1" style="display:none"
                    src="https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
@@ -151,8 +176,10 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
 </head>
 <body class="home index-page">
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
-				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+</noscript>
 <!-- End Google Tag Manager (noscript) -->
 <div class="main-wrapper">
     <header id="header" class="header">
@@ -175,16 +202,13 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <a href="#introduction">Introduction</a>
                         </li>
                         <!--<li class="menu-item">-->
-                            <!--<a href="#community-involvement">Community</a>-->
+                        <!--<a href="#community-involvement">Community</a>-->
                         <!--</li>-->
                         <li class="menu-item">
                             <a href="#roadmap">Roadmap</a>
                         </li>
                         <li class="menu-item">
                             <a href="#token">Token Sale</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#whitelist">WHITELIST</a>
                         </li>
                         <li class="menu-item">
                             <a href="#team">Team</a>
@@ -198,14 +222,14 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <li class="menu-item">
                             <a href="hiring.html">Hiring</a>
                         </li>
-                        <li class="menu-item">
-                            <select id="selectpicker" data-width="fit" name="language" style="width: 130px">
-                                <option value="en" data-content='<span class="flag-icon flag-icon-gb"></span> English'>English</option>
-                                <option value="cn" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>
-                                <option value="vn" data-content='<span class="flag-icon flag-icon-vn"></span> Tiếng Việt'>Tiếng Việt</option>
-                                <!--<option value="kr" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어 '>한국어 </option>-->
-                            </select>
-                        </li>
+                        <!--<li class="menu-item">-->
+                        <!--<select id="selectpicker" data-width="fit" name="language" style="width: 130px">-->
+                        <!--<option value="en" data-content='<span class="flag-icon flag-icon-gb"></span> English'>English</option>-->
+                        <!--<option value="cn" data-content='<span class="flag-icon flag-icon-cn"></span> 中文'>中文</option>-->
+                        <!--<option value="vn" data-content='<span class="flag-icon flag-icon-vn"></span> Tiếng Việt'>Tiếng Việt</option>-->
+                        <!--&lt;!&ndash;<option value="kr" data-content='<span class="flag-icon flag-icon-kr"></span> 한국어 '>한국어 </option>&ndash;&gt;-->
+                        <!--</select>-->
+                        <!--</li>-->
                     </ul>
                 </div>
             </div>
@@ -217,25 +241,40 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 <h1 class="main-title">TIMING IS EVERYTHING<br/>ALL DATA - ONE PLACE</h1>
                 <div class="subscribe-form-wrapper">
                     <div class="form-descr top">
+                        <!--<p>-->
+                        <!--Svandis is a data hub providing a research platform to crypto-market participants                         -->
+                        <!--</br>-->
+                        <!--Its features prioritize objectivity, relevance and speed-->
+                        <!--</br>-->
+                        <!--Data is crowdsourced by the DataMining App and the Research Community - a gamified validation system on blockchain-->
+                        <!--</p>-->
                         <p>
-                            Svandis is a data hub providing a research platform to crypto-market participants                         
-							</br>
-							Its features prioritize objectivity, relevance and speed
-							</br>
-							Data is crowdsourced by the DataMining App and the Research Community - a gamified validation system on blockchain
-						</p>
+                            Svandis is a data hub providing a global research platform, <br> where everyone can earn
+                            tokens for submitting correct information.
+                        </p>
+                        <p>
+                            Its features prioritize objectivity, relevance and speed. <br>
+                            Data is crowdsourced by the DataMining App and the Research Community - a gamified
+                            validation system on blockchain
+                        </p>
                     </div>
                     <div class="paper-buttons">
                         <div class="buttons-wrapper">
-                            <a href="https://github.com/svandisproject/technical-whitepaper/blob/master/TechnicalWhitepaper.md" target="_blank"
-                               class="button paper-btn whitepaper-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'White Paper'});">White Paper</a>
+                            <a href="https://github.com/svandisproject/technical-whitepaper/blob/master/TechnicalWhitepaper.md"
+                               target="_blank"
+                               class="button paper-btn whitepaper-btn"
+                               onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'White Paper'});">White
+                                Paper</a>
                             <a href="lightpaper.pdf" target="_blank"
-                               class="button paper-btn light-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Light Paper'});">Light Paper</a>
+                               class="button paper-btn light-btn"
+                               onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Light Paper'});">Light
+                                Paper</a>
                         </div>
                     </div>
-                    <div class="paper-buttons" style="margin-top: 40px;">
-                        <a href="#whitelist"
-                            class="button paper-btn white-btn scroll">Apply for whitelist</a>
+                    <div class="paper-buttons mt-4">
+                        <a href="https://app.svandis.io/"
+                           target="_blank"
+                           class="button paper-btn white-btn scroll">Test Beta Version</a>
                     </div>
                     <div class="form-descr bottom">
                         <p>subscribe for updates</p>
@@ -256,11 +295,11 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                 alert(errorString);
                             return !isError;
                         }
-    
+
                         //-->
                     </script>
                     <form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
-                            onsubmit="return validate_signup(this)">
+                          onsubmit="return validate_signup(this)">
                         <input type="hidden" name="addressbookid" value="172526">
                         <input type="hidden" name="ci_isconsentform" value="true">
                         <!-- UserID - required field, do not remove -->
@@ -271,8 +310,10 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <input type="text" name="Email" class="email" placeholder="Email:">
                         <input type="hidden" name="ci_userConsentText" value="">
                         <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
-                        <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
-                        <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
+                        <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d"
+                               value="">
+                        <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn"
+                               onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
                     </form>
                     <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
                         newsletter! Have you joined our Telegram group yet?
@@ -318,26 +359,47 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
     </section>
     <section id="introduction" class="introduction-section">
         <div class="container">
+            <div class="description mb-5">
+                <h4>
+                    In an age of data overload, volume doesn’t necessarily mean value. <br>
+                    At Svandis, we are revolutionizing the way you receive information.
+                </h4>
+                <p class="pt-3">
+                    Data mining software developing by Svandis could be used in different industries, <br>
+                    for example digital asset markets, global markets, sports, arts, etc. <br>
+                    At the beginning, we are focusing on cryptocurrency market, <br>
+                    as we believe its participants needs to get actual information and increased transparency.
+                </p>
+            </div>
+            <div class="subscribe-form-wrapper mt-3 mb-4">
+                <div class="paper-buttons">
+                    <a href="https://app.svandis.io/"
+                       target="_blank"
+                       class="button paper-btn white-btn scroll">Test Beta Version</a>
+                </div>
+            </div>
             <div class="introduction-container">
                 <div class="video-container">
-                    <iframe src="https://www.youtube.com/embed/eOmZIbBD3Ik" style="max-width: 100%; margin-bottom: 90px" width="1000" height="562.5" frameborder="0" allowfullscreen></iframe>
+                    <iframe src="https://www.youtube.com/embed/eOmZIbBD3Ik" style="max-width: 100%; margin-bottom: 90px"
+                            width="1000" height="562.5" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
         <div id="features" class="introduction-section-wrapper">
             <div class="container">
                 <div class="introduction-items-wrap">
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon2.png" alt="ICO Token Screener">
                             </div>
                             <div class="txt">
-                                Svandis is a platform that provides research and visualisation tools for crypto market participants
+                                Svandis is a platform that provides research and visualisation tools for crypto market
+                                participants
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon3.png" alt="Digital Asset Screener">
@@ -347,49 +409,54 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon4.png" alt="Svandis Indices">
                             </div>
                             <div class="txt">
-                                The main features of Svandis are the Newsfeed, Screeners, Catalyst analysis, Heatmaps, Alerts and Portfolio
+                                The main features of Svandis are the Newsfeed, Screeners, Catalyst analysis, Heatmaps,
+                                Alerts and Portfolio
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon5.png" alt="Indices Builder">
                             </div>
                             <div class="txt">
-                                Members in the Research community are rewarded for submitting, verifying, validating and updating data about ICO and token sales
+                                Members in the Research community are rewarded for submitting, verifying, validating and
+                                updating data about ICO and token sales
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon1.png" alt="Newsfeed">
                             </div>
                             <div class="txt">
-                                Users are rewarded for installing and running the DataMining App, an open source application using language processing and machine learning to process information for Newsfeed content
+                                Users are rewarded for installing and running the DataMining App, an open source
+                                application using language processing and machine learning to process information for
+                                Newsfeed content
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-6">
                         <div class="introduction-item">
                             <div class="img-wrap">
                                 <img src="./img/icon6.png" alt="Charts">
                             </div>
                             <div class="txt">
-                                The Svandis Marketplace is a hub for third-party partners, providing access to other products and services to Svandis users in an efficiently unique approach
+                                The Svandis Marketplace is a hub for third-party partners, providing access to other
+                                products and services to Svandis users in an efficiently unique approach
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="introduction-descr-wrap">
-                    <div class="col">
+                    <div class="col-4">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
                                 Language Processing
@@ -400,7 +467,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
                                 Machine Learning
@@ -412,7 +479,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-4">
                         <div class="introduction-inner-wrap">
                             <h5 class="introduction-inner-title">
                                 Correlation Analysis
@@ -426,49 +493,23 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 </div>
             </div>
         </div>
-        
     </section>
-    <section id="community-involvement" class="community-involvement-section">
+    <section class="mb-0">
         <div class="container">
-            <div class="community-involvement-container">
-                <h2 class="section-title">Blog Articles</h2>
-                <div class="owl-carousel">
-                    <div>
-                        <a target="_blank" href="https://medium.com/svandis/json-capital-and-svandis-enter-strategic-partnership-80ebbd57fd66?source=svandis_io_home_page">
-                            <img src="https://cdn-images-1.medium.com/max/1000/0*D1FYy7hL-iE21V2q" alt="json-capital-and-svandis-enter-strategic-partnership" /><br />
-                            <h4>JSON Capital and Svandis Enter Strategic Partnership</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://medium.com/svandis/introducing-the-svandis-research-community-and-internal-analytics-team-13e4443275d9?source=svandis_io_home_page">
-                            <img src="https://cdn-images-1.medium.com/max/400/1*Rc1NyIg99WjK6T7r5sZrIQ.png" alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
-                            <h4>Introducing the Svandis Research Community and Internal Analytics Team</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://medium.com/svandis/the-svandis-datamining-app-628f97d1e383?source=svandis_io_home_page">
-                            <img src="https://cdn-images-1.medium.com/max/400/0*RV7SEXVWdxzh2hR7." alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
-                            <h4>The Svandis DataMining App</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://medium.com/svandis/svandis-certified-reviewers-gamification-db2d88b9c231?source=svandis_io_home_page">
-                            <img src="https://cdn-images-1.medium.com/max/400/0*KLUFr9G_Fc1OQRqM" alt="introducing-the-svandis-research-community-and-internal-analytics-team" /><br />
-                            <h4>Svandis Certified Reviewers & Gamification</h4>
-                        </a>
-                    </div>
-                    <div>
-                        <a target="_blank" href="https://medium.com/cindicator/bringing-high-quality-data-to-crypto-markets-cindicator-partners-with-svandis-6a9c73b5195">
-                            <img height="250" src="https://cdn-images-1.medium.com/max/800/1*njAD6Glc-erY5Z9gxCqyWw.png" /><br />
-                            <h4>Bringing High-Quality Data to Crypto Markets: Cindicator Partners with Svandis</h4>
-                        </a>
-                    </div>
-                </div>
-                <div style="text-align:center; font-size: 17px;">
-                    <a target="_blank" href="https://medium.com/svandis">All of our blogs</a>
-                </div>
+            <h2 class="section-title">THE FUTURE OF DATA MINING</h2>
+            <div class="description inverse mb-5">
+                <p class="pt-3">
+                    Thanks to unique rewarding mechanism of Research Community, each participant will be motivated to
+                    find any necessary information, which can be applied in different usecases and industries.
+                </p>
+                <p class="pt-3">
+                    In the case of demand for actual information of any kind, special challenges can be created and
+                    structured as a marketplace to motivate community to conduct the research.
+                </p>
             </div>
         </div>
+    </section>
+    <section id="community-involvement" class="community-involvement-section">
         <span id="roadmap"></span>
     </section>
     <section class="roadmap-section">
@@ -529,11 +570,11 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             </ul>
                         </div>
                     </div>
-                    <div class="time-item item-8 active">
+                    <div class="time-item item-8">
                         <div class="item-inner-wrap">
                             <ul class="items-list">
-                                <li>User’s feedback on the Beta version</li>
-                                <li>Widget feature development</li>
+                                <li class="active">User’s feedback on the Beta version</li>
+                                <li class="active">Widget feature development</li>
                                 <li>Token Sale</li>
                                 <li>Widget feature release</li>
                             </ul>
@@ -560,12 +601,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
         <div class="container">
             <h2 class="section-title">Token Sale</h2>
             <div class="flex-row margin-bottom">
-                <div class="col left-col">
+                <div class="col-6 left-col">
                     <div class="diagram-img">
                         <img src="img/chart-1.png" alt="Token Distribution">
                     </div>
                 </div>
-                <div class="col right-col">
+                <div class="col-6 right-col">
                     <div class="diagram-info">
                         <h2 class="diagram-item-title">Token Distribution</h2>
                         <ul>
@@ -580,12 +621,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 </div>
             </div>
             <div class="flex-row">
-                <div class="col left-col">
+                <div class="col-6 left-col">
                     <div class="diagram-img">
                         <img src="img/chart-2.png" alt="USE OF PROCEEDS">
                     </div>
                 </div>
-                <div class="col right-col">
+                <div class="col-6 right-col">
                     <div class="diagram-info">
                         <h2 class="diagram-item-title">Use of Proceeds</h2>
                         <ul>
@@ -600,88 +641,6 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                 </div>
             </div>
         </div>
-    </section>
-    <section id="sale" class="full-width-section">
-        <div class="flex-row">
-            <div class="col left-col bg-col"></div>
-            <div class="col right-col info-col">
-                <h3 class="sub-title">Token Sale Information</h3>
-                <ul class="sale-info">
-                    <li class="flex-row"><span class="descr">Hard Cap <span class="token-dots">.........................................................</span></span><span
-                            class="val">$12,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Total token supply <span class="token-dots">........................................</span></span><span
-                            class="val">400,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Token for Public Contributors <span class="token-dots">................</span></span><span
-                            class="val">60%</span></li>
-                    <li class="flex-row"><span class="descr">Maximum Token Supply to the Public <span
-                            class="token-dots">........</span></span><span class="val">240,000,000</span></li>
-                    <li class="flex-row"><span class="descr">Token price <span
-                            class="token-dots">....................................................</span></span><span
-                            class="val">$0.05</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <section class="private-pre-sale-section">
-                <div class="container">
-                    <div class="main-home-wrapper" id="whitelist">
-                        <h1 class="main-title">Private Pre-Sale Ongoing</h1>
-                        <div class="subscribe-form-wrapper">
-                            <div class="paper-buttons">
-                                <a href="form.html" target="_blank"
-                                   class="button paper-btn white-btn">Apply for whitelist</a>
-                            </div>
-                            <div class="form-descr bottom">
-                                <p>subscribe for updates</p>
-                            </div>
-                            <!-- Start of signup -->
-                            <script language="javascript">
-                                <!--
-                                function validate_signup(frm) {
-                                    var emailAddress = frm.Email.value;
-                                    var errorString = '';
-                                    if (emailAddress == '' || emailAddress.indexOf('@') == -1) {
-                                        errorString = 'Please enter your email address';
-                                    }
-                                    var isError = false;
-                                    if (errorString.length > 0)
-                                        isError = true;
-                                    if (isError)
-                                        alert(errorString);
-                                    return !isError;
-                                }
-            
-                                //-->
-                            </script>
-                            <form name="signup" id="signup" action="https://r1.dmtrk.net/signup.ashx" method="post"
-                                  onsubmit="return validate_signup(this)">
-                                <input type="hidden" name="addressbookid" value="172526">
-                                <input type="hidden" name="ci_isconsentform" value="true">
-                                <!-- UserID - required field, do not remove -->
-                                <input type="hidden" name="userid" value="227981">
-                                <!-- ReturnURL - when the user hits submit, they'll get sent here -->
-                                <input type="hidden" name="ReturnURL" value="https://svandis.io">
-                                <!-- Email - the user's email address -->
-                                <input type="text" name="Email" class="email" placeholder="Email:">
-                                <input type="hidden" name="ci_userConsentText" value="">
-                                <input type="hidden" id="ci_consenturl" name="ci_consenturl" value="">
-                                <input type="hidden" name="SIG4985be24ae01d05c26b2746fc6368512e77a73d4367c88c67452096d74be039d" value="">
-                                <input type="Submit" name="Submit" value="Subscribe" class="button subscribe-btn" onclick="gtag('event', 'click', { event_category: 'click', event_action: 'click', event_label: 'Subscribe'});">
-                            </form>
-                            <div id="success" class="success-message" style="opacity: 0">Thanks for signing up to our
-                                newsletter! Have you joined our Telegram group yet?
-                            </div>
-                            <script language="javascript">
-                                var urlInput = document.getElementById("ci_consenturl");
-                                if (urlInput != null && urlInput != 'undefined') {
-                                    urlInput.value = encodeURI(window.location.href);
-                                }
-                            </script>
-                            <!-- End of signup -->
-                        </div>
-                    </div>
-                </div>
-            </section>
     </section>
     <section id="team" class="team-section">
         <div class="container">
@@ -704,17 +663,18 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
-                                        class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                           class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="bio-button" data-popup="bio-hermann">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-hermann">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-hermann">
                         <div class="bio-popup-content-wrapper">
-                            
+
                             <div class="team-item-wrap">
                                 <div class="bio-popup-close" data-popup="bio-hermann">
                                     X
@@ -729,24 +689,31 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         CEO and Founder
                                     </div>
-    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
-                                                class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/hermann-finnbj%C3%B6rnsson-ba202214b/"
+                                                   class="social-icon" target="_blank"><i
+                                                        class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">
                                         With over 15 years in software development, Hermann has founded
                                         four companies from
-                                        scratch that are still fully operational. Hermann is one of the co-founders of isx.is –
-                                        the first and only cryptocurrency exchange in Iceland, a KYC-run exchange that connects
-                                        to the user’s bank account, with all trades conducted in Icelandic króna pairs. He also
+                                        scratch that are still fully operational. Hermann is one of the co-founders of
+                                        isx.is –
+                                        the first and only cryptocurrency exchange in Iceland, a KYC-run exchange that
+                                        connects
+                                        to the user’s bank account, with all trades conducted in Icelandic króna pairs.
+                                        He also
                                         has been working on clarifying and establishing the legal and tax status of
-                                        cryptocurrency in Iceland. His experience includes developing electronic voting systems
-                                        in Iceland, as well as a digital token card that can be used for all-purpose connections
+                                        cryptocurrency in Iceland. His experience includes developing electronic voting
+                                        systems
+                                        in Iceland, as well as a digital token card that can be used for all-purpose
+                                        connections
                                         and payments.
                                     </p>
                                 </div>
@@ -797,20 +764,27 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
 
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/yan-crevier-45ab7a100/" class="social-icon"
-                                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li><a href="https://www.linkedin.com/in/yan-crevier-45ab7a100/"
+                                                   class="social-icon"
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
-                                            
+
                                         </ul>
                                     </div>
-                                    
-                                    <p class="col-descr">Yan is co-founder and Strategic Development Manager of the Québec
-                                        Blockchain non-profit organisation. Five years ago, after over a decade and a half in
+
+                                    <p class="col-descr">Yan is co-founder and Strategic Development Manager of the
+                                        Québec
+                                        Blockchain non-profit organisation. Five years ago, after over a decade and a
+                                        half in
                                         retail management, he plunged head-first into the world of blockchain and its
-                                        possibilities. Over that period he has built up a wide and diversified network of
-                                        contacts, while exploring every level of the blockchain space, including marketing and
-                                        PR, community building and management, financial analysis and negotiation. Among other
-                                        things, Yan has been involved in several token sales, both as a direct participant and
+                                        possibilities. Over that period he has built up a wide and diversified network
+                                        of
+                                        contacts, while exploring every level of the blockchain space, including
+                                        marketing and
+                                        PR, community building and management, financial analysis and negotiation. Among
+                                        other
+                                        things, Yan has been involved in several token sales, both as a direct
+                                        participant and
                                         as a behind-the-scenes advisor.
                                     </p>
                                 </div>
@@ -839,7 +813,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-chris">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-chris">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-chris">
@@ -858,20 +833,22 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Chief Marketing Officer
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/cbmcclure" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">Once a social-behavioral epidemiologist, Chris has led
-                                        commercialization teams, including marketing, sales & strategy, across life sciences,
+                                        commercialization teams, including marketing, sales & strategy, across life
+                                        sciences,
                                         research & development, and analytics. With a strong belief in blockchain and
                                         cryptocurrency for the future success of the global population, Chris focuses on
-                                        marketing and business development for ICOs from pre-TGE to growth (concept to early
+                                        marketing and business development for ICOs from pre-TGE to growth (concept to
+                                        early
                                         revenue).</p>
                                 </div>
                             </div>
@@ -895,11 +872,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/sebastien-harvey-874bb0158/"
-                                            class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                           class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Sebastien">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Sebastien">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Sebastien">
@@ -918,23 +896,29 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Chief Information Officer
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/sebastien-harvey-874bb0158/"
-                                                    class="social-icon" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                   class="social-icon" target="_blank"><i
+                                                    class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">
-                                        Sebastien is President and co-founder of Quebec Blockchain, an organization promoting
+                                        Sebastien is President and co-founder of Quebec Blockchain, an organization
+                                        promoting
                                         knowledge development and collaboration as a vector for innovation. He develops
-                                        blockchain-related projects in partnership with leaders from both the public and private
-                                        sector: decentralized autonomous organization, a research community for developers, a
+                                        blockchain-related projects in partnership with leaders from both the public and
+                                        private
+                                        sector: decentralized autonomous organization, a research community for
+                                        developers, a
                                         smart city project, and a crypto mining centre among others. Having worked as a
-                                        financial security advisor and chief executive of a contemporary art centre, for the
-                                        last ten years Sebastien has worked in organisational and strategic development, public
+                                        financial security advisor and chief executive of a contemporary art centre, for
+                                        the
+                                        last ten years Sebastien has worked in organisational and strategic development,
+                                        public
                                         fundraising and communications.
                                     </p>
                                 </div>
@@ -958,7 +942,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <div class="social-bio-aligned">
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
-                                    <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/" class="social-icon"
+                                    <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/"
+                                           class="social-icon"
                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                     <li><a href="https://github.com/rubenCodeforges" class="social-icon"
@@ -966,7 +951,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Ruben">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Ruben">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Ruben">
@@ -988,7 +974,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
 
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/" class="social-icon"
+                                            <li><a href="https://www.linkedin.com/in/ruben-movsesyan-6a363268/"
+                                                   class="social-icon"
                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                             <li><a href="https://github.com/rubenCodeforges" class="social-icon"
@@ -998,7 +985,11 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </div>
 
                                     <p class="col-descr">
-                                        Ruben has more than 10 years of solid experience in software development industry along with excellent leadership skills. He is the founder of Codeforges company, a leading outsourcing collective of passionate professionals who helps businesses develop polished products and implement creative ideas with a strong focus on quality and up to date approaches in software development.
+                                        Ruben has more than 10 years of solid experience in software development
+                                        industry along with excellent leadership skills. He is the founder of Codeforges
+                                        company, a leading outsourcing collective of passionate professionals who helps
+                                        businesses develop polished products and implement creative ideas with a strong
+                                        focus on quality and up to date approaches in software development.
                                     </p>
                                 </div>
                             </div>
@@ -1026,7 +1017,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Catherine">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Catherine">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Catherine">
@@ -1045,22 +1037,27 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Head of Operations
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/khaidukova-ekaterina/" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li><a href="https://www.linkedin.com/in/khaidukova-ekaterina/"
+                                                   class="social-icon"
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">Catherine is the former Head of Anti-Money Laundering at one of
                                         Russia’s largest
-                                        brokerage firms, with over 7 years’ experience in markets and finance. Her background in
+                                        brokerage firms, with over 7 years’ experience in markets and finance. Her
+                                        background in
                                         anti-money laundering and market abuse has given her the strength to make tough
-                                        decisions in crucial situations, along with the skill to evaluate large amounts of
-                                        factual and circumstantial data and to deal with their consequences. Catherine’s deep
-                                        knowledge of the regulatory environment allows her to accurately anticipate how it will
+                                        decisions in crucial situations, along with the skill to evaluate large amounts
+                                        of
+                                        factual and circumstantial data and to deal with their consequences. Catherine’s
+                                        deep
+                                        knowledge of the regulatory environment allows her to accurately anticipate how
+                                        it will
                                         affect the market.</p>
                                 </div>
                             </div>
@@ -1083,15 +1080,17 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <div class="social-bio-aligned">
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
-                                    <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/" class="social-icon"
-                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/"
+                                           class="social-icon"
+                                           target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                     <li><a href="https://github.com/victorwiebe" class="social-icon"
-                                        target="_blank"><i class="fab fa-github"></i></a>
+                                           target="_blank"><i class="fab fa-github"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Victor">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Victor">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Victor">
@@ -1110,20 +1109,27 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Blockchain Developer
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li><a href="https://www.linkedin.com/in/victor-j-wiebe-1aaaaa63/"
+                                                   class="social-icon"
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                             <li><a href="https://github.com/victorwiebe" class="social-icon"
-                                                target="_blank"><i class="fab fa-github"></i></a>
+                                                   target="_blank"><i class="fab fa-github"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">
-                                        After 5 years delivering mobile app and web products, Victor shifted his career to creating transparent blockchain solutions. He worked previously on Blockchain Development and Cyber Security for the Akropolis.io Pensions ICO project started in 2017. His prior app and website work has been used in production by Intel, ESPN, and Columbia University. Victor also holds a Bachelors of Electrical Engineering from the University of Calgary, Canada and is a Professional Scrum Master.
+                                        After 5 years delivering mobile app and web products, Victor shifted his career
+                                        to creating transparent blockchain solutions. He worked previously on Blockchain
+                                        Development and Cyber Security for the Akropolis.io Pensions ICO project started
+                                        in 2017. His prior app and website work has been used in production by Intel,
+                                        ESPN, and Columbia University. Victor also holds a Bachelors of Electrical
+                                        Engineering from the University of Calgary, Canada and is a Professional Scrum
+                                        Master.
                                     </p>
                                 </div>
                             </div>
@@ -1146,12 +1152,14 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <div class="social-bio-aligned">
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
-                                    <li><a href="https://www.linkedin.com/in/marc-olivier-lebel-106829a7/" class="social-icon"
-                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                    <li><a href="https://www.linkedin.com/in/marc-olivier-lebel-106829a7/"
+                                           class="social-icon"
+                                           target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Marc-Olivier">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Marc-Olivier">READ BIO <span
+                                    class="bio-plus">+</span></div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Marc-Olivier">
@@ -1170,17 +1178,22 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Project Coordinator / IT Expert
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/marc-olivier-lebel-106829a7/" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li><a href="https://www.linkedin.com/in/marc-olivier-lebel-106829a7/"
+                                                   class="social-icon"
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">
-                                        Following his studies in information technology, an instructive career at CGI company as a system administrator, and devops in major banks in Canada, Marc-Olivier is now devoted full time to blockchain technology and its potential impacts. Co-founder of Quebec Blockchain, his main goal is to reinforce, as well as offer expertise to Svandis project at a technical level.
+                                        Following his studies in information technology, an instructive career at CGI
+                                        company as a system administrator, and devops in major banks in Canada,
+                                        Marc-Olivier is now devoted full time to blockchain technology and its potential
+                                        impacts. Co-founder of Quebec Blockchain, his main goal is to reinforce, as well
+                                        as offer expertise to Svandis project at a technical level.
                                     </p>
                                 </div>
                             </div>
@@ -1208,7 +1221,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="team-function">
                                 Product Advisor<br>
                                 –<br>
-                                Chief Investment Officer,<br> 
+                                Chief Investment Officer,<br>
                                 Cindicator
                             </div>
                         </div>
@@ -1216,11 +1229,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/" class="social-icon"
-                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                           target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Nodari">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Nodari">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Nodari">
@@ -1239,24 +1253,29 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Product Advisor<br>
                                         –<br>
-                                        Chief Investment Officer,<br> 
+                                        Chief Investment Officer,<br>
                                         Cindicator
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                            <li><a href="https://www.linkedin.com/in/nodari-kolmakhidze/"
+                                                   class="social-icon"
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">Nodari is Chief Investment Officer at Cindicator. With nearly a
                                         decade’s experience in
-                                        finance, trading and asset management, Nodari’s main interest is in Black Swan events.
-                                        His investment management track record includes successfully shorting markets before the
-                                        Russian campaign in Crimea, the US stock market selloffs in August 2015 and January
-                                        2016, the UK Brexit vote and the election of Donald Trump as US President. Before
+                                        finance, trading and asset management, Nodari’s main interest is in Black Swan
+                                        events.
+                                        His investment management track record includes successfully shorting markets
+                                        before the
+                                        Russian campaign in Crimea, the US stock market selloffs in August 2015 and
+                                        January
+                                        2016, the UK Brexit vote and the election of Donald Trump as US President.
+                                        Before
                                         joining Cindicator, Nodari worked for an algo event-driven hedge fund.</p>
                                 </div>
                             </div>
@@ -1307,31 +1326,39 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                         –<br>
                                         Head of Analytics, Cindicator
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/kate-kurbanova/" class="social-icon"
+                                            <li><a href="https://www.linkedin.com/in/kate-kurbanova/"
+                                                   class="social-icon"
                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
-                                    <p class="col-descr">Kate has been working in the fintech startup Cindicator as Head of
+
+                                    <p class="col-descr">Kate has been working in the fintech startup Cindicator as Head
+                                        of
                                         Analytics since 2016. Together with her team, she is reinventing the approach to
-                                        financial analysis, creating the world’s first ecosystem run by Hybrid Intelligence.
-                                        Kate knows that crypto traders, investors and analysts today face an unprecedented
-                                        challenge in researching and processing the vast range of information sources that
+                                        financial analysis, creating the world’s first ecosystem run by Hybrid
+                                        Intelligence.
+                                        Kate knows that crypto traders, investors and analysts today face an
+                                        unprecedented
+                                        challenge in researching and processing the vast range of information sources
+                                        that
                                         inhabit the crypto space.
-                                        She was one of the main drivers of Cindicator token sale in September 2017 and she
-                                        continues to be a deep analyst of current token sales’ changes as her team analyses all
-                                        ICOs worth to notice daily. She is also a token sale advisor in a number of crypto
+                                        She was one of the main drivers of Cindicator token sale in September 2017 and
+                                        she
+                                        continues to be a deep analyst of current token sales’ changes as her team
+                                        analyses all
+                                        ICOs worth to notice daily. She is also a token sale advisor in a number of
+                                        crypto
                                         projects.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <div class="col col-1-4">
                     <div class="team-item-wrap">
                         <div class="img-wrapper">
@@ -1343,7 +1370,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             </div>
                             <div class="team-function">
                                 –<br>
-                                Smart Contract Developer and Auditor<br> 
+                                Smart Contract Developer and Auditor<br>
                                 Blockchan Advisor
                             </div>
                         </div>
@@ -1355,7 +1382,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Bokky">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Bokky">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Bokky">
@@ -1373,26 +1401,33 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </div>
                                     <div class="team-function">
                                         –<br>
-                                        Smart Contract Developer and Auditor<br> 
+                                        Smart Contract Developer and Auditor<br>
                                         Blockchan Advisor
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://github.com/bokkypoobah" class="social-icon" target="_blank"><i
+                                            <li><a href="https://github.com/bokkypoobah" class="social-icon"
+                                                   target="_blank"><i
                                                     class="fab fa-github"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
-                                    <p class="col-descr">Bokky is a leading global blockchain security specialist and has been a
-                                            quantitative software developer for over 20 years. He has worked with the Ethereum
-                                            blockchain since the platform launched in 2015, and is excited by the ease at with which
-                                            monetary value can be sent to, held and sent by smart contracts on the Ethereum
-                                            platform. Bokky is a respected smart contract security auditor, having developed and
-                                            audited smart contracts for over 20 companies, among them Status, Cindicator, Stox, and
-                                            others. Bokky is currently editing "Mastering Ethereum" with Andreas M. Antonopolous and
-                                            Gavin Wood.</p>
+
+                                    <p class="col-descr">Bokky is a leading global blockchain security specialist and
+                                        has been a
+                                        quantitative software developer for over 20 years. He has worked with the
+                                        Ethereum
+                                        blockchain since the platform launched in 2015, and is excited by the ease at
+                                        with which
+                                        monetary value can be sent to, held and sent by smart contracts on the Ethereum
+                                        platform. Bokky is a respected smart contract security auditor, having developed
+                                        and
+                                        audited smart contracts for over 20 companies, among them Status, Cindicator,
+                                        Stox, and
+                                        others. Bokky is currently editing "Mastering Ethereum" with Andreas M.
+                                        Antonopolous and
+                                        Gavin Wood.</p>
                                 </div>
                             </div>
                         </div>
@@ -1421,7 +1456,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-David">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-David">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-David">
@@ -1442,19 +1478,23 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                         Chief Operating Officer,<br>
                                         Credits
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
-                                            <li><a href="https://www.linkedin.com/in/david-kolmakhidze/" class="social-icon"
+                                            <li><a href="https://www.linkedin.com/in/david-kolmakhidze/"
+                                                   class="social-icon"
                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">David is Chief Operating Officer at Credits, an open blockchain
-                                        platform which features autonomous smart contracts and an internal cryptocurrency. David
-                                        has 6 years’ experience in cryptocurrency investments, and is an expert in marketing
-                                        strategy for token sales, with a deep experience in building partnerships with both
+                                        platform which features autonomous smart contracts and an internal
+                                        cryptocurrency. David
+                                        has 6 years’ experience in cryptocurrency investments, and is an expert in
+                                        marketing
+                                        strategy for token sales, with a deep experience in building partnerships with
+                                        both
                                         retail and angel investors.
                                     </p>
                                 </div>
@@ -1479,11 +1519,12 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/jasonlee137/" class="social-icon"
-                                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                           target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
-                            <div class="bio-button" data-popup="bio-Jason">READ BIO <span class="bio-plus">+</span></div>
+                            <div class="bio-button" data-popup="bio-Jason">READ BIO <span class="bio-plus">+</span>
+                            </div>
                         </div>
                     </div>
                     <div class="bio-popup bio-Jason">
@@ -1502,21 +1543,25 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Marketing Advisor
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/jasonlee137/" class="social-icon"
-                                                    target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
-                                    <p class="col-descr">Jason is a senior media technology manager at one of Australia’s
+
+                                    <p class="col-descr">Jason is a senior media technology manager at one of
+                                        Australia’s
                                         largest banks. He has nearly a decade of experience in the digital advertising
-                                        landscape, leading strategic data driven marketing initiatives across Johnson & Johnson,
+                                        landscape, leading strategic data driven marketing initiatives across Johnson &
+                                        Johnson,
                                         Telstra, Virgin Atlantic and the financial industry. From being an active retail
-                                        investor across stocks, property and commodities for over 10 years he has since shifted
-                                        efforts as a founding partner of JSON Capital - a cryptocurrency based hedge fund with a
+                                        investor across stocks, property and commodities for over 10 years he has since
+                                        shifted
+                                        efforts as a founding partner of JSON Capital - a cryptocurrency based hedge
+                                        fund with a
                                         strong belief in the future prospects of blockchain and cryptocurrencies.</p>
                                 </div>
                             </div>
@@ -1540,7 +1585,7 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                             <div class="social-user-block">
                                 <ul class="social-icons-list">
                                     <li><a href="https://www.linkedin.com/in/cemfdagdelen/" class="social-icon"
-                                        target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                           target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                     </li>
                                 </ul>
                             </div>
@@ -1563,70 +1608,84 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                                     <div class="team-function">
                                         Advisor, DAO and Token Incentives
                                     </div>
-                                    
+
                                     <div class="social-user-block">
                                         <ul class="social-icons-list">
                                             <li><a href="https://www.linkedin.com/in/cemfdagdelen/" class="social-icon"
-                                                target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                                   target="_blank"><i class="fab fa-linkedin-in"></i></a>
                                             </li>
                                         </ul>
                                     </div>
-                                    
+
                                     <p class="col-descr">
-                                        Cem is founding specialist at Horatii Partners. With a background in investment banking, and an avid sailor since the age of 9, Cem has received awards for his work in financial trading and innovation. At the core of his work in cryptocurrency and blockchain, Cem is a researcher in decentralized governance, DAO, and cryptoeconomic primitives (i.e., token incentives).
+                                        Cem is founding specialist at Horatii Partners. With a background in investment
+                                        banking, and an avid sailor since the age of 9, Cem has received awards for his
+                                        work in financial trading and innovation. At the core of his work in
+                                        cryptocurrency and blockchain, Cem is a researcher in decentralized governance,
+                                        DAO, and cryptoeconomic primitives (i.e., token incentives).
                                     </p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                
+
                 <!--<div class="col col-1-4">-->
-                    <!--<div class="team-item-wrap">-->
-                        <!--<div class="img-wrapper">-->
-                            <!--<img src="./img/Jason_Lee.png" alt="Roderik">-->
-                        <!--</div>-->
-                        <!--<div class="inner-wrap">-->
-                            <!--<p class="col-descr">-->
-                                <!--Jason is a senior media technology manager at one of Australia’s largest banks. He has-->
-                                <!--nearly a decade of experience in the digital advertising landscape, leading strategic-->
-                                <!--data driven marketing initiatives across Johnson & Johnson, Telstra, Virgin Atlantic and-->
-                                <!--the financial industry. From being an active retail investor across stocks, property and-->
-                                <!--commodities for over 10 years he has since shifted efforts as a founding partner of JSON-->
-                                <!--Capital - a cryptocurrency based hedge fund with a strong belief in the future prospects-->
-                                <!--of blockchain and cryptocurrencies.-->
-                            <!--</p>-->
-                            <!--<div class="social-user-block">-->
-                                <!--<ul class="social-icons-list">-->
-                                    <!--<li><a href="#" class="social-icon"-->
-                                           <!--target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
-                                    <!--</li>-->
-                                <!--</ul>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                    <!--</div>-->
+                <!--<div class="team-item-wrap">-->
+                <!--<div class="img-wrapper">-->
+                <!--<img src="./img/Jason_Lee.png" alt="Roderik">-->
+                <!--</div>-->
+                <!--<div class="inner-wrap">-->
+                <!--<p class="col-descr">-->
+                <!--Jason is a senior media technology manager at one of Australia’s largest banks. He has-->
+                <!--nearly a decade of experience in the digital advertising landscape, leading strategic-->
+                <!--data driven marketing initiatives across Johnson & Johnson, Telstra, Virgin Atlantic and-->
+                <!--the financial industry. From being an active retail investor across stocks, property and-->
+                <!--commodities for over 10 years he has since shifted efforts as a founding partner of JSON-->
+                <!--Capital - a cryptocurrency based hedge fund with a strong belief in the future prospects-->
+                <!--of blockchain and cryptocurrencies.-->
+                <!--</p>-->
+                <!--<div class="social-user-block">-->
+                <!--<ul class="social-icons-list">-->
+                <!--<li><a href="#" class="social-icon"-->
+                <!--target="_blank"><i class="fab fa-linkedin-in"></i></a>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</div>-->
                 <!--</div>-->
             </div>
         </div>
     </section>
     <section id="partners" class="partners-section">
         <div class="container">
-            <h2 class="section-title">Partners and Service Providers</h2>
+            <h2 class="section-title">PARTNERS, INVESTORS AND SERVICE PROVIDERS</h2>
             <div class="partners-wrapper">
                 <div class="item-wrap">
                     <a target="_blank" href="https://cindicator.com"
                        onclick="trackOutboundLink('https://cindicator.com');"><img
-                            src="img/logo-sindicator.png" alt="Sindicator"></a>
+                            src="img/cindicator.png" alt="Sindicator"></a>
                 </div>
                 <div class="item-wrap">
                     <a target="_blank" href="http://json.capital"
                        onclick="trackOutboundLink('http://json.capital');"><img
                             src="img/logo-json-capital.png" alt="Json Capital"></a>
                 </div>
+
+                <div class="item-wrap">
+                    <a target="_blank"
+                       class="d-flex align-items-center justify-content-center"
+                       href="https://ibf.is"
+                       onclick="trackOutboundLink('https://ibf.is');">
+                        <img src="img/ibf.png" class="w-50" alt="ibf">
+                    </a>
+                </div>
                 <div class="item-wrap">
                     <a target="_blank" href="https://isx.is"
-                       onclick="trackOutboundLink('https://isx.is');"><img src="img/logo-isx.png"
-                                                                           alt="ISX"></a>
+                       onclick="trackOutboundLink('https://isx.is');">
+                        <img src="img/logo-isx.png" alt="ISX">
+                    </a>
                 </div>
                 <div class="item-wrap">
                     <a target="_blank" href="http://quebecblockchain.ca/"
@@ -1646,6 +1705,58 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            <div class="community-involvement-container">
+                <h2 class="section-title">Blog Articles</h2>
+                <div class="owl-carousel">
+                    <div>
+                        <a target="_blank"
+                           href="https://medium.com/svandis/json-capital-and-svandis-enter-strategic-partnership-80ebbd57fd66?source=svandis_io_home_page">
+                            <img src="https://cdn-images-1.medium.com/max/1000/0*D1FYy7hL-iE21V2q"
+                                 alt="json-capital-and-svandis-enter-strategic-partnership"/><br/>
+                            <h4>JSON Capital and Svandis Enter Strategic Partnership</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank"
+                           href="https://medium.com/svandis/introducing-the-svandis-research-community-and-internal-analytics-team-13e4443275d9?source=svandis_io_home_page">
+                            <img src="https://cdn-images-1.medium.com/max/400/1*Rc1NyIg99WjK6T7r5sZrIQ.png"
+                                 alt="introducing-the-svandis-research-community-and-internal-analytics-team"/><br/>
+                            <h4>Introducing the Svandis Research Community and Internal Analytics Team</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank"
+                           href="https://medium.com/svandis/the-svandis-datamining-app-628f97d1e383?source=svandis_io_home_page">
+                            <img src="https://cdn-images-1.medium.com/max/400/0*RV7SEXVWdxzh2hR7."
+                                 alt="introducing-the-svandis-research-community-and-internal-analytics-team"/><br/>
+                            <h4>The Svandis DataMining App</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank"
+                           href="https://medium.com/svandis/svandis-certified-reviewers-gamification-db2d88b9c231?source=svandis_io_home_page">
+                            <img src="https://cdn-images-1.medium.com/max/400/0*KLUFr9G_Fc1OQRqM"
+                                 alt="introducing-the-svandis-research-community-and-internal-analytics-team"/><br/>
+                            <h4>Svandis Certified Reviewers & Gamification</h4>
+                        </a>
+                    </div>
+                    <div>
+                        <a target="_blank"
+                           href="https://medium.com/cindicator/bringing-high-quality-data-to-crypto-markets-cindicator-partners-with-svandis-6a9c73b5195">
+                            <img height="250"
+                                 src="https://cdn-images-1.medium.com/max/800/1*njAD6Glc-erY5Z9gxCqyWw.png"/><br/>
+                            <h4>Bringing High-Quality Data to Crypto Markets: Cindicator Partners with Svandis</h4>
+                        </a>
+                    </div>
+                </div>
+                <div style="text-align:center; font-size: 17px;">
+                    <a target="_blank" href="https://medium.com/svandis">All of our blogs</a>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="faq" class="faq-section">
         <div class="container">
             <div class="faq-container">
@@ -1661,6 +1772,10 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                          aria-hidden="true" style="display: none;">
                         Svandis is a fintech company that is developing a research platform providing market-leading
                         analytical and visualisation tools for professionals working in crypto market space.
+                        Svandis data mining software is applicable to another industries as well, such as global
+                        markets,
+                        sports and arts.
+
                     </div>
 
                     <h3 id="accordion-1-t2" class="accordion-title" role="tab" aria-controls="accordion-1-c2"
@@ -1713,10 +1828,10 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         <p>The Svandis Community, along with other partners, will receive Svandis tokens (SVN) in
                             recognition of their contribution:</p>
                         <ol>
-                            <li>Checking on ICOs and token sales by using a standardized template and a checklist. The
-                                goal is to check the validity of several categories of information published by an ICO
-                                or
-                                token sale.
+                            <li>
+                                Checking information by using a standardized template and a checklist.
+                                The goal is to check the validity of several categories of information published by a
+                                source.
                             </li>
                             <li>Installing a DataMining application. This app will grab website pages and other content
                                 to enable the analysis of a vast quantity of historical and real-time data.
@@ -1733,39 +1848,6 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                         Research Platform. Svandis tokens are ERC-20 compatible tokens distributed on the Ethereum
                         blockchain pursuant to a related ERC-20 smart contract (the “SVN Tokens”). Unlike proof-of-work
                         blockchains such as Bitcoin or Ethereum, there is no mining in Svandis.
-                    </div>
-
-                    <h3 id="accordion-1-t8" class="accordion-title" role="tab" aria-controls="accordion-1-c8"
-                        aria-selected="false" aria-expanded="false" tabindex="0">
-                        Is there a pre-sale? When will be the token sale?
-                    </h3>
-                    <div id="accordion-1-c8" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t8"
-                         aria-hidden="true" style="display: none;">
-                        The private pre-sale is happening right now, you can apply <a href="#header">here</a>. The token
-                        sale
-                        itself is scheduled for Q3 2018, subscribe to our updates to
-                        stay tuned.
-                    </div>
-
-                    <h3 id="accordion-1-t9" class="accordion-title" role="tab" aria-controls="accordion-1-c9"
-                        aria-selected="false" aria-expanded="false" tabindex="0">
-                        What purchase methods will be accepted during the token sale?
-                    </h3>
-                    <div id="accordion-1-c9" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t9"
-                         aria-hidden="true" style="display: none;">
-                        Only ETH will be accepted during the token sale.
-                    </div>
-
-                    <h3 id="accordion-1-t10" class="accordion-title" role="tab" aria-controls="accordion-1-c10"
-                        aria-selected="false" aria-expanded="false" tabindex="0">
-                        How can I participate in the Svandis token distribution?
-                    </h3>
-                    <div id="accordion-1-c10" class="accordion-content" role="tabpanel"
-                         aria-labelledby="accordion-1-t10"
-                         aria-hidden="true" style="display: none;">
-                        To get involved in the Svandis token distribution, you need an Ethereum wallet compatible with
-                        ERC20 tokens. Do not send Ether (“ETH”) directly from cryptocurrency exchanges, use only an ETH
-                        compatible wallet.
                     </div>
 
                     <h3 id="accordion-1-t11" class="accordion-title" role="tab" aria-controls="accordion-1-c11"
@@ -1822,11 +1904,8 @@ https://www.facebook.com/tr?id=146739112807876&ev=PageView&noscript=1
                     <li class="menu-item">
                         <a href="#introduction">Introduction</a>
                     </li>
-                    <li class="menu-item">
-                        <a href="#whitelist">PRE-SALE</a>
-                    </li>
                     <!--<li class="menu-item">-->
-                        <!--<a href="#community-involvement">Community</a>-->
+                    <!--<a href="#community-involvement">Community</a>-->
                     <!--</li>-->
                     <li class="menu-item">
                         <a href="#roadmap">Roadmap</a>

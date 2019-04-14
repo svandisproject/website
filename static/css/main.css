@@ -765,7 +765,9 @@ div.mce_inline_error,
 
 .team-row > .col {
     margin-top: 88px;
-    margin-bottom: 3.6em
+    margin-bottom: 3.6em;
+    flex-basis: auto;
+    flex-grow: 0;
 }
 
 .team-item-wrap {
@@ -3055,4 +3057,19 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
     .diagram-img img {
         max-width: 100%;
     }
+}
+
+.description {
+    color: #fff;
+    text-align: center;
+}
+.description.inverse {
+    color: #000;
+}
+.description p {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.w-50 {
+    width: 50%;
 }
