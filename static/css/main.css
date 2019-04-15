@@ -1464,9 +1464,9 @@ div.mce_inline_error,
 }
 
 .privacy-policy-table .table-row {
-     display: flex;
-     border-bottom: 1px solid #000;
- }
+    display: flex;
+    border-bottom: 1px solid #000;
+}
 
 .privacy-policy-table .table-row:last-child {
     border-bottom: none;
@@ -3087,6 +3087,13 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
 }
 .mb-4 {
     margin-bottom: 4em;
+}
+.col-6 {
+    width: calc(100% / 2);
+}
+
+.col-4 {
+    width: calc(100% / 3);
 }
 
 .flex-center {
