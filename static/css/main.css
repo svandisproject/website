@@ -3208,3 +3208,8 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
         width: 100%;
     }
 }
+
+.img-modal-section .img-modal-trigger {
+    font-size: 1.3em;
+    height: 80px;
+}
