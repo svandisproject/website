@@ -173,7 +173,6 @@ jQuery(document).ready(function ($) {
     });
 
     $('.img-modal-trigger').click(function () {
-        console.log('click');
         $('.img-modal').show();
     });
     $('.img-modal-close').click(() => {
