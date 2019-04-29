@@ -3110,3 +3110,60 @@ span.select2-container--default .select2-results__option--highlighted[aria-selec
     width: 100%;
     margin: 2em 10%;
 }
+
+.steps-description {
+
+}
+
+.datamining-app-description .circle {
+    position: absolute;
+    top: 1.5em;
+}
+
+.steps-description .circle {
+    border-radius: 50%;
+    /*border: 1px solid;*/
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    display: inline-block;
+    font-weight: bold;
+    background-color: #0634a5;
+    color: #fff;
+    line-height: 1.5em;
+    margin-right: 5px;
+    text-align: center;
+    width: 1.6em;
+    height: 1.6em;
+}
+
+.col-2 .circle {
+    position: relative;
+}
+
+.step-item {
+    border: 1px solid;
+    padding: 0.5em;
+    background-color: #f4f5f5;
+    min-height: 300px;
+}
+
+.steps-description i {
+    position: absolute;
+    top: 45%;
+    right: -10px;
+}
+
+.steps-description i.fa-chevron-down {
+    bottom: 0;
+    left: 45%;
+    top: 100%;
+}
+
+.steps-description p {
+    font-size: 24px;
+}
+
+.steps-description h6 {
+    font-size: 20px;
+    font-weight: bold;
+}
