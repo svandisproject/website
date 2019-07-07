@@ -1,0 +1,505 @@
+<html lang="en-US"><head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-W9LJC32"></script><script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-110819624-2"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css">
+    <script>
+        window.dataLayer = window.dataLayer || [];
+    </script>
+    <!-- Google Tag Manager -->
+    <script>
+      if(location.hostname === 'svandis.io'){
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-W9LJC32')};</script>
+    <!-- End Google Tag Manager -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+    <script>
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        window.addEventListener("load", function () {
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#252e39"
+                    },
+                    "button": {
+                        "background": "#14a7d0"
+                    }
+                },
+                "content": {
+                    "href": "privacy-policy.html"
+                },
+                "type": "opt-out",
+                onInitialise: function (status) {
+
+                    var type = this.options.type;
+                    var didConsent = this.hasConsented();
+
+                    if (type == 'opt-out' && didConsent) {
+                        gtag('js', new Date());
+                        gtag('config', 'UA-110819624-2');
+                    }
+                },
+                onStatusChange: function (status, chosenBefore) {
+                    var type = this.options.type;
+                    var didConsent = this.hasConsented();
+
+                    if (type == 'opt-out' && !didConsent) {
+                        // disable cookies
+                    } else if (type == 'opt-out' && didConsent) {
+                        gtag('js', new Date());
+                        gtag('config', 'UA-110819624-2');
+
+                    }
+
+                },
+                onRevokeChoice: function () {
+                    var type = this.options.type;
+                    if (type == 'opt-out') {
+                        // enable cookies
+                    }
+                },
+            })
+        });
+    </script>
+    <script>
+        var trackOutboundLink = function (url) {
+            ga('send', 'event', 'outbound', 'click', url, {
+                'hitCallback': function () {
+                    document.location = url;
+                }
+            });
+        }
+    </script>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="robots" content="noindex,nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Svandis</title>
+    <link rel="shortcut icon" type="image/png" href="https://svandis.io//img/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" id="style_svandis-css" href="https://svandis.io//css/main.css" type="text/css" media="all">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
+<style>
+    @media (max-width: 576px){
+        .subscribe-form-wrapper p {
+            margin-top: 190px;
+        }
+    }
+
+    .accordion .accordion-title {
+        position: relative;
+        min-height: 50px;
+        padding: 14px 38px 14px 70px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.09);
+        font-size: 18px;
+        font-weight: 400;
+        color: #333;
+        text-transform: none;
+        cursor: pointer;
+        border: solid 1px #d9d9d9;
+        text-align: right;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+
+    .accordion .accordion-title:after{
+        content: '+' !important;
+        left: auto;
+        color: #333 !important;
+        position: absolute !important;
+        font-weight: 600 !important;
+        right: 0 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        font-size: 18px !important;
+        width: 37px !important;
+        height: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        background-color: transparent !important;
+        
+    }
+
+    .accordion-content {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border: solid 1px #d9d9d9;
+        border-radius: 3px;
+    }
+
+    h4{
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul.dashed {
+    list-style-type: none;
+    }
+    ul.dashed > li {
+    text-indent: -5px;
+    }
+    ul.dashed > li:before {
+    content: "-";
+    text-indent: -5px;
+    }
+
+    .apply-button{
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .apply-button a{
+        background-color: #0634a5;
+        color: white;
+        padding: 10px 90px;
+        border-radius: 34px;
+    }
+
+    .subscribe-form-wrapper {
+        max-width: none;
+        font-family: inherit;
+    }
+
+    .subscribe-form-wrapper p {
+        text-transform: inherit;
+        line-height: inherit;
+        font-size: inherit;
+        letter-spacing: inherit;
+        font-weight: inherit;
+    }
+
+    @media (max-width: 576px){
+        .home-section {
+            min-height: 490px;
+        }
+    }
+
+</style></head>
+<body class="home" cz-shortcut-listen="true"><div class="cc-revoke cc-bottom cc-animate cc-color-override-530831885 " style="display: none;">Cookie Policy</div><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-opt-out cc-theme-block cc-bottom cc-color-override-530831885 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">This website uses cookies to ensure you get the best experience on our website. <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="privacy-policy.html" target="_blank">Learn more</a></span><div class="cc-compliance cc-highlight"><a aria-label="deny cookies" role="button" tabindex="0" class="cc-btn cc-deny">Decline</a><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Got it!</a></div><!--googleon: all--></div>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W9LJC32"
+				  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="main-wrapper">
+    <header id="header" class="header">
+        <div class="container">
+            <div class="header-wrap flex-row">
+                <a href="index.html" class="custom-logo-link">
+                    <img width="198" height="50" src="https://svandis.io//img/logo.png" class="custom-logo" alt="Svandis">
+                </a>
+                <div class="menu-toggle">
+                    <div class="bars">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="main-navigation">
+                    <ul id="primary-menu" class="main-nav">
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#introduction">Introduction</a>
+                        </li>
+                        <!--<li class="menu-item">-->
+                            <!--<a href="https://svandis.io/#community-involvement">Community</a>-->
+                        <!--</li>-->
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#roadmap">Roadmap</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#token">Token Sale</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#ecosystem">Ecosystem</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#team">Team</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#partners">Partners</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="https://svandis.io/#faq">FAQ</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="hiring.html">Hiring</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="home-section">
+        <div class="container">
+            <div class="main-home-wrapper subscribe-form-wrapper">
+                <h1 class="main-title ">Svandis is Hiring !</h1>
+                
+                <p>
+                    At Svandis, our mission is to give our users the best trading experience possible. To do that, we depend on the platform, community, and our team of talented, ambitious people who share a common passion for excellence.
+
+                    Whether you have years of experience or are just starting your career in crypto-related services, we’ll help you realize your full potential and achieve your career goals. 
+                    
+                    Other than working with a great team of smart and energetic people, we also offer a very competitive salary. We also have a defined career path for successful individuals in this practice.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="introduction">
+        <div id="accordion-1" class="accordion" role="tablist" aria-multiselectable="true">
+            <h3 id="accordion-1-t1" class="accordion-title read" role="tab" aria-controls="accordion-1-c1" aria-selected="false" aria-expanded="false" tabindex="0" data-initialstate="false">
+                Researcher & Analyst
+            </h3>
+            <div id="accordion-1-c1" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t1" aria-hidden="true" style="display: none;">
+			<h4>Overview</h4>
+                <p>Svandis wants to create professional opportunities for the most effective and motivated participants of the Svandis community. Those who want to develop their independence while building their career with an ascending company will understand this is the opportunity they were looking for.</p>
+                <p>Svandis is not “hiring” researchers or analysts. We are looking for partners who want to develop their potential and invest their talent to create value. </p>
+                <h4>Key Responsibilities</h4>
+                <ul class="dashed">
+                    <li>Prepare insightful reviews on a recurring basis for the Svandis community and internal team (upcoming token sales, worldwide, and political events, industry overview, sector analysis);</li>
+                    <li>Provide daily reports over major news for existing tokens, token sales and ICOs;</li>
+                    <li>Analysis of trends (ICO market, crypto assets, traditional markets) with the view to provide insight on current situation and trends;</li>
+                    <li>Prepare and deliver complex technical information in a clear and engaging style to various type of audience;</li>
+                    <li>Update Svandis database by entering/validating data;</li>
+					<li>Participate in the development and implementation of primary and secondary research tools including but not limited to the creation of qualitative research discussion guides, quantitative research survey guides, and the collection and distillation of data from these tools;</li>
+                    <li>Keeping track on crypto exchange listings and liquidity;</li>
+                    <li>Provide analysis to prioritize addition of new digital assets.</li>
+                </ul>
+                
+                <h4>Required Knowledge and Abilities</h4>
+
+                <ul class="dashed">
+					<li>Minimum 3 years’ experience in both crypto and traditional financial markets would be an advantage;</li>
+                    <li>The ability to develop a vision and express it to a diversified audience;</li>
+                    <li>Having positive leadership and the ability to communicate in a constructive way complex goals;</li>
+                    <li>High sense of accountability about your work and the deliverables you decided to accept;</li>
+                    <li>High self-motivation;</li>
+                    <li>Strong research and analytical background, ability to create innovative solutions to transform data into insightful information;</li>
+                    <li>Interpersonal, excellent communication (written and verbal) and presentation skills;</li>
+                    <li>Ability to organize schedules and plans in accordance with tight deadline;</li>
+                    <li>Acquaintance with crypto space and knowledge of both crypto and traditional financial markets are advantages;</li>
+					<li>Motivated to keep learning.</li>					
+                </ul>
+
+                <div class="apply-button">
+                    <a href="form-hiring.html">Apply</a>
+                </div>
+            </div>
+          
+            <h3 id="accordion-1-t2" class="accordion-title" role="tab" aria-controls="accordion-1-c2" aria-selected="false" aria-expanded="false" tabindex="0">
+                Gamification Integration Expert
+            </h3>
+            <div id="accordion-1-c2" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t2" aria-hidden="true" style="display: none;">
+				<h4>Overview</h4>
+				
+					<p>Svandis is looking for a gamification integration expert to consistently strive on improving user experience and enlarge user engagement. A well-balanced platform that incentivizes activities and discourages abuses is taken as a topic of the highest importance within Svandis.</p>
+			
+                <h4>Key Responsibilities</h4>
+                <ul class="dashed">
+                    <li>Create high-level concepts on the gamification of user experiences;</li> 
+                    <li>Develop ideas to simplify implementation;</li>
+                    <li>Evaluate the effectiveness of programs, systems, and campaigns;</li> make recommendations for improvement or expansion;</li>
+                    <li>Develop market and competitor analysis, as well as benchmarking studies on a regular basis;</li>
+                    <li>Manage, review and revise instructional content to meet user needs, expectations, and changing requirements;</li>
+                    <li>Analyze user issues;</li>
+                    <li>Identify opportunities through research and leverage existing learning assets to repurpose content, as appropriate, for cost and time savings;</li>
+                    <li>Communicate progress and opportunities through weekly, monthly, and quarterly business reviews;</li>
+                    <li>Other responsibilities as they may be assigned from time-to-time.</li>
+                </ul>
+
+                <h4>Required Knowledge and Abilities</h4>
+                <ul class="dashed">
+                    <li>Minimum 2 years’ relevant experience in IT/App development, digital marketing, and game design, social media, rewards/loyalty programs, design, customer/group engagement, etc;</li>
+                    <li>Ability to manage multiple projects and teams at the same time;</li>
+                    <li>Proficiently utilize a variety of gamification platforms;</li> 
+                    <li>Solid project management experience;</li>
+                    <li>Excellent communication (written and verbal) and presentation skills;</li>
+                    <li>Passionate about all things digital and gamified;</li>
+                    <li>High attention to detail, critical thinking, negotiation and problem solving skills;</li>
+                    <li>Must be adept at handling concurrent projects and competing priorities in a high-volume, fast-paced and deadline-driven environment.</li>
+                </ul>
+
+                <div class="apply-button">
+                    <a href="form-hiring.html">Apply</a>
+                </div>
+            </div>
+            <h3 id="accordion-1-t5" class="accordion-title" role="tab" aria-controls="accordion-1-c5" aria-selected="false" aria-expanded="false" tabindex="0">
+                Backend Developer
+            </h3>
+            <div id="accordion-1-c5" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t5" aria-hidden="true" style="display: none;">
+				<h4>Overview</h4>
+                <p>As a Backend Developer at Svandis, you will be part of the development team, making solutions for both external customers worldwide and for internal operations. You will help to evolve and improve the existing architecture, implement new features and functionality for Svandis ecosystem. Work will require participation in a cross-functional team to produce high-quality products.</p>
+                
+                <h4>Key Responsibilities</h4>
+                <ul class="dashed">
+                    <li>PHP coding experience;</li>
+                    <li>Proficiently utilize PHP 7, Symfony 3.4 (Experience with >2.0 is fine), PostgreSQL, Phpunit;</li>
+                    <li>Able to work in a fast-paced environment and tight deadlines;</li>
+                    <li>Write testable, clean, efficient code with sufficient documentation that improves the code-base of our products in meaningful ways;</li>
+                    <li>Work closely with all departments and Product Owner to produce high quality products.</li>
+                </ul>
+
+                <h4>Required Knowledge and Abilities</h4>
+                <ul class="dashed">
+                    <li>Experience in software engineering/web development using various programming languages;</li>
+                    <li>Experience with testing and continuous integrations;</li>
+                    <li>Eager and willing to learn new things, stay up to date with the latest technologies, and expand your base skillset to propose new approaches to your work;</li>
+                    <li>Self-motivated and highly driven;</li>
+                    <li>Good analytical and problem-solving skills;</li>
+                    <li>Ability to work independently with minimum supervision.</li>
+                </ul>
+
+                <div class="apply-button">
+                    <a href="form-hiring.html">Apply</a>
+                </div>
+            </div>
+            <h3 id="accordion-1-t7" class="accordion-title" role="tab" aria-controls="accordion-1-c7" aria-selected="false" aria-expanded="false" tabindex="0">
+                Natural Language Processing Developer
+            </h3>
+            <div id="accordion-1-c7" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t7" aria-hidden="true" style="display: none;">
+				<h4>Overview</h4>
+                <p>Svandis is looking for an experienced developer in building and training neural networks used for Natural Language Processing.</p>
+
+                <h4>Key Responsibilities</h4>
+                <ul class="dashed">
+                    <li>Enhance the automated translation engine developed in house and participate on the extension of the engine with additional languages;</li>
+                    <li>Participate in cutting edge research using techniques such as Machine Learning and Natural Language Processing amongst other capabilities;</li>
+                    <li>Help develop software and algorithms and build new cognitive computing platforms, deep learning algorithms and models, workflow and automation;</li>
+                    <li>Define and drive the analytical scope and method for projects, including formulating and shaping the capabilities through a full software development life cycle.</li>
+                </ul>
+
+                <h4>Required Knowledge and Abilities</h4>
+                <ul class="dashed">
+                    <li>Knowledge of the algorithms and techniques of a computational domain with emphasis on text processing, performance and scalability;</li>
+                    <li>In-depth knowledge of machine learning algorithms and ability to apply them in data driven natural language processing techniques;</li>
+                    <li>Understanding of morphology, syntax, semantics, discourse and/or pragmatics, Natural Language understanding/generation is preferred;</li>
+                    <li>Good command of NLTK is a must;</li>
+                    <li>Strong research and innovation skills with the ability to solve non-trivial problems;</li>
+                    <li>Excellent programming skills in Python;</li>
+                    <li>Excellent prototyping skills in open-source with some examples of practical application;</li>
+                    <li>Flexibility and adaptability to work in a growing dynamic team in a highly visible role;</li>
+                    <li>Excellent communication and teamwork skills.</li>                        
+                </ul>
+
+                <div class="apply-button">
+                    <a href="form-hiring.html">Apply</a>
+                </div>
+            </div>
+
+            <h3 id="accordion-1-t8" class="accordion-title" role="tab" aria-controls="accordion-1-c8" aria-selected="false" aria-expanded="false" tabindex="0">
+                Frontend Developer
+            </h3>
+            <div id="accordion-1-c8" class="accordion-content" role="tabpanel" aria-labelledby="accordion-1-t8" aria-hidden="true" style="display: none;">
+				<h4>Overview</h4>
+                <p>We are looking for a frontend developer who can share our passion for quality and solid solutions. This role provides opportunities for you to take part in an actual product development, making immediate impact to the financial business and earn a tremendous learning experience.</p>
+
+                <h4>Key Responsibilities</h4>
+                <ul class="dashed">
+                    <li>Build complex user interfaces from the ground up using the latest web technologies;</li>
+                    <li>Develop new user-facing features using Vue/Vuex;</li>
+                    <li>Develop new features and components in existing application;</li>
+                    <li>Build readable code that scales and performs well;</li>
+                    <li>Work closely with all departments and Product Owner to produce high quality product;</li>
+                    <li>Work with PM and UX designer to understand requirement and ensure the technical feasibility of UI/UX design;</li>
+                    <li>Collaborate with other team members and with cross-functional teams and stakeholders across geographies;</li>
+                    <li>Participate in code reviews.</li>
+                </ul>
+
+                <h4>Required Knowledge and Abilities</h4>
+                <ul class="dashed">
+                    <li>2 or more years of current experience with web software development technologies and tools including:<br>
+                    ES6, Vue + Vuex, jest, Socket.io, HTML5, SCSS, D3;</li>
+                    <li>Willingness to learn new and emerging technologies;</li>
+                    <li>Able to work in a fast-paced environment and tight deadlines;</li>
+                    <li>Bachelor's Degree with IT or CS related emphasis or equivalent work experience;</li>
+                    <li>Maintenance of existing enterprise web applications;</li>
+                    <li>Excellent written and verbal communication.</li>
+                </ul>
+
+                <p style="margin-top: 20px;">The Front-End developer will be joining an established delivery team. This is an opportunity to collaborate with fellow developers, where your opinion and technical skills will be valued and appreciated.</p>
+            
+                <div class="apply-button">
+                    <a href="form-hiring.html">Apply</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-section">
+        <div class="container">
+            <ul class="social-icons-list">
+                <li>
+                    <a class="social-icon" href="//t.me/svandis_chatroom" target="_blank">
+                        <i class="fab fa-telegram"></i></a>
+                </li>
+                <li><a class="social-icon" href="//t.me/svandisio" target="_blank">
+                    <i class="fab fa-telegram-plane"></i></a>
+                </li>
+                <li>
+                    <a href="//twitter.com/svandisio" class="social-icon" target="_blank">
+                        <i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="//medium.com/svandis " class="social-icon" target="_blank">
+                        <i class="fab fa-medium-m"></i></a>
+                </li>
+                <li>
+                    <a class="social-icon" href="//www.reddit.com/r/Svandis/" target="_blank">
+                        <i class="fab fa-reddit-alien"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="dark-logo-wrapper">
+                <a href="#header" class="logo-img"><img src="https://svandis.io//img/logo-dark.png" alt="logo"></a>
+            </div>
+            <div class="footer-navigation">
+                <ul id="menu-main-menu" class="footer-nav flex-row">
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#introduction">Introduction</a>
+                    </li>
+                    <!--<li class="menu-item">-->
+                        <!--<a href="https://svandis.io/#community-involvement">Community</a>-->
+                    <!--</li>-->
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#roadmap">Roadmap</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#token">Token Sale</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#ecosystem">Ecosystem</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#team">Team</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#partners">Partners</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="https://svandis.io/#faq">FAQ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="privacy-policy.html">Privacy Policy</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="hiring.html">Hiring</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://svandis.io/js/accordion.js"></script>
+<script type="text/javascript" src="https://svandis.io/js/main.js"></script>
+
+</body></html>
